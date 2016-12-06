@@ -7,17 +7,18 @@ import java.util.Map;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
+import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.testng.annotations.BeforeSuite;
 
-import com.alibaba.fastjson.JSON;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.parsing.Parser;
 import com.jayway.restassured.path.json.JsonPath;
+import com.jayway.restassured.response.Header;
 
-import net.sf.json.JSONObject;
 import pu.hui.util.Constants;
 import pu.hui.util.ExcelSheet;
 import pu.hui.util.ExcelUtil;
+import pu.hui.util.OauthToken;
 
 public class TestCaseBase {
 	private static Logger logger = Logger.getLogger(TestCaseBase.class);
@@ -26,9 +27,9 @@ public class TestCaseBase {
 	private static ExcelSheet excelSheet = eu.getSheet("Interface");
 	private static ExcelSheet excelSheet2 = eu.getSheet("Datas");
 	public static String token = "";
-	//成功个数
+	//鎴愬姛涓暟
 	public static int sucCount = 0;
-	//失败个数
+	//澶辫触涓暟
 	public static int failCount = 0;
 
 	@BeforeSuite
@@ -89,13 +90,16 @@ public class TestCaseBase {
 	
 
 	public TestCaseEntity postJson(TestCaseEntity testCaseEntity) {
+		OAuth2AccessToken token = OauthToken.getToken();
+		Header header = new Header("Authorization", String.format("%s %s", token.getTokenType(),
+				token.getValue()));
 		RestAssured.baseURI = testCaseEntity.getInterface_baseURI();
-		RestAssured.port = 30333;
+		//RestAssured.port = 8080;
 		RestAssured.basePath = testCaseEntity.getInterface_basePath();
 		RestAssured.registerParser("text/plain", Parser.JSON);
 		String xx = testCaseEntity.getRequestParam();
 		String yy = testCaseEntity.getInterface_address();
-		String json = given().contentType("application/json").body(testCaseEntity.getRequestParam()).when()
+		String json = given().header(header).contentType("application/json").body(testCaseEntity.getRequestParam()).when()
 				.post(testCaseEntity.getInterface_address()).asString();
 		testCaseEntity.setServerResponse(json);
 		System.out.println("++++++++++++++++++++json:" + json + "-------");
@@ -203,7 +207,7 @@ public class TestCaseBase {
 			}
 			jsonObjectParam = String.format(jsonObjectParam, values);
 			
-			System.out.println("替换过后的json参数："+jsonObjectParam);
+			System.out.println("鏇挎崲杩囧悗鐨刯son鍙傛暟锛�"+jsonObjectParam);
 		}
 		jsonObjectParam = String.format(jsonObjectParam, new String[]{token});
 		testCaseEntity.setRequestParam(jsonObjectParam);
@@ -212,7 +216,7 @@ public class TestCaseBase {
 	public void calculateSuccAndFail(){
 		
 		float susseccRate = ((float)sucCount)/(sucCount+failCount)*100;//((double)la)/b;
-		excelSheet.setValue(0, 0, "运行总数："+(sucCount+failCount)+"    "+"成功个数："+sucCount+"    "+"失败个数："+failCount+"   "+"通过率："+susseccRate+"%");
+		excelSheet.setValue(0, 0, "杩愯鎬绘暟锛�"+(sucCount+failCount)+"    "+"鎴愬姛涓暟锛�"+sucCount+"    "+"澶辫触涓暟锛�"+failCount+"   "+"閫氳繃鐜囷細"+susseccRate+"%");
 		eu.save();
 	}
 	

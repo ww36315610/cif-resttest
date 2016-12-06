@@ -1,0 +1,2306 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\cnbjpuhui-384\AppData\Local\Temp\testng-eclipse-312528495\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">94 methods, 3 failed,   91 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@20749d9)">TestInterface01(pu.hui.restauto.restassure.Data@20749d9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@363f0ba0)">TestInterface01(pu.hui.restauto.restassure.Data@363f0ba0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@7e4d2287)">TestInterface01(pu.hui.restauto.restassure.Data@7e4d2287)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@4b869331)">TestInterface01(pu.hui.restauto.restassure.Data@4b869331)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@1b7cae6f)">TestInterface01(pu.hui.restauto.restassure.Data@1b7cae6f)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@3cbcd8f3)">TestInterface01(pu.hui.restauto.restassure.Data@3cbcd8f3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@69da0b12)">TestInterface01(pu.hui.restauto.restassure.Data@69da0b12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@65ec8b24)">TestInterface01(pu.hui.restauto.restassure.Data@65ec8b24)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@3bdb2c78)">TestInterface01(pu.hui.restauto.restassure.Data@3bdb2c78)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@63ec445c)">TestInterface01(pu.hui.restauto.restassure.Data@63ec445c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@68b58644)">TestInterface01(pu.hui.restauto.restassure.Data@68b58644)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@3162743f)">TestInterface01(pu.hui.restauto.restassure.Data@3162743f)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@4d27d9d)">TestInterface01(pu.hui.restauto.restassure.Data@4d27d9d)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@1afd44cb)">TestInterface01(pu.hui.restauto.restassure.Data@1afd44cb)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@162b3d47)">TestInterface01(pu.hui.restauto.restassure.Data@162b3d47)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@4b1a43d8)">TestInterface01(pu.hui.restauto.restassure.Data@4b1a43d8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@7c4fc2bf)">TestInterface01(pu.hui.restauto.restassure.Data@7c4fc2bf)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@3a627c80)">TestInterface01(pu.hui.restauto.restassure.Data@3a627c80)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@56f71edb)">TestInterface01(pu.hui.restauto.restassure.Data@56f71edb)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@70211e49)">TestInterface01(pu.hui.restauto.restassure.Data@70211e49)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@3b2f4a93)">TestInterface01(pu.hui.restauto.restassure.Data@3b2f4a93)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@5c0f79f0)">TestInterface01(pu.hui.restauto.restassure.Data@5c0f79f0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@10876a6)">TestInterface01(pu.hui.restauto.restassure.Data@10876a6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@765df79d)">TestInterface01(pu.hui.restauto.restassure.Data@765df79d)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@c6da8bb)">TestInterface01(pu.hui.restauto.restassure.Data@c6da8bb)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@5da7cee2)">TestInterface01(pu.hui.restauto.restassure.Data@5da7cee2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@2ba33e2c)">TestInterface01(pu.hui.restauto.restassure.Data@2ba33e2c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@1a480135)">TestInterface01(pu.hui.restauto.restassure.Data@1a480135)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@62a4417)">TestInterface01(pu.hui.restauto.restassure.Data@62a4417)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@60e21209)">TestInterface01(pu.hui.restauto.restassure.Data@60e21209)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@7d070ef5)">TestInterface01(pu.hui.restauto.restassure.Data@7d070ef5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@1ff55ff)">TestInterface01(pu.hui.restauto.restassure.Data@1ff55ff)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@26d820eb)">TestInterface01(pu.hui.restauto.restassure.Data@26d820eb)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@7c447c76)">TestInterface01(pu.hui.restauto.restassure.Data@7c447c76)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@7d755813)">TestInterface01(pu.hui.restauto.restassure.Data@7d755813)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@78b41097)">TestInterface01(pu.hui.restauto.restassure.Data@78b41097)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@10667848)">TestInterface01(pu.hui.restauto.restassure.Data@10667848)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@21a66d45)">TestInterface01(pu.hui.restauto.restassure.Data@21a66d45)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@299270eb)">TestInterface01(pu.hui.restauto.restassure.Data@299270eb)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@66e889df)">TestInterface01(pu.hui.restauto.restassure.Data@66e889df)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@5ee34b1b)">TestInterface01(pu.hui.restauto.restassure.Data@5ee34b1b)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@6e1f8469)">TestInterface01(pu.hui.restauto.restassure.Data@6e1f8469)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@d8948cd)">TestInterface01(pu.hui.restauto.restassure.Data@d8948cd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@421a4ee1)">TestInterface01(pu.hui.restauto.restassure.Data@421a4ee1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@17740dae)">TestInterface01(pu.hui.restauto.restassure.Data@17740dae)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@3a5c2626)">TestInterface01(pu.hui.restauto.restassure.Data@3a5c2626)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@27ace0b1)">TestInterface01(pu.hui.restauto.restassure.Data@27ace0b1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@8c46918)">TestInterface01(pu.hui.restauto.restassure.Data@8c46918)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@46d8f407)">TestInterface01(pu.hui.restauto.restassure.Data@46d8f407)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@4d7aaca2)">TestInterface01(pu.hui.restauto.restassure.Data@4d7aaca2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@35342d2f)">TestInterface01(pu.hui.restauto.restassure.Data@35342d2f)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@2f2d52ef)">TestInterface01(pu.hui.restauto.restassure.Data@2f2d52ef)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@66ad7bf0)">TestInterface01(pu.hui.restauto.restassure.Data@66ad7bf0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@42210be1)">TestInterface01(pu.hui.restauto.restassure.Data@42210be1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@66ec9390)">TestInterface01(pu.hui.restauto.restassure.Data@66ec9390)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@616b241a)">TestInterface01(pu.hui.restauto.restassure.Data@616b241a)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@771d1ffb)">TestInterface01(pu.hui.restauto.restassure.Data@771d1ffb)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@460b6d54)">TestInterface01(pu.hui.restauto.restassure.Data@460b6d54)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@4088741b)">TestInterface01(pu.hui.restauto.restassure.Data@4088741b)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@7495699f)">TestInterface01(pu.hui.restauto.restassure.Data@7495699f)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@338cc75f)">TestInterface01(pu.hui.restauto.restassure.Data@338cc75f)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@6e1d4137)">TestInterface01(pu.hui.restauto.restassure.Data@6e1d4137)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@73ad7e90)">TestInterface01(pu.hui.restauto.restassure.Data@73ad7e90)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@3db64bd4)">TestInterface01(pu.hui.restauto.restassure.Data@3db64bd4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@6601cc93)">TestInterface01(pu.hui.restauto.restassure.Data@6601cc93)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@1686f0b4)">TestInterface01(pu.hui.restauto.restassure.Data@1686f0b4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@23f3dbf0)">TestInterface01(pu.hui.restauto.restassure.Data@23f3dbf0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@4d48bd85)">TestInterface01(pu.hui.restauto.restassure.Data@4d48bd85)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@1aa99005)">TestInterface01(pu.hui.restauto.restassure.Data@1aa99005)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@7ce9e05a)">TestInterface01(pu.hui.restauto.restassure.Data@7ce9e05a)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@243f003c)">TestInterface01(pu.hui.restauto.restassure.Data@243f003c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@20011bf)">TestInterface01(pu.hui.restauto.restassure.Data@20011bf)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@acf859d)">TestInterface01(pu.hui.restauto.restassure.Data@acf859d)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@5bcb04cb)">TestInterface01(pu.hui.restauto.restassure.Data@5bcb04cb)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@322803db)">TestInterface01(pu.hui.restauto.restassure.Data@322803db)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@629adce)">TestInterface01(pu.hui.restauto.restassure.Data@629adce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@15f8701f)">TestInterface01(pu.hui.restauto.restassure.Data@15f8701f)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@3d7b1f1c)">TestInterface01(pu.hui.restauto.restassure.Data@3d7b1f1c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@6f9ad11c)">TestInterface01(pu.hui.restauto.restassure.Data@6f9ad11c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@ca93621)">TestInterface01(pu.hui.restauto.restassure.Data@ca93621)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@72e789cb)">TestInterface01(pu.hui.restauto.restassure.Data@72e789cb)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@77cb9cd1)">TestInterface01(pu.hui.restauto.restassure.Data@77cb9cd1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@455824ad)">TestInterface01(pu.hui.restauto.restassure.Data@455824ad)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@23382f76)">TestInterface01(pu.hui.restauto.restassure.Data@23382f76)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@49dbaaf3)">TestInterface01(pu.hui.restauto.restassure.Data@49dbaaf3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@30e6a763)">TestInterface01(pu.hui.restauto.restassure.Data@30e6a763)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@59c33386)">TestInterface01(pu.hui.restauto.restassure.Data@59c33386)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@7a34f66a)">TestInterface01(pu.hui.restauto.restassure.Data@7a34f66a)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@3c7cfcbb)">TestInterface01(pu.hui.restauto.restassure.Data@3c7cfcbb)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@5f13be1)">TestInterface01(pu.hui.restauto.restassure.Data@5f13be1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@58294867)">TestInterface01(pu.hui.restauto.restassure.Data@58294867)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@2822c6ff)">TestInterface01(pu.hui.restauto.restassure.Data@2822c6ff)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@1be59f28)">TestInterface01(pu.hui.restauto.restassure.Data@1be59f28)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pu.hui.CifInterfaceTest" hash-for-method="TestInterface01(pu.hui.restauto.restassure.Data@588307f7)">TestInterface01(pu.hui.restauto.restassure.Data@588307f7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">pu.hui.CifInterfaceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@20749d9)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@20749d9) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@20749d9)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at pu.hui.CifInterfaceTest.TestInterface01(CifInterfaceTest.java:41)
+	at sun.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@363f0ba0)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@363f0ba0) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@363f0ba0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at pu.hui.CifInterfaceTest.TestInterface01(CifInterfaceTest.java:41)
+	at sun.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@7e4d2287)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@7e4d2287) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@7e4d2287)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at pu.hui.CifInterfaceTest.TestInterface01(CifInterfaceTest.java:41)
+	at sun.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">pu.hui.CifInterfaceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@4b869331)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@4b869331) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@4b869331)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@1b7cae6f)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@1b7cae6f) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@1b7cae6f)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@3cbcd8f3)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@3cbcd8f3) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@3cbcd8f3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@69da0b12)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@69da0b12) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@69da0b12)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@65ec8b24)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@65ec8b24) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@65ec8b24)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@3bdb2c78)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@3bdb2c78) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@3bdb2c78)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@63ec445c)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@63ec445c) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@63ec445c)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@68b58644)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@68b58644) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@68b58644)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@3162743f)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@3162743f) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@3162743f)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@4d27d9d)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@4d27d9d) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@4d27d9d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@1afd44cb)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@1afd44cb) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@1afd44cb)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@162b3d47)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@162b3d47) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@162b3d47)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@4b1a43d8)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@4b1a43d8) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@4b1a43d8)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@7c4fc2bf)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@7c4fc2bf) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@7c4fc2bf)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@3a627c80)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@3a627c80) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@3a627c80)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@56f71edb)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@56f71edb) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@56f71edb)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@70211e49)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@70211e49) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@70211e49)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@3b2f4a93)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@3b2f4a93) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@3b2f4a93)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@5c0f79f0)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@5c0f79f0) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@5c0f79f0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@10876a6)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@10876a6) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@10876a6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@765df79d)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@765df79d) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@765df79d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@c6da8bb)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@c6da8bb) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@c6da8bb)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@5da7cee2)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@5da7cee2) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@5da7cee2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@2ba33e2c)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@2ba33e2c) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@2ba33e2c)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@1a480135)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@1a480135) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@1a480135)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@62a4417)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@62a4417) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@62a4417)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@60e21209)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@60e21209) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@60e21209)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@7d070ef5)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@7d070ef5) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@7d070ef5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@1ff55ff)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@1ff55ff) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@1ff55ff)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@26d820eb)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@26d820eb) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@26d820eb)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@7c447c76)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@7c447c76) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@7c447c76)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@7d755813)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@7d755813) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@7d755813)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@78b41097)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@78b41097) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@78b41097)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@10667848)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@10667848) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@10667848)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@21a66d45)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@21a66d45) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@21a66d45)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@299270eb)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@299270eb) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@299270eb)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@66e889df)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@66e889df) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@66e889df)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@5ee34b1b)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@5ee34b1b) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@5ee34b1b)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@6e1f8469)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@6e1f8469) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@6e1f8469)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@d8948cd)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@d8948cd) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@d8948cd)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@421a4ee1)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@421a4ee1) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@421a4ee1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@17740dae)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@17740dae) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@17740dae)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@3a5c2626)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@3a5c2626) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@3a5c2626)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@27ace0b1)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@27ace0b1) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@27ace0b1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@8c46918)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@8c46918) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@8c46918)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@46d8f407)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@46d8f407) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@46d8f407)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@4d7aaca2)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@4d7aaca2) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@4d7aaca2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@35342d2f)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@35342d2f) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@35342d2f)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@2f2d52ef)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@2f2d52ef) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@2f2d52ef)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@66ad7bf0)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@66ad7bf0) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@66ad7bf0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@42210be1)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@42210be1) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@42210be1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@66ec9390)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@66ec9390) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@66ec9390)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@616b241a)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@616b241a) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@616b241a)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@771d1ffb)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@771d1ffb) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@771d1ffb)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@460b6d54)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@460b6d54) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@460b6d54)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@4088741b)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@4088741b) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@4088741b)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@7495699f)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@7495699f) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@7495699f)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@338cc75f)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@338cc75f) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@338cc75f)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@6e1d4137)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@6e1d4137) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@6e1d4137)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@73ad7e90)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@73ad7e90) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@73ad7e90)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@3db64bd4)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@3db64bd4) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@3db64bd4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@6601cc93)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@6601cc93) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@6601cc93)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@1686f0b4)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@1686f0b4) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@1686f0b4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@23f3dbf0)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@23f3dbf0) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@23f3dbf0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@4d48bd85)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@4d48bd85) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@4d48bd85)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@1aa99005)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@1aa99005) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@1aa99005)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@7ce9e05a)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@7ce9e05a) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@7ce9e05a)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@243f003c)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@243f003c) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@243f003c)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@20011bf)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@20011bf) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@20011bf)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@acf859d)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@acf859d) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@acf859d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@5bcb04cb)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@5bcb04cb) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@5bcb04cb)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@322803db)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@322803db) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@322803db)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@629adce)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@629adce) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@629adce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@15f8701f)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@15f8701f) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@15f8701f)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@3d7b1f1c)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@3d7b1f1c) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@3d7b1f1c)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@6f9ad11c)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@6f9ad11c) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@6f9ad11c)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@ca93621)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@ca93621) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@ca93621)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@72e789cb)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@72e789cb) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@72e789cb)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@77cb9cd1)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@77cb9cd1) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@77cb9cd1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@455824ad)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@455824ad) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@455824ad)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@23382f76)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@23382f76) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@23382f76)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@49dbaaf3)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@49dbaaf3) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@49dbaaf3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@30e6a763)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@30e6a763) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@30e6a763)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@59c33386)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@59c33386) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@59c33386)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@7a34f66a)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@7a34f66a) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@7a34f66a)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@3c7cfcbb)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@3c7cfcbb) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@3c7cfcbb)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@5f13be1)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@5f13be1) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@5f13be1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@58294867)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@58294867) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@58294867)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@2822c6ff)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@2822c6ff) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@2822c6ff)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@1be59f28)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@1be59f28) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@1be59f28)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestInterface01(pu.hui.restauto.restassure.Data@588307f7)">
+                  </a> <!-- TestInterface01(pu.hui.restauto.restassure.Data@588307f7) -->
+                  <span class="method-name">TestInterface01</span>
+                  <span class="parameters">(pu.hui.restauto.restassure.Data@588307f7)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\cnbjpuhui-384\AppData\Local\Temp\testng-eclipse-312528495\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pu.hui.CifInterfaceTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(94);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TestInterface01')
+data.setCell(0, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(0, 3, 2545);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestInterface01')
+data.setCell(1, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(1, 3, 256);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestInterface01')
+data.setCell(2, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(2, 3, 223);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestInterface01')
+data.setCell(3, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(3, 3, 204);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TestInterface01')
+data.setCell(4, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(4, 3, 196);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TestInterface01')
+data.setCell(5, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(5, 3, 164);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TestInterface01')
+data.setCell(6, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(6, 3, 153);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TestInterface01')
+data.setCell(7, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(7, 3, 151);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TestInterface01')
+data.setCell(8, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(8, 3, 149);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TestInterface01')
+data.setCell(9, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(9, 3, 146);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TestInterface01')
+data.setCell(10, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(10, 3, 137);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TestInterface01')
+data.setCell(11, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(11, 3, 137);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TestInterface01')
+data.setCell(12, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(12, 3, 122);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TestInterface01')
+data.setCell(13, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(13, 3, 120);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TestInterface01')
+data.setCell(14, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(14, 3, 120);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TestInterface01')
+data.setCell(15, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(15, 3, 118);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TestInterface01')
+data.setCell(16, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(16, 3, 117);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TestInterface01')
+data.setCell(17, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(17, 3, 117);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TestInterface01')
+data.setCell(18, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(18, 3, 117);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'TestInterface01')
+data.setCell(19, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(19, 3, 116);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'TestInterface01')
+data.setCell(20, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(20, 3, 113);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'TestInterface01')
+data.setCell(21, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(21, 3, 112);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'TestInterface01')
+data.setCell(22, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(22, 3, 112);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'TestInterface01')
+data.setCell(23, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(23, 3, 111);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'TestInterface01')
+data.setCell(24, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(24, 3, 109);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'TestInterface01')
+data.setCell(25, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(25, 3, 105);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'TestInterface01')
+data.setCell(26, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(26, 3, 104);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'TestInterface01')
+data.setCell(27, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(27, 3, 104);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'TestInterface01')
+data.setCell(28, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(28, 3, 102);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'TestInterface01')
+data.setCell(29, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(29, 3, 102);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'TestInterface01')
+data.setCell(30, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(30, 3, 102);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'TestInterface01')
+data.setCell(31, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(31, 3, 102);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'TestInterface01')
+data.setCell(32, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(32, 3, 98);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'TestInterface01')
+data.setCell(33, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(33, 3, 98);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'TestInterface01')
+data.setCell(34, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(34, 3, 97);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'TestInterface01')
+data.setCell(35, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(35, 3, 96);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'TestInterface01')
+data.setCell(36, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(36, 3, 95);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'TestInterface01')
+data.setCell(37, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(37, 3, 95);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'TestInterface01')
+data.setCell(38, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(38, 3, 95);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'TestInterface01')
+data.setCell(39, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(39, 3, 94);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'TestInterface01')
+data.setCell(40, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(40, 3, 93);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'TestInterface01')
+data.setCell(41, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(41, 3, 93);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'TestInterface01')
+data.setCell(42, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(42, 3, 93);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'TestInterface01')
+data.setCell(43, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(43, 3, 90);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'TestInterface01')
+data.setCell(44, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(44, 3, 90);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'TestInterface01')
+data.setCell(45, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(45, 3, 90);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'TestInterface01')
+data.setCell(46, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(46, 3, 90);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'TestInterface01')
+data.setCell(47, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(47, 3, 90);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'TestInterface01')
+data.setCell(48, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(48, 3, 90);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'TestInterface01')
+data.setCell(49, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(49, 3, 89);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'TestInterface01')
+data.setCell(50, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(50, 3, 89);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'TestInterface01')
+data.setCell(51, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(51, 3, 89);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'TestInterface01')
+data.setCell(52, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(52, 3, 89);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'TestInterface01')
+data.setCell(53, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(53, 3, 89);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'TestInterface01')
+data.setCell(54, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(54, 3, 88);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'TestInterface01')
+data.setCell(55, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(55, 3, 87);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'TestInterface01')
+data.setCell(56, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(56, 3, 87);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'TestInterface01')
+data.setCell(57, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(57, 3, 86);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'TestInterface01')
+data.setCell(58, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(58, 3, 85);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'TestInterface01')
+data.setCell(59, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(59, 3, 85);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'TestInterface01')
+data.setCell(60, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(60, 3, 84);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'TestInterface01')
+data.setCell(61, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(61, 3, 83);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'TestInterface01')
+data.setCell(62, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(62, 3, 83);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'TestInterface01')
+data.setCell(63, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(63, 3, 83);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'TestInterface01')
+data.setCell(64, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(64, 3, 82);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'TestInterface01')
+data.setCell(65, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(65, 3, 82);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'TestInterface01')
+data.setCell(66, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(66, 3, 81);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'TestInterface01')
+data.setCell(67, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(67, 3, 80);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'TestInterface01')
+data.setCell(68, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(68, 3, 80);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'TestInterface01')
+data.setCell(69, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(69, 3, 79);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'TestInterface01')
+data.setCell(70, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(70, 3, 79);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'TestInterface01')
+data.setCell(71, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(71, 3, 79);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'TestInterface01')
+data.setCell(72, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(72, 3, 78);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'TestInterface01')
+data.setCell(73, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(73, 3, 78);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'TestInterface01')
+data.setCell(74, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(74, 3, 78);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'TestInterface01')
+data.setCell(75, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(75, 3, 78);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'TestInterface01')
+data.setCell(76, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(76, 3, 78);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'TestInterface01')
+data.setCell(77, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(77, 3, 78);
+data.setCell(78, 0, 78)
+data.setCell(78, 1, 'TestInterface01')
+data.setCell(78, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(78, 3, 77);
+data.setCell(79, 0, 79)
+data.setCell(79, 1, 'TestInterface01')
+data.setCell(79, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(79, 3, 76);
+data.setCell(80, 0, 80)
+data.setCell(80, 1, 'TestInterface01')
+data.setCell(80, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(80, 3, 75);
+data.setCell(81, 0, 81)
+data.setCell(81, 1, 'TestInterface01')
+data.setCell(81, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(81, 3, 75);
+data.setCell(82, 0, 82)
+data.setCell(82, 1, 'TestInterface01')
+data.setCell(82, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(82, 3, 74);
+data.setCell(83, 0, 83)
+data.setCell(83, 1, 'TestInterface01')
+data.setCell(83, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(83, 3, 74);
+data.setCell(84, 0, 84)
+data.setCell(84, 1, 'TestInterface01')
+data.setCell(84, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(84, 3, 74);
+data.setCell(85, 0, 85)
+data.setCell(85, 1, 'TestInterface01')
+data.setCell(85, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(85, 3, 74);
+data.setCell(86, 0, 86)
+data.setCell(86, 1, 'TestInterface01')
+data.setCell(86, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(86, 3, 73);
+data.setCell(87, 0, 87)
+data.setCell(87, 1, 'TestInterface01')
+data.setCell(87, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(87, 3, 73);
+data.setCell(88, 0, 88)
+data.setCell(88, 1, 'TestInterface01')
+data.setCell(88, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(88, 3, 73);
+data.setCell(89, 0, 89)
+data.setCell(89, 1, 'TestInterface01')
+data.setCell(89, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(89, 3, 72);
+data.setCell(90, 0, 90)
+data.setCell(90, 1, 'TestInterface01')
+data.setCell(90, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(90, 3, 71);
+data.setCell(91, 0, 91)
+data.setCell(91, 1, 'TestInterface01')
+data.setCell(91, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(91, 3, 71);
+data.setCell(92, 0, 92)
+data.setCell(92, 1, 'TestInterface01')
+data.setCell(92, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(92, 3, 71);
+data.setCell(93, 0, 93)
+data.setCell(93, 1, 'TestInterface01')
+data.setCell(93, 2, 'pu.hui.CifInterfaceTest')
+data.setCell(93, 3, 71);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">pu.hui.CifInterfaceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@1afd44cb)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@5ee34b1b)</span>
+                <span class="method-start">2576 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@322803db)</span>
+                <span class="method-start">2690 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@460b6d54)</span>
+                <span class="method-start">2948 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@3a627c80)</span>
+                <span class="method-start">3066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@66e889df)</span>
+                <span class="method-start">3266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@8c46918)</span>
+                <span class="method-start">3363 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@765df79d)</span>
+                <span class="method-start">3485 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@49dbaaf3)</span>
+                <span class="method-start">3575 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@3c7cfcbb)</span>
+                <span class="method-start">3680 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@7d755813)</span>
+                <span class="method-start">3776 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@10876a6)</span>
+                <span class="method-start">3875 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@6e1f8469)</span>
+                <span class="method-start">4026 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@5f13be1)</span>
+                <span class="method-start">4141 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@46d8f407)</span>
+                <span class="method-start">4230 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@63ec445c)</span>
+                <span class="method-start">4437 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@d8948cd)</span>
+                <span class="method-start">4556 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@66ec9390)</span>
+                <span class="method-start">4673 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@60e21209)</span>
+                <span class="method-start">4764 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@56f71edb)</span>
+                <span class="method-start">4861 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@2822c6ff)</span>
+                <span class="method-start">4947 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@3db64bd4)</span>
+                <span class="method-start">5059 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@3cbcd8f3)</span>
+                <span class="method-start">5196 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@6e1d4137)</span>
+                <span class="method-start">5280 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@58294867)</span>
+                <span class="method-start">5374 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@1be59f28)</span>
+                <span class="method-start">5455 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@2ba33e2c)</span>
+                <span class="method-start">5572 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@5da7cee2)</span>
+                <span class="method-start">5657 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@5c0f79f0)</span>
+                <span class="method-start">5731 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@4d48bd85)</span>
+                <span class="method-start">5830 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@421a4ee1)</span>
+                <span class="method-start">5914 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@7c4fc2bf)</span>
+                <span class="method-start">6002 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@3162743f)</span>
+                <span class="method-start">6140 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@21a66d45)</span>
+                <span class="method-start">6243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@77cb9cd1)</span>
+                <span class="method-start">6333 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@10667848)</span>
+                <span class="method-start">6407 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@616b241a)</span>
+                <span class="method-start">6478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@1aa99005)</span>
+                <span class="method-start">6581 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@17740dae)</span>
+                <span class="method-start">6699 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@7ce9e05a)</span>
+                <span class="method-start">6785 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@69da0b12)</span>
+                <span class="method-start">6860 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@26d820eb)</span>
+                <span class="method-start">7015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@acf859d)</span>
+                <span class="method-start">7110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@78b41097)</span>
+                <span class="method-start">7189 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@7e4d2287)</span>
+                <span class="method-start">7413 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@2f2d52ef)</span>
+                <span class="method-start">7495 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@1686f0b4)</span>
+                <span class="method-start">7598 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@72e789cb)</span>
+                <span class="method-start">7688 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@6f9ad11c)</span>
+                <span class="method-start">7766 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@363f0ba0)</span>
+                <span class="method-start">7934 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@73ad7e90)</span>
+                <span class="method-start">8024 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@7495699f)</span>
+                <span class="method-start">8135 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@5bcb04cb)</span>
+                <span class="method-start">8214 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@1b7cae6f)</span>
+                <span class="method-start">8292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@4d7aaca2)</span>
+                <span class="method-start">8397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@7d070ef5)</span>
+                <span class="method-start">8491 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@20749d9)</span>
+                <span class="method-start">8568 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@65ec8b24)</span>
+                <span class="method-start">8690 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@4b869331)</span>
+                <span class="method-start">8793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@66ad7bf0)</span>
+                <span class="method-start">8917 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@1a480135)</span>
+                <span class="method-start">9000 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@70211e49)</span>
+                <span class="method-start">9075 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@455824ad)</span>
+                <span class="method-start">9158 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@6601cc93)</span>
+                <span class="method-start">9248 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@35342d2f)</span>
+                <span class="method-start">9326 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@629adce)</span>
+                <span class="method-start">9398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@299270eb)</span>
+                <span class="method-start">9487 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@42210be1)</span>
+                <span class="method-start">9563 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@243f003c)</span>
+                <span class="method-start">9654 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@771d1ffb)</span>
+                <span class="method-start">9726 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@c6da8bb)</span>
+                <span class="method-start">9808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@162b3d47)</span>
+                <span class="method-start">9892 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@3a5c2626)</span>
+                <span class="method-start">9981 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@7c447c76)</span>
+                <span class="method-start">10059 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@27ace0b1)</span>
+                <span class="method-start">10135 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@62a4417)</span>
+                <span class="method-start">10217 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@30e6a763)</span>
+                <span class="method-start">10292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@15f8701f)</span>
+                <span class="method-start">10382 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@338cc75f)</span>
+                <span class="method-start">10453 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@3bdb2c78)</span>
+                <span class="method-start">10524 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@3b2f4a93)</span>
+                <span class="method-start">10620 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@4b1a43d8)</span>
+                <span class="method-start">10710 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@68b58644)</span>
+                <span class="method-start">10862 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@23382f76)</span>
+                <span class="method-start">11008 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@3d7b1f1c)</span>
+                <span class="method-start">11088 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@59c33386)</span>
+                <span class="method-start">11168 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@1ff55ff)</span>
+                <span class="method-start">11270 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@588307f7)</span>
+                <span class="method-start">11344 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@4d27d9d)</span>
+                <span class="method-start">11434 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@20011bf)</span>
+                <span class="method-start">11528 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@ca93621)</span>
+                <span class="method-start">11602 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@4088741b)</span>
+                <span class="method-start">11715 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@23f3dbf0)</span>
+                <span class="method-start">11820 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestInterface01(pu.hui.restauto.restassure.Data@7a34f66a)</span>
+                <span class="method-start">11911 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
