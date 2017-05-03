@@ -16,7 +16,14 @@ public class AssertClass {
 
 	@Test(dataProvider = "mysql_retsfull_data", dataProviderClass = CaseData.class)
 	public void method(JSONObject object) {
-		JSONArray array = HttpResponse.getResponse(object, "xy691fc4b8c804544369e6146d4314282e20160926");
+		 JSONArray array = HttpResponse.getResponse(object,"xy691fc4b8c804544369e6146d4314282e20160926");
+		/**
+		 * 生产环境 
+		 * JSONArray array = HttpResponse.getResponse(object,"xye885eb4f4ead67a14a08a1267f3587a58c362ee47435854b8ddff3ddcd6f9be820160926"); 
+		 * qz： xy90c66d9cf6ef5ff736c08a6ffe53f403221d12ca2beb6df5276f6a70d222fbc620160926
+		 * redhare: xye885eb4f4ead67a14a08a1267f3587a58c362ee47435854b8ddff3ddcd6f9be820160926
+		 */
+
 		JSONObject json = null;
 		for (int i = 0; i < array.size(); i++) {
 			json = JSONObject.parseObject(array.get(i).toString());

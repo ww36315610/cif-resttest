@@ -15,10 +15,18 @@ import com.cif.utils.httpclient.Oauth;
 public class HttpResponse {
 	static HttpClientImp httpCL = new HttpClientImp();
 	static HttpClient client = new DefaultHttpClient();
-	static OAuth2AccessToken token = Oauth.getToken();
+	 static OAuth2AccessToken token = Oauth.getToken();
+	// 生产Oauth
+    // static OAuth2AccessToken token = Oauth.getTokenLine();
 
 	public static JSONArray getResponse(JSONObject jsonObjects, String change) {
+		// 测试resfull接口地址
 		String before = "http://t1.zuul.pub.puhuifinance.com/cif-rest-server/";
+		/**
+		 * 线上resfull接口地址 
+		 * String before ="https://api.puhuifinance.com/cif-rest-server-pre/";
+		 */
+
 		String url = before + jsonObjects.getString("url");
 		String params = jsonObjects.getString("params");
 		JSONObject paramsJson = JSONObject.parseObject(params);
@@ -26,6 +34,7 @@ public class HttpResponse {
 			paramsJson.replace("idCardNum", change);
 		}
 		JSONArray jsonArrayHttp = httpCL.postHttp(client, url, getAuthMap(), paramsJson.toJSONString());
+		System.out.println(jsonArrayHttp);
 		return jsonArrayHttp;
 	}
 
