@@ -7,7 +7,6 @@ import java.util.regex.Pattern;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.cif.utils.file.FileOperation;
-import com.cif.utils.jiami.JiaMi;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
@@ -38,7 +37,7 @@ public class MongoDao {
 				JSONObject jsonObject = JSONObject.parseObject(object.toString());
 				DBObject dbo = (DBObject) com.mongodb.util.JSON.parse(jsonObject.toJSONString());
 				JSONObject json = (JSONObject) JSONObject.toJSON(dbo);
-				json.replace("_id", JiaMi.getAes(_id));
+				// json.replace("_id", JiaMi.getAes(_id));
 				dbConn.insert(new BasicDBObject(json));
 				num++;
 			}
