@@ -1,4 +1,4 @@
-package com.cif.restfull;
+package com.cif.restfull_jenkins;
 
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -4,12 +4,10 @@
 	<test name="Api_Select">
 		<classes>
 			<!-- 调用@Test执行类 -->
-			<class name="com.cif.restfull.Api_Select" />
+			<class name="com.cif.restfull_jenkins.AssertClass" />
 			<methods>
-				<include name="testMethod"></include>
+				<include name="method"></include>
 			</methods>
-				<!-- 调用@Factory执行类 -->
-			<class name="com.cif.utcs.UtcsTestNG_Run" />
 		</classes>
 	</test>
 </suite>

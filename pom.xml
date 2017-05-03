@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.puhui.cif</groupId>
-	<artifactId>cif_auto_test</artifactId>
+	<artifactId>cif-resttest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 

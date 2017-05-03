@@ -4,7 +4,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import com.alibaba.fastjson.JSONArray;
-import com.cif.restfull.Api_Mongo;
 import com.cif.utils.file.FileOperation;
 import com.cif.utils.mongo.MongoDao;
 import com.cif.utils.mongo.MongoOperation;
@@ -60,7 +59,7 @@ public class MogoData {
 				String className = getClassName(jsonArray);
 				if (className.equals(object.toString())) {
 					applyNo = MongoDao.insertMongo(dbConn, jsonArray, num);
-					
+
 				} else {
 					continue;
 				}
