@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [framework_testng]" allow-return-values="true">
+  <test verbose="2" name="TestMethods">
+    <classes>
+      <class name="com.cif.utcs.UtcsTestNG_Run"/>
+    </classes>
+  </test> <!-- TestMethods -->
+  <test name="TestMethods(failed)">
+    <classes>
+      <class name="com.cif.utcs.UtcsTesNG_Factory">
+        <methods>
+          <include name="assertTest"/>
+          <include name="assertTest"/>
+          <include name="getJsonArray"/>
+        </methods>
+      </class> <!-- com.cif.utcs.UtcsTesNG_Factory -->
+    </classes>
+  </test> <!-- TestMethods(failed) -->
+</suite> <!-- Failed suite [framework_testng] -->

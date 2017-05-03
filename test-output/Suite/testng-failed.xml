@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Api_Select">
+    <classes>
+      <class name="com.cif.restfull.Api_Select">
+        <methods>
+          <include name="testMethod"/>
+        </methods>
+      </class> <!-- com.cif.restfull.Api_Select -->
+    </classes>
+  </test> <!-- Api_Select -->
+  <test name="UtcsTestNG_Run">
+    <classes>
+      <class name="com.cif.utcs.UtcsTestNG_Run"/>
+    </classes>
+  </test> <!-- UtcsTestNG_Run -->
+</suite> <!-- Failed suite [Suite] -->

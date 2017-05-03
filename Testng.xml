@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+	<test name="Api_Select">
+		<classes>
+			<!-- 调用@Test执行类 -->
+			<class name="com.cif.restfull.Api_Select" />
+			<methods>
+				<include name="testMethod"></include>
+			</methods>
+				<!-- 调用@Factory执行类 -->
+			<class name="com.cif.utcs.UtcsTestNG_Run" />
+		</classes>
+	</test>
+</suite>

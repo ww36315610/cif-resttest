@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <test name="UtcsTestNG_Run(failed)">
+    <classes>
+      <class name="com.cif.utcs.UtcsTesNG_Factory">
+        <methods>
+          <include name="assertTest"/>
+          <include name="assertTest"/>
+          <include name="getJsonArray"/>
+        </methods>
+      </class> <!-- com.cif.utcs.UtcsTesNG_Factory -->
+    </classes>
+  </test> <!-- UtcsTestNG_Run(failed) -->
+</suite> <!-- Failed suite [Suite] -->

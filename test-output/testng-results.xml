@@ -1,1162 +1,270 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" total="94" passed="91">
+<testng-results skipped="0" failed="0" total="23" passed="23">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11984" started-at="2016-12-06T02:47:53Z" finished-at="2016-12-06T02:48:05Z">
+  <suite name="Default suite" duration-ms="2949" started-at="2017-05-03T03:53:03Z" finished-at="2017-05-03T03:53:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11984" started-at="2016-12-06T02:47:53Z" finished-at="2016-12-06T02:48:05Z">
-      <class name="pu.hui.CifInterfaceTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="setUp" is-config="true" duration-ms="7" started-at="2016-12-06T10:47:53Z" finished-at="2016-12-06T10:47:53Z">
+    <test name="Default test" duration-ms="2949" started-at="2017-05-03T03:53:03Z" finished-at="2017-05-03T03:53:06Z">
+      <class name="com.cif.restfull_jenkins.AssertClass">
+        <test-method status="PASS" signature="getApplyNo()[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="getApplyNo" is-config="true" duration-ms="17" started-at="2017-05-03T11:53:03Z" finished-at="2017-05-03T11:53:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="2545" started-at="2016-12-06T10:47:53Z" data-provider="create" finished-at="2016-12-06T10:47:55Z">
+        </test-method> <!-- getApplyNo -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="916" started-at="2017-05-03T11:53:03Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@1afd44cb]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.voices\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_1","id":"1","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="113" started-at="2016-12-06T10:47:55Z" data-provider="create" finished-at="2016-12-06T10:47:55Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="51" started-at="2017-05-03T11:53:04Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@5ee34b1b]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.contacts_intersectphones\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_2","id":"2","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="256" started-at="2016-12-06T10:47:55Z" data-provider="create" finished-at="2016-12-06T10:47:56Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="61" started-at="2017-05-03T11:53:04Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@322803db]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_card_info.credit_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_3","id":"3","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="117" started-at="2016-12-06T10:47:56Z" data-provider="create" finished-at="2016-12-06T10:47:56Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="49" started-at="2017-05-03T11:53:04Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@460b6d54]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_card_info.trans_info\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_4","id":"4","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="196" started-at="2016-12-06T10:47:56Z" data-provider="create" finished-at="2016-12-06T10:47:56Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="47" started-at="2017-05-03T11:53:04Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@3a627c80]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"bank_card_info.trans\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_5","id":"5","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="94" started-at="2016-12-06T10:47:56Z" data-provider="create" finished-at="2016-12-06T10:47:56Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="44" started-at="2017-05-03T11:53:04Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@66e889df]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"bank_card_info.bank_card_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_6","id":"6","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="120" started-at="2016-12-06T10:47:56Z" data-provider="create" finished-at="2016-12-06T10:47:56Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="46" started-at="2017-05-03T11:53:04Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@8c46918]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.contacts\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_7","id":"7","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="90" started-at="2016-12-06T10:47:56Z" data-provider="create" finished-at="2016-12-06T10:47:56Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="59" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@765df79d]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.alipay_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_8","id":"8","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="105" started-at="2016-12-06T10:47:56Z" data-provider="create" finished-at="2016-12-06T10:47:56Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="46" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@49dbaaf3]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.alipay_bank\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_9","id":"9","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="95" started-at="2016-12-06T10:47:56Z" data-provider="create" finished-at="2016-12-06T10:47:56Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="192" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@3c7cfcbb]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.address_mark\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_10","id":"10","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="98" started-at="2016-12-06T10:47:56Z" data-provider="create" finished-at="2016-12-06T10:47:56Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="47" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@7d755813]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.received_address\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_11","id":"11","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="149" started-at="2016-12-06T10:47:56Z" data-provider="create" finished-at="2016-12-06T10:47:57Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="40" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@10876a6]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.taobao_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_12","id":"12","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="112" started-at="2016-12-06T10:47:57Z" data-provider="create" finished-at="2016-12-06T10:47:57Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="147" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@6e1f8469]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.detail_trans_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_13","id":"13","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="88" started-at="2016-12-06T10:47:57Z" data-provider="create" finished-at="2016-12-06T10:47:57Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="44" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@5f13be1]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_bank_card\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_14","id":"14","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="204" started-at="2016-12-06T10:47:57Z" data-provider="create" finished-at="2016-12-06T10:47:57Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="51" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@46d8f407]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.band_repay_bankcard\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_15","id":"15","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="118" started-at="2016-12-06T10:47:57Z" data-provider="create" finished-at="2016-12-06T10:47:57Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="39" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@63ec445c]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.band_borrow_bankcard\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_16","id":"16","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="116" started-at="2016-12-06T10:47:57Z" data-provider="create" finished-at="2016-12-06T10:47:57Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="40" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@d8948cd]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.band_bankcard_mobile\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_17","id":"17","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="90" started-at="2016-12-06T10:47:57Z" data-provider="create" finished-at="2016-12-06T10:47:57Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="39" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@66ec9390]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.band_bankcard_idcardnum\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_18","id":"18","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="96" started-at="2016-12-06T10:47:57Z" data-provider="create" finished-at="2016-12-06T10:47:57Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="42" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@60e21209]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_report_info.cr_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_19","id":"19","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="85" started-at="2016-12-06T10:47:57Z" data-provider="create" finished-at="2016-12-06T10:47:58Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="45" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@56f71edb]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_report_info.query_info\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_20","id":"20","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="111" started-at="2016-12-06T10:47:58Z" data-provider="create" finished-at="2016-12-06T10:47:58Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="60" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@2822c6ff]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_report_info.info_summary\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_21","id":"21","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="137" started-at="2016-12-06T10:47:58Z" data-provider="create" finished-at="2016-12-06T10:47:58Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="72" started-at="2017-05-03T11:53:05Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@3db64bd4]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_report_info.info_other_overdue\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_22","id":"22","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="83" started-at="2016-12-06T10:47:58Z" data-provider="create" finished-at="2016-12-06T10:47:58Z">
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="39" started-at="2017-05-03T11:53:06Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T11:53:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@3cbcd8f3]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_report_info.info_other_normal\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_23","id":"23","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="93" started-at="2016-12-06T10:47:58Z" data-provider="create" finished-at="2016-12-06T10:47:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@6e1d4137]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="79" started-at="2016-12-06T10:47:58Z" data-provider="create" finished-at="2016-12-06T10:47:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@58294867]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="117" started-at="2016-12-06T10:47:58Z" data-provider="create" finished-at="2016-12-06T10:47:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@1be59f28]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="84" started-at="2016-12-06T10:47:58Z" data-provider="create" finished-at="2016-12-06T10:47:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@2ba33e2c]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="73" started-at="2016-12-06T10:47:58Z" data-provider="create" finished-at="2016-12-06T10:47:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@5da7cee2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="98" started-at="2016-12-06T10:47:58Z" data-provider="create" finished-at="2016-12-06T10:47:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@5c0f79f0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="83" started-at="2016-12-06T10:47:58Z" data-provider="create" finished-at="2016-12-06T10:47:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@4d48bd85]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="87" started-at="2016-12-06T10:47:59Z" data-provider="create" finished-at="2016-12-06T10:47:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@421a4ee1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="137" started-at="2016-12-06T10:47:59Z" data-provider="create" finished-at="2016-12-06T10:47:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@7c4fc2bf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="102" started-at="2016-12-06T10:47:59Z" data-provider="create" finished-at="2016-12-06T10:47:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@3162743f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="89" started-at="2016-12-06T10:47:59Z" data-provider="create" finished-at="2016-12-06T10:47:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@21a66d45]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="74" started-at="2016-12-06T10:47:59Z" data-provider="create" finished-at="2016-12-06T10:47:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@77cb9cd1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="71" started-at="2016-12-06T10:47:59Z" data-provider="create" finished-at="2016-12-06T10:47:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@10667848]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="97" started-at="2016-12-06T10:47:59Z" data-provider="create" finished-at="2016-12-06T10:47:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@616b241a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="117" started-at="2016-12-06T10:47:59Z" data-provider="create" finished-at="2016-12-06T10:47:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@1aa99005]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="85" started-at="2016-12-06T10:47:59Z" data-provider="create" finished-at="2016-12-06T10:47:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@17740dae]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="74" started-at="2016-12-06T10:47:59Z" data-provider="create" finished-at="2016-12-06T10:47:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@7ce9e05a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="153" started-at="2016-12-06T10:47:59Z" data-provider="create" finished-at="2016-12-06T10:48:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@69da0b12]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="95" started-at="2016-12-06T10:48:00Z" data-provider="create" finished-at="2016-12-06T10:48:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@26d820eb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="78" started-at="2016-12-06T10:48:00Z" data-provider="create" finished-at="2016-12-06T10:48:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@acf859d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="223" started-at="2016-12-06T10:48:00Z" data-provider="create" finished-at="2016-12-06T10:48:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@78b41097]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="FAIL" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="80" started-at="2016-12-06T10:48:00Z" data-provider="create" finished-at="2016-12-06T10:48:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@7e4d2287]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at pu.hui.CifInterfaceTest.TestInterface01(CifInterfaceTest.java:41)
-	at sun.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="102" started-at="2016-12-06T10:48:00Z" data-provider="create" finished-at="2016-12-06T10:48:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@2f2d52ef]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="89" started-at="2016-12-06T10:48:00Z" data-provider="create" finished-at="2016-12-06T10:48:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@1686f0b4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="78" started-at="2016-12-06T10:48:00Z" data-provider="create" finished-at="2016-12-06T10:48:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@72e789cb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="164" started-at="2016-12-06T10:48:00Z" data-provider="create" finished-at="2016-12-06T10:48:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@6f9ad11c]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="FAIL" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="86" started-at="2016-12-06T10:48:01Z" data-provider="create" finished-at="2016-12-06T10:48:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@363f0ba0]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at pu.hui.CifInterfaceTest.TestInterface01(CifInterfaceTest.java:41)
-	at sun.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="109" started-at="2016-12-06T10:48:01Z" data-provider="create" finished-at="2016-12-06T10:48:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@73ad7e90]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="78" started-at="2016-12-06T10:48:01Z" data-provider="create" finished-at="2016-12-06T10:48:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@7495699f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="78" started-at="2016-12-06T10:48:01Z" data-provider="create" finished-at="2016-12-06T10:48:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@5bcb04cb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="104" started-at="2016-12-06T10:48:01Z" data-provider="create" finished-at="2016-12-06T10:48:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@1b7cae6f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="93" started-at="2016-12-06T10:48:01Z" data-provider="create" finished-at="2016-12-06T10:48:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@4d7aaca2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="76" started-at="2016-12-06T10:48:01Z" data-provider="create" finished-at="2016-12-06T10:48:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@7d070ef5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="FAIL" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="120" started-at="2016-12-06T10:48:01Z" data-provider="create" finished-at="2016-12-06T10:48:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@20749d9]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at pu.hui.CifInterfaceTest.TestInterface01(CifInterfaceTest.java:41)
-	at sun.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="102" started-at="2016-12-06T10:48:01Z" data-provider="create" finished-at="2016-12-06T10:48:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@65ec8b24]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="122" started-at="2016-12-06T10:48:01Z" data-provider="create" finished-at="2016-12-06T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@4b869331]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="82" started-at="2016-12-06T10:48:02Z" data-provider="create" finished-at="2016-12-06T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@66ad7bf0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="73" started-at="2016-12-06T10:48:02Z" data-provider="create" finished-at="2016-12-06T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@1a480135]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="81" started-at="2016-12-06T10:48:02Z" data-provider="create" finished-at="2016-12-06T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@70211e49]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="89" started-at="2016-12-06T10:48:02Z" data-provider="create" finished-at="2016-12-06T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@455824ad]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="78" started-at="2016-12-06T10:48:02Z" data-provider="create" finished-at="2016-12-06T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@6601cc93]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="71" started-at="2016-12-06T10:48:02Z" data-provider="create" finished-at="2016-12-06T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@35342d2f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="89" started-at="2016-12-06T10:48:02Z" data-provider="create" finished-at="2016-12-06T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@629adce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="75" started-at="2016-12-06T10:48:02Z" data-provider="create" finished-at="2016-12-06T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@299270eb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="90" started-at="2016-12-06T10:48:02Z" data-provider="create" finished-at="2016-12-06T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@42210be1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="72" started-at="2016-12-06T10:48:02Z" data-provider="create" finished-at="2016-12-06T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@243f003c]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="82" started-at="2016-12-06T10:48:02Z" data-provider="create" finished-at="2016-12-06T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@771d1ffb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="83" started-at="2016-12-06T10:48:02Z" data-provider="create" finished-at="2016-12-06T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@c6da8bb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="89" started-at="2016-12-06T10:48:02Z" data-provider="create" finished-at="2016-12-06T10:48:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@162b3d47]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="77" started-at="2016-12-06T10:48:03Z" data-provider="create" finished-at="2016-12-06T10:48:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@3a5c2626]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="75" started-at="2016-12-06T10:48:03Z" data-provider="create" finished-at="2016-12-06T10:48:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@7c447c76]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="79" started-at="2016-12-06T10:48:03Z" data-provider="create" finished-at="2016-12-06T10:48:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@27ace0b1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="74" started-at="2016-12-06T10:48:03Z" data-provider="create" finished-at="2016-12-06T10:48:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@62a4417]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="90" started-at="2016-12-06T10:48:03Z" data-provider="create" finished-at="2016-12-06T10:48:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@30e6a763]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="71" started-at="2016-12-06T10:48:03Z" data-provider="create" finished-at="2016-12-06T10:48:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@15f8701f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="71" started-at="2016-12-06T10:48:03Z" data-provider="create" finished-at="2016-12-06T10:48:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@338cc75f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="95" started-at="2016-12-06T10:48:03Z" data-provider="create" finished-at="2016-12-06T10:48:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@3bdb2c78]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="87" started-at="2016-12-06T10:48:03Z" data-provider="create" finished-at="2016-12-06T10:48:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@3b2f4a93]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="151" started-at="2016-12-06T10:48:03Z" data-provider="create" finished-at="2016-12-06T10:48:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@4b1a43d8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="146" started-at="2016-12-06T10:48:03Z" data-provider="create" finished-at="2016-12-06T10:48:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@68b58644]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="79" started-at="2016-12-06T10:48:04Z" data-provider="create" finished-at="2016-12-06T10:48:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@23382f76]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="80" started-at="2016-12-06T10:48:04Z" data-provider="create" finished-at="2016-12-06T10:48:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@3d7b1f1c]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="102" started-at="2016-12-06T10:48:04Z" data-provider="create" finished-at="2016-12-06T10:48:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@59c33386]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="74" started-at="2016-12-06T10:48:04Z" data-provider="create" finished-at="2016-12-06T10:48:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@1ff55ff]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="90" started-at="2016-12-06T10:48:04Z" data-provider="create" finished-at="2016-12-06T10:48:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@588307f7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="93" started-at="2016-12-06T10:48:04Z" data-provider="create" finished-at="2016-12-06T10:48:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@4d27d9d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="73" started-at="2016-12-06T10:48:04Z" data-provider="create" finished-at="2016-12-06T10:48:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@20011bf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="112" started-at="2016-12-06T10:48:04Z" data-provider="create" finished-at="2016-12-06T10:48:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@ca93621]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="104" started-at="2016-12-06T10:48:04Z" data-provider="create" finished-at="2016-12-06T10:48:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@4088741b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="90" started-at="2016-12-06T10:48:04Z" data-provider="create" finished-at="2016-12-06T10:48:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@23f3dbf0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-        <test-method status="PASS" signature="TestInterface01(java.lang.Object)[pri:0, instance:pu.hui.CifInterfaceTest@10e92f8f]" name="TestInterface01" duration-ms="78" started-at="2016-12-06T10:48:05Z" data-provider="create" finished-at="2016-12-06T10:48:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pu.hui.restauto.restassure.Data@7a34f66a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestInterface01 -->
-      </class> <!-- pu.hui.CifInterfaceTest -->
+        </test-method> <!-- method -->
+      </class> <!-- com.cif.restfull_jenkins.AssertClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
