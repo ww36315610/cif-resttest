@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.puhui.cif</groupId>
+	<groupId>pu.hui.restauto</groupId>
 	<artifactId>cif-resttest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>cif_auto_test</name>
+	<name>pu.hui.restauto</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>

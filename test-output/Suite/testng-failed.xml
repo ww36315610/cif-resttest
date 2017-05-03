@@ -3,16 +3,11 @@
 <suite name="Failed suite [Suite]">
   <test name="Api_Select">
     <classes>
-      <class name="com.cif.restfull.Api_Select">
+      <class name="com.cif.restfull_jenkins.AssertClass">
         <methods>
-          <include name="testMethod"/>
+          <include name="method"/>
         </methods>
-      </class> <!-- com.cif.restfull.Api_Select -->
+      </class> <!-- com.cif.restfull_jenkins.AssertClass -->
     </classes>
   </test> <!-- Api_Select -->
-  <test name="UtcsTestNG_Run">
-    <classes>
-      <class name="com.cif.utcs.UtcsTestNG_Run"/>
-    </classes>
-  </test> <!-- UtcsTestNG_Run -->
 </suite> <!-- Failed suite [Suite] -->

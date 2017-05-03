@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="23" passed="23">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4198" started-at="2017-05-03T06:16:42Z" finished-at="2017-05-03T06:16:47Z">
+  <suite name="Suite" duration-ms="2808" started-at="2017-05-03T06:34:55Z" finished-at="2017-05-03T06:34:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4198" started-at="2017-05-03T06:16:42Z" finished-at="2017-05-03T06:16:47Z">
+    <test name="Api_Select" duration-ms="2808" started-at="2017-05-03T06:34:55Z" finished-at="2017-05-03T06:34:58Z">
       <class name="com.cif.restfull_jenkins.AssertClass">
-        <test-method status="PASS" signature="getApplyNo()[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="getApplyNo" is-config="true" duration-ms="47" started-at="2017-05-03T14:16:42Z" finished-at="2017-05-03T14:16:42Z">
+        <test-method status="PASS" signature="getApplyNo()[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="getApplyNo" is-config="true" duration-ms="25" started-at="2017-05-03T14:34:55Z" finished-at="2017-05-03T14:34:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getApplyNo -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="1999" started-at="2017-05-03T14:16:43Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:45Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="900" started-at="2017-05-03T14:34:56Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:56Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="52" started-at="2017-05-03T14:16:45Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:45Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="58" started-at="2017-05-03T14:34:56Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:56Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="47" started-at="2017-05-03T14:16:45Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:45Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="43" started-at="2017-05-03T14:34:56Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="43" started-at="2017-05-03T14:16:45Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:45Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="36" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="42" started-at="2017-05-03T14:16:45Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="36" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="55" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="51" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -77,7 +77,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="46" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="41" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -88,7 +88,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="42" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="39" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -99,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="42" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="44" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -110,7 +110,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="123" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="126" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -121,7 +121,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="49" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="46" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -132,7 +132,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="38" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="37" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -143,7 +143,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="172" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="171" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -154,7 +154,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="56" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="48" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -165,7 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="55" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="42" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -176,7 +176,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="41" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="53" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -187,7 +187,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="44" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="43" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -198,7 +198,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="34" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="41" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -209,7 +209,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="39" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="38" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -220,7 +220,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="54" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="48" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:57Z">
           <params>
             <param index="0">
               <value>
@@ -231,7 +231,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="42" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="42" started-at="2017-05-03T14:34:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:58Z">
           <params>
             <param index="0">
               <value>
@@ -242,7 +242,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="53" started-at="2017-05-03T14:16:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:47Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="34" started-at="2017-05-03T14:34:58Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:58Z">
           <params>
             <param index="0">
               <value>
@@ -253,7 +253,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4f7d0008]" name="method" duration-ms="44" started-at="2017-05-03T14:16:47Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:16:47Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@2f686d1f]" name="method" duration-ms="37" started-at="2017-05-03T14:34:58Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T14:34:58Z">
           <params>
             <param index="0">
               <value>
@@ -265,6 +265,6 @@
           </reporter-output>
         </test-method> <!-- method -->
       </class> <!-- com.cif.restfull_jenkins.AssertClass -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Api_Select -->
+  </suite> <!-- Suite -->
 </testng-results>
