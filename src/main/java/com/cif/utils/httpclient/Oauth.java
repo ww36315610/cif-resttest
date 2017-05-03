@@ -24,7 +24,7 @@ public class Oauth {
 		ResourceOwnerPasswordAccessTokenProvider provider = new ResourceOwnerPasswordAccessTokenProvider();
 		ResourceOwnerPasswordResourceDetails resource = new ResourceOwnerPasswordResourceDetails();
 		resource.setClientAuthenticationScheme(AuthenticationScheme.form);
-		resource.setAccessTokenUri("" + "/uaa/oauth/token?grant_type=client_credentials");
+		resource.setAccessTokenUri("https://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials");
 		resource.setClientId("cif-rest-service");
 		resource.setClientSecret("9q56z7V9aeE83D3f");
 		resource.setGrantType("client_credentials");
