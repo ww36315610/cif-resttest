@@ -34,7 +34,7 @@ public class MogoData {
 		System.out.println("-----------------------------钱站渠道-----------------------------\n");
 
 		this.doMongo("mongo_kn", KaNiu.class);
-		System.out.println("-----------------------------卡牛渠道------------------------\n");
+		System.out.println("-----------------------------卡牛渠道-----------------------------\n");
 	}
 
 	public static void main(String[] args) {
@@ -43,7 +43,7 @@ public class MogoData {
 		System.out.println("-----------------------------钱站渠道-----------------------------\n");
 
 		min.doMongo("mongo_kn", KaNiu.class);
-		System.out.println("-----------------------------卡牛渠道------------------------\n");
+		System.out.println("-----------------------------卡牛渠道-----------------------------\n");
 
 	}
 

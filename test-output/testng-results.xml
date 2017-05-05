@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="9" total="23" passed="14">
+<testng-results skipped="0" failed="11" total="46" passed="35">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8694" started-at="2017-05-03T08:56:25Z" finished-at="2017-05-03T08:56:33Z">
+  <suite name="Default suite" duration-ms="212221" started-at="2017-05-05T03:59:46Z" finished-at="2017-05-05T04:03:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8694" started-at="2017-05-03T08:56:25Z" finished-at="2017-05-03T08:56:33Z">
+    <test name="Default test" duration-ms="212221" started-at="2017-05-05T03:59:46Z" finished-at="2017-05-05T04:03:18Z">
       <class name="com.cif.restfull_jenkins.AssertClass">
-        <test-method status="PASS" signature="getApplyNo()[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="getApplyNo" is-config="true" duration-ms="9" started-at="2017-05-03T16:56:25Z" finished-at="2017-05-03T16:56:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getApplyNo -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="3494" started-at="2017-05-03T16:56:25Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:29Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="31431" started-at="2017-05-05T11:59:47Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:18Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="301" started-at="2017-05-03T16:56:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:29Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="8798" started-at="2017-05-05T12:00:18Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:27Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="142" started-at="2017-05-03T16:56:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:29Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="10086" started-at="2017-05-05T12:00:27Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:37Z">
           <params>
             <param index="0">
               <value>
@@ -41,48 +37,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="71" started-at="2017-05-03T16:56:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:29Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="4181" started-at="2017-05-05T12:00:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:41Z">
           <params>
             <param index="0">
               <value>
@@ -90,48 +48,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="110" started-at="2017-05-03T16:56:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:30Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2164" started-at="2017-05-05T12:00:41Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:43Z">
           <params>
             <param index="0">
               <value>
@@ -139,48 +59,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="157" started-at="2017-05-03T16:56:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:30Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="307" started-at="2017-05-05T12:00:43Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:44Z">
           <params>
             <param index="0">
               <value>
@@ -188,48 +70,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="175" started-at="2017-05-03T16:56:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:30Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="349" started-at="2017-05-05T12:00:44Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:44Z">
           <params>
             <param index="0">
               <value>
@@ -240,7 +84,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="204" started-at="2017-05-03T16:56:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:30Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1870" started-at="2017-05-05T12:00:44Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:46Z">
           <params>
             <param index="0">
               <value>
@@ -251,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="127" started-at="2017-05-03T16:56:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:30Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="4776" started-at="2017-05-05T12:00:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:51Z">
           <params>
             <param index="0">
               <value>
@@ -262,7 +106,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="287" started-at="2017-05-03T16:56:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:31Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="4940" started-at="2017-05-05T12:00:51Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:56Z">
           <params>
             <param index="0">
               <value>
@@ -273,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="213" started-at="2017-05-03T16:56:31Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:31Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1957" started-at="2017-05-05T12:00:56Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:57Z">
           <params>
             <param index="0">
               <value>
@@ -284,7 +128,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="201" started-at="2017-05-03T16:56:31Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:31Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1543" started-at="2017-05-05T12:00:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:59Z">
           <params>
             <param index="0">
               <value>
@@ -295,7 +139,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="316" started-at="2017-05-03T16:56:31Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:31Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="403" started-at="2017-05-05T12:00:59Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:59Z">
           <params>
             <param index="0">
               <value>
@@ -306,7 +150,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="364" started-at="2017-05-03T16:56:31Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:32Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1565" started-at="2017-05-05T12:00:59Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:01Z">
           <params>
             <param index="0">
               <value>
@@ -317,7 +161,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="292" started-at="2017-05-03T16:56:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:32Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="5212" started-at="2017-05-05T12:01:01Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:06Z">
           <params>
             <param index="0">
               <value>
@@ -328,7 +172,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="646" started-at="2017-05-03T16:56:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:33Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="5140" started-at="2017-05-05T12:01:06Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:11Z">
           <params>
             <param index="0">
               <value>
@@ -339,7 +183,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="132" started-at="2017-05-03T16:56:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:33Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="3955" started-at="2017-05-05T12:01:11Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:15Z">
           <params>
             <param index="0">
               <value>
@@ -350,7 +194,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="172" started-at="2017-05-03T16:56:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:33Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="3815" started-at="2017-05-05T12:01:15Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:19Z">
           <params>
             <param index="0">
               <value>
@@ -361,7 +205,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="136" started-at="2017-05-03T16:56:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:33Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2644" started-at="2017-05-05T12:01:19Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:22Z">
           <params>
             <param index="0">
               <value>
@@ -369,47 +213,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:27)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="157" started-at="2017-05-03T16:56:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:33Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="4724" started-at="2017-05-05T12:01:22Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:26Z">
           <params>
             <param index="0">
               <value>
@@ -417,47 +224,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:27)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="61" started-at="2017-05-03T16:56:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:33Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="27218" started-at="2017-05-05T12:01:26Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:54Z">
           <params>
             <param index="0">
               <value>
@@ -465,47 +235,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:27)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="76" started-at="2017-05-03T16:56:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:33Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1826" started-at="2017-05-05T12:01:54Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:56Z">
           <params>
             <param index="0">
               <value>
@@ -513,6 +246,50 @@
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1918" started-at="2017-05-05T12:01:56Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_report_info.info_other_normal\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_23","id":"23","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2459" started-at="2017-05-05T12:01:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.voices\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_24","id":"24","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="7077" started-at="2017-05-05T12:02:00Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.contacts_intersectphones\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_25","id":"25","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2407" started-at="2017-05-05T12:02:07Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.basic_info\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_26","id":"26","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -523,7 +300,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:27)
+	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
 	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
@@ -553,11 +330,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="124" started-at="2017-05-03T16:56:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-03T16:56:33Z">
+        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2120" started-at="2017-05-05T12:02:09Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_report_info.info_other_normal\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_23","id":"23","table":"resfull_case"}]]>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.smses\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_27","id":"27","table":"resfull_case"}]]>
               </value>
             </param>
           </params>
@@ -571,7 +348,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:27)
+	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
 	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
@@ -598,6 +375,548 @@
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="10276" started-at="2017-05-05T12:02:12Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_card_info.credit_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_28","id":"28","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2751" started-at="2017-05-05T12:02:22Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_card_info.trans_info\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_29","id":"29","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2671" started-at="2017-05-05T12:02:25Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.taobao_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_30","id":"30","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="7564" started-at="2017-05-05T12:02:27Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.received_address\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_31","id":"31","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1511" started-at="2017-05-05T12:02:35Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.taobao_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_32","id":"32","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1055" started-at="2017-05-05T12:02:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.trans_info\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_33","id":"33","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="625" started-at="2017-05-05T12:02:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_34","id":"34","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="669" started-at="2017-05-05T12:02:38Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_anti_frauds\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_35","id":"35","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1146" started-at="2017-05-05T12:02:39Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_client\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_36","id":"36","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1268" started-at="2017-05-05T12:02:40Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_gps\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_37","id":"37","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1231" started-at="2017-05-05T12:02:41Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.idcard_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_38","id":"38","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1428" started-at="2017-05-05T12:02:42Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.mobile_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_39","id":"39","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1386" started-at="2017-05-05T12:02:44Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.email_info\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_40","id":"40","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1722" started-at="2017-05-05T12:02:45Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customerLoanInfo\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_41","id":"41","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1551" started-at="2017-05-05T12:02:47Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"bank_card_info.trans\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_42","id":"42","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1223" started-at="2017-05-05T12:02:48Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"bank_card_info.bank_card_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_43","id":"43","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="26664" started-at="2017-05-05T12:02:50Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:03:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.contacts\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_44","id":"44","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="945" started-at="2017-05-05T12:03:16Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:03:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.alipay_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_45","id":"45","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="859" started-at="2017-05-05T12:03:17Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:03:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.alipay_bank\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_46","id":"46","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->

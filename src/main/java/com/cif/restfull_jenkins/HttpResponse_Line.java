@@ -12,13 +12,18 @@ import com.alibaba.fastjson.JSONObject;
 import com.cif.utils.httpclient.HttpClientImp;
 import com.cif.utils.httpclient.Oauth;
 
-public class HttpResponse {
-	HttpClientImp httpCL = new HttpClientImp();
-	HttpClient client = new DefaultHttpClient();
-	OAuth2AccessToken token = Oauth.getToken();
-	String before = "http://t1.zuul.pub.puhuifinance.com/cif-rest-server/";
+public class HttpResponse_Line {
+	static HttpClientImp httpCL = new HttpClientImp();
+	static HttpClient client = new DefaultHttpClient();
+	// 生产Oauth
+	static OAuth2AccessToken token = Oauth.getTokenLine();
 
-	public JSONArray getResponse(JSONObject jsonObjects, String change) {
+	public static JSONArray getResponse(JSONObject jsonObjects, String change) {
+		// 线上resfull接口地址
+		String before = "https://api.puhuifinance.com/cif-rest-server-pre/";
+		// 线上resfull接口地址 --预发布
+		// String before ="https://api.puhuifinance.com/cif-rest-server-pre/";
+
 		String url = before + jsonObjects.getString("url");
 		String params = jsonObjects.getString("params");
 		JSONObject paramsJson = JSONObject.parseObject(params);
@@ -26,11 +31,11 @@ public class HttpResponse {
 			paramsJson.replace("idCardNum", change);
 		}
 		JSONArray jsonArrayHttp = httpCL.postHttp(client, url, getAuthMap(), paramsJson.toJSONString());
-		// System.out.println(jsonArrayHttp);
+		System.out.println(jsonArrayHttp);
 		return jsonArrayHttp;
 	}
 
-	public Map<String, Object> getAuthMap() {
+	public static Map<String, Object> getAuthMap() {
 		Map<String, Object> map = new LinkedHashMap<String, Object>();
 		map.put("Accept", "*/*");
 		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
