@@ -84,6 +84,12 @@
 			<artifactId>c3p0</artifactId>
 			<version>0.9.1.2</version>
 		</dependency>
+		<!-- 加密 -->
+		<dependency>
+			<groupId>com.puhui</groupId>
+			<artifactId>puhui-aes</artifactId>
+			<version>1.1</version>
+		</dependency>
 
 		<!-- 添加testNG的依赖 -->
 		<dependency>

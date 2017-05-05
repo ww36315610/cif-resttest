@@ -3,6 +3,8 @@ package com.cif.restfull_jenkins;
 import java.util.Iterator;
 import java.util.List;
 
+import org.testng.annotations.Test;
+
 import com.alibaba.fastjson.JSONArray;
 import com.cif.utils.file.FileOperation;
 import com.cif.utils.mongo.MongoDao;
@@ -16,7 +18,7 @@ public class MogoData {
 	DB mongoDb;
 	DBCollection dbConn;
 	String channel;
-	String applyNo;
+	static long applyNo;
 	JSONArray jsonArry = new JSONArray();
 	static String fileName;
 	static List<JSONArray> listJsonArrayBason;
@@ -24,7 +26,7 @@ public class MogoData {
 
 	static {
 		num = System.currentTimeMillis();
-		fileName = Api_Mongo.class.getClassLoader().getResource("mongoBason.txt").getPath();
+		fileName = MogoData.class.getClassLoader().getResource("mongoBason.txt").getPath();
 		listJsonArrayBason = FileOperation.readFileByLines(fileName);
 	}
 
@@ -38,13 +40,22 @@ public class MogoData {
 	}
 
 	public static void main(String[] args) {
-		Api_Mongo min = new Api_Mongo();
+		MogoData min = new MogoData();
 		min.doMongo("mongo_qz", QianZhan.class);
 		System.out.println("-----------------------------钱站渠道-----------------------------\n");
 
 		min.doMongo("mongo_kn", KaNiu.class);
 		System.out.println("-----------------------------卡牛渠道-----------------------------\n");
+	}
 
+	@Test
+	public void beginMongo() {
+		MogoData min = new MogoData();
+		min.doMongo("mongo_qz", QianZhan.class);
+		System.out.println("-----------------------------钱站渠道-----------------------------\n");
+
+		min.doMongo("mongo_kn", KaNiu.class);
+		System.out.println("-----------------------------卡牛渠道-----------------------------\n");
 	}
 
 	// 调用 insert插入数据，调用find查询数据--输出find<JSONArry>
@@ -58,8 +69,7 @@ public class MogoData {
 				JSONArray jsonArray = iter.next();
 				String className = getClassName(jsonArray);
 				if (className.equals(object.toString())) {
-					applyNo = MongoDao.insertMongo(dbConn, jsonArray, num);
-
+					applyNo = MongoDao.insertMongoLong(dbConn, jsonArray, num);
 				} else {
 					continue;
 				}

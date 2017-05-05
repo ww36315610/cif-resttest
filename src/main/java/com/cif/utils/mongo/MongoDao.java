@@ -13,7 +13,8 @@ import com.mongodb.DBObject;
 import com.mongodb.QueryOperators;
 
 public class MongoDao {
-	// 从文件中读取bason然后插入mongo、、并返回进件号
+
+	// 从文件中读取bason然后插入mongo、、并返回进件号[String]
 	public static String insertMongo(DBCollection dbConn, JSONArray jsonArray, long time) {
 		String className = FileOperation.getStore(jsonArray, "className");
 		String[] classNameSplit = className.split("\\.");
@@ -26,6 +27,21 @@ public class MongoDao {
 		json.replace("idNo", time + 2 + "");
 		dbConn.insert(new BasicDBObject(json));
 		return time + "";
+	}
+
+	// 从文件中读取bason然后插入mongo、、并返回进件号[long]
+	public static long insertMongoLong(DBCollection dbConn, JSONArray jsonArray, long time) {
+		String className = FileOperation.getStore(jsonArray, "className");
+		String[] classNameSplit = className.split("\\.");
+		JSONObject jsonRead = (JSONObject) jsonArray.get(0);
+		DBObject dbo = (DBObject) com.mongodb.util.JSON.parse(jsonRead.toJSONString());
+		JSONObject json = (JSONObject) JSONObject.toJSON(dbo);
+		json.replace("applyNo", time + "");
+		json.replace("_id", time + 1 + "");
+		json.replace("idCardNum", time + 2 + "");
+		json.replace("idNo", time + 2 + "");
+		dbConn.insert(new BasicDBObject(json));
+		return time;
 	}
 
 	// 插入mongo

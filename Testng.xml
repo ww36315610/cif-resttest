@@ -4,6 +4,13 @@
 	<test name="Api_Select">
 		<classes>
 			<!-- 调用@Test执行类 -->
+			<class name="com.cif.restfull_jenkins.MogoData" />
+			<methods>
+				<include name="beginMongo"></include>
+			</methods>
+		</classes>
+
+		<classes>
 			<class name="com.cif.restfull_jenkins.AssertClass" />
 			<methods>
 				<include name="method"></include>
