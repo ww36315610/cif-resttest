@@ -43,6 +43,32 @@ public class FileOperation {
 		return list;
 	}
 
+	// 一次读取一行 返回List<String>
+	public static List<String> readFileByLineString(String fileName) {
+		File file = new File(fileName);
+		BufferedReader reader = null;
+		List<String> list = new ArrayList<String>();
+		try {
+			reader = new BufferedReader(new FileReader(file));
+			String tempString = null;
+			// 一次读入一行，直到读入null为文件结束
+			while ((tempString = reader.readLine()) != null) {
+				list.add(tempString);
+			}
+			reader.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (reader != null) {
+				try {
+					reader.close();
+				} catch (IOException e1) {
+				}
+			}
+		}
+		return list;
+	}
+
 	// 一次读取一行 ，返回JSONObject
 	public static JSONObject readFileByLine(String fileName) {
 		File file = new File(fileName);

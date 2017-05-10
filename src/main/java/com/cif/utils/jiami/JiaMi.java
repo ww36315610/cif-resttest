@@ -3,7 +3,7 @@ package com.cif.utils.jiami;
 import com.puhui.aes.AesEncryptionUtil;
 
 public class JiaMi {
-	static String param = "1493782649002";
+	static String param = "500240198906290013";
 
 	public static void main(String[] args) {
 		System.out.println(getAes(param));

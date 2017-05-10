@@ -12,7 +12,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.cif.utils.httpclient.HttpClientImp;
 import com.cif.utils.httpclient.Oauth;
 
-public class HttpResponse_Line {
+public class Line_HttpResponse {
 	static HttpClientImp httpCL = new HttpClientImp();
 	static HttpClient client = new DefaultHttpClient();
 	// 生产Oauth

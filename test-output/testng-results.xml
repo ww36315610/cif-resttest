@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="11" total="46" passed="35">
+<testng-results skipped="0" failed="0" total="115" passed="115">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="212221" started-at="2017-05-05T03:59:46Z" finished-at="2017-05-05T04:03:18Z">
+  <suite name="Default suite" duration-ms="24757" started-at="2017-05-10T12:15:13Z" finished-at="2017-05-10T12:15:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="212221" started-at="2017-05-05T03:59:46Z" finished-at="2017-05-05T04:03:18Z">
+    <test name="Default test" duration-ms="24757" started-at="2017-05-10T12:15:13Z" finished-at="2017-05-10T12:15:38Z">
       <class name="com.cif.restfull_jenkins.AssertClass">
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="31431" started-at="2017-05-05T11:59:47Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:18Z">
+        <test-method status="PASS" signature="befor()[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="befor" is-config="true" duration-ms="13418" started-at="2017-05-10T20:15:13Z" finished-at="2017-05-10T20:15:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befor -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="1238" started-at="2017-05-10T20:15:27Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:29Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="8798" started-at="2017-05-05T12:00:18Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:27Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="99" started-at="2017-05-10T20:15:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:29Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="10086" started-at="2017-05-05T12:00:27Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:37Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="83" started-at="2017-05-10T20:15:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:29Z">
           <params>
             <param index="0">
               <value>
@@ -40,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="4181" started-at="2017-05-05T12:00:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:41Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="104" started-at="2017-05-10T20:15:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:29Z">
           <params>
             <param index="0">
               <value>
@@ -51,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2164" started-at="2017-05-05T12:00:41Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:43Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="86" started-at="2017-05-10T20:15:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:29Z">
           <params>
             <param index="0">
               <value>
@@ -62,7 +66,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="307" started-at="2017-05-05T12:00:43Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:44Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="66" started-at="2017-05-10T20:15:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:29Z">
           <params>
             <param index="0">
               <value>
@@ -73,7 +77,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="349" started-at="2017-05-05T12:00:44Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:44Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="92" started-at="2017-05-10T20:15:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:29Z">
           <params>
             <param index="0">
               <value>
@@ -84,7 +88,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1870" started-at="2017-05-05T12:00:44Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:46Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="91" started-at="2017-05-10T20:15:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:29Z">
           <params>
             <param index="0">
               <value>
@@ -95,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="4776" started-at="2017-05-05T12:00:46Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:51Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="87" started-at="2017-05-10T20:15:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:29Z">
           <params>
             <param index="0">
               <value>
@@ -106,7 +110,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="4940" started-at="2017-05-05T12:00:51Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:56Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="126" started-at="2017-05-10T20:15:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:29Z">
           <params>
             <param index="0">
               <value>
@@ -117,7 +121,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1957" started-at="2017-05-05T12:00:56Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:57Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="80" started-at="2017-05-10T20:15:29Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:30Z">
           <params>
             <param index="0">
               <value>
@@ -128,7 +132,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1543" started-at="2017-05-05T12:00:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:59Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="83" started-at="2017-05-10T20:15:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:30Z">
           <params>
             <param index="0">
               <value>
@@ -139,7 +143,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="403" started-at="2017-05-05T12:00:59Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:00:59Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="189" started-at="2017-05-10T20:15:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:30Z">
           <params>
             <param index="0">
               <value>
@@ -150,7 +154,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1565" started-at="2017-05-05T12:00:59Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:01Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="76" started-at="2017-05-10T20:15:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:30Z">
           <params>
             <param index="0">
               <value>
@@ -161,7 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="5212" started-at="2017-05-05T12:01:01Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:06Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="82" started-at="2017-05-10T20:15:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:30Z">
           <params>
             <param index="0">
               <value>
@@ -172,7 +176,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="5140" started-at="2017-05-05T12:01:06Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:11Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="81" started-at="2017-05-10T20:15:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:30Z">
           <params>
             <param index="0">
               <value>
@@ -183,7 +187,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="3955" started-at="2017-05-05T12:01:11Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:15Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="70" started-at="2017-05-10T20:15:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:30Z">
           <params>
             <param index="0">
               <value>
@@ -194,7 +198,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="3815" started-at="2017-05-05T12:01:15Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:19Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="72" started-at="2017-05-10T20:15:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:30Z">
           <params>
             <param index="0">
               <value>
@@ -205,7 +209,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2644" started-at="2017-05-05T12:01:19Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:22Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="87" started-at="2017-05-10T20:15:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:30Z">
           <params>
             <param index="0">
               <value>
@@ -216,7 +220,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="4724" started-at="2017-05-05T12:01:22Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:26Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="84" started-at="2017-05-10T20:15:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:30Z">
           <params>
             <param index="0">
               <value>
@@ -227,7 +231,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="27218" started-at="2017-05-05T12:01:26Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:54Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="73" started-at="2017-05-10T20:15:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:30Z">
           <params>
             <param index="0">
               <value>
@@ -238,7 +242,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1826" started-at="2017-05-05T12:01:54Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:56Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="76" started-at="2017-05-10T20:15:30Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:31Z">
           <params>
             <param index="0">
               <value>
@@ -249,7 +253,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1918" started-at="2017-05-05T12:01:56Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:01:57Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="74" started-at="2017-05-10T20:15:31Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:31Z">
           <params>
             <param index="0">
               <value>
@@ -260,7 +264,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2459" started-at="2017-05-05T12:01:57Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:00Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="207" started-at="2017-05-10T20:15:31Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:31Z">
           <params>
             <param index="0">
               <value>
@@ -271,7 +275,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="7077" started-at="2017-05-05T12:02:00Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:07Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="100" started-at="2017-05-10T20:15:31Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:31Z">
           <params>
             <param index="0">
               <value>
@@ -282,7 +286,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2407" started-at="2017-05-05T12:02:07Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:09Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="95" started-at="2017-05-10T20:15:31Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:31Z">
           <params>
             <param index="0">
               <value>
@@ -290,47 +294,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2120" started-at="2017-05-05T12:02:09Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:12Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="142" started-at="2017-05-10T20:15:31Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:31Z">
           <params>
             <param index="0">
               <value>
@@ -338,47 +305,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="10276" started-at="2017-05-05T12:02:12Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:22Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="99" started-at="2017-05-10T20:15:31Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:31Z">
           <params>
             <param index="0">
               <value>
@@ -389,7 +319,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2751" started-at="2017-05-05T12:02:22Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:25Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="97" started-at="2017-05-10T20:15:31Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:31Z">
           <params>
             <param index="0">
               <value>
@@ -400,7 +330,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="2671" started-at="2017-05-05T12:02:25Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:27Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="93" started-at="2017-05-10T20:15:31Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:31Z">
           <params>
             <param index="0">
               <value>
@@ -411,7 +341,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="7564" started-at="2017-05-05T12:02:27Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:35Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="99" started-at="2017-05-10T20:15:31Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -422,7 +352,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1511" started-at="2017-05-05T12:02:35Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:36Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="82" started-at="2017-05-10T20:15:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -433,7 +363,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1055" started-at="2017-05-05T12:02:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:37Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="82" started-at="2017-05-10T20:15:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -441,47 +371,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="625" started-at="2017-05-05T12:02:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:38Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="67" started-at="2017-05-10T20:15:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -489,47 +382,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="669" started-at="2017-05-05T12:02:38Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:39Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="68" started-at="2017-05-10T20:15:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -537,47 +393,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1146" started-at="2017-05-05T12:02:39Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:40Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="85" started-at="2017-05-10T20:15:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -585,47 +404,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1268" started-at="2017-05-05T12:02:40Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:41Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="72" started-at="2017-05-10T20:15:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -633,47 +415,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1231" started-at="2017-05-05T12:02:41Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:42Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="67" started-at="2017-05-10T20:15:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -681,47 +426,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1428" started-at="2017-05-05T12:02:42Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:44Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="70" started-at="2017-05-10T20:15:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -729,47 +437,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1386" started-at="2017-05-05T12:02:44Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:45Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="63" started-at="2017-05-10T20:15:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -777,47 +448,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1722" started-at="2017-05-05T12:02:45Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:47Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="61" started-at="2017-05-10T20:15:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -825,47 +459,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.cif.restfull_jenkins.AssertClass.method(AssertClass.java:21)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1551" started-at="2017-05-05T12:02:47Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:48Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="60" started-at="2017-05-10T20:15:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -876,7 +473,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="1223" started-at="2017-05-05T12:02:48Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:02:50Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="66" started-at="2017-05-10T20:15:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -887,7 +484,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="26664" started-at="2017-05-05T12:02:50Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:03:16Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="83" started-at="2017-05-10T20:15:32Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:33Z">
           <params>
             <param index="0">
               <value>
@@ -898,7 +495,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="945" started-at="2017-05-05T12:03:16Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:03:17Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="75" started-at="2017-05-10T20:15:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:33Z">
           <params>
             <param index="0">
               <value>
@@ -909,11 +506,770 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@4d826d77]" name="method" duration-ms="859" started-at="2017-05-05T12:03:17Z" data-provider="mysql_retsfull_data" finished-at="2017-05-05T12:03:18Z">
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="64" started-at="2017-05-10T20:15:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:33Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[{"code":"resultCode","code_1":"tag","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.alipay_bank\"}","type":"json","message":"","url":"api/v1/getOneBasicColumn","expecteds":"SUCCESS","caseID":"case_46","id":"46","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="106" started-at="2017-05-10T20:15:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"842","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.voices\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_47","id":"47","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="90" started-at="2017-05-10T20:15:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"2","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.contacts_intersectphones\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_48","id":"48","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="70" started-at="2017-05-10T20:15:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"8","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_card_info.credit_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_49","id":"49","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="66" started-at="2017-05-10T20:15:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"86","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_card_info.trans_info\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_50","id":"50","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="70" started-at="2017-05-10T20:15:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"bank_card_info.trans\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_51","id":"51","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="66" started-at="2017-05-10T20:15:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"bank_card_info.bank_card_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_52","id":"52","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="78" started-at="2017-05-10T20:15:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"3","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.contacts\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_53","id":"53","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="99" started-at="2017-05-10T20:15:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"2","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.alipay_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_54","id":"54","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="68" started-at="2017-05-10T20:15:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"4","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.alipay_bank\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_55","id":"55","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="76" started-at="2017-05-10T20:15:33Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"336","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.address_mark\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_56","id":"56","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="68" started-at="2017-05-10T20:15:34Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"5","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.received_address\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_57","id":"57","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="66" started-at="2017-05-10T20:15:34Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"3","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.taobao_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_58","id":"58","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="106" started-at="2017-05-10T20:15:34Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"336","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.detail_trans_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_59","id":"59","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="102" started-at="2017-05-10T20:15:34Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_bank_card\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_60","id":"60","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="64" started-at="2017-05-10T20:15:34Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.band_repay_bankcard\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_61","id":"61","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="61" started-at="2017-05-10T20:15:34Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.band_borrow_bankcard\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_62","id":"62","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="61" started-at="2017-05-10T20:15:34Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.band_bankcard_mobile\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_63","id":"63","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="74" started-at="2017-05-10T20:15:34Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.band_bankcard_idcardnum\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_64","id":"64","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="72" started-at="2017-05-10T20:15:34Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_report_info.cr_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_65","id":"65","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="78" started-at="2017-05-10T20:15:34Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"9","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_report_info.query_info\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_66","id":"66","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="68" started-at="2017-05-10T20:15:34Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_report_info.info_summary\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_67","id":"67","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="68" started-at="2017-05-10T20:15:34Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_report_info.info_other_overdue\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_68","id":"68","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="66" started-at="2017-05-10T20:15:34Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"qz","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_report_info.info_other_normal\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_69","id":"69","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="131" started-at="2017-05-10T20:15:35Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"842","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.voices\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_70","id":"70","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="76" started-at="2017-05-10T20:15:35Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"2","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.contacts_intersectphones\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_71","id":"71","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="63" started-at="2017-05-10T20:15:35Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.basic_info\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_72","id":"72","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="136" started-at="2017-05-10T20:15:35Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"321","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.smses\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_73","id":"73","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="90" started-at="2017-05-10T20:15:35Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"8","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_card_info.credit_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_74","id":"74","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="78" started-at="2017-05-10T20:15:35Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"86","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_card_info.trans_info\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_75","id":"75","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="85" started-at="2017-05-10T20:15:35Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"3","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.taobao_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_76","id":"76","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="69" started-at="2017-05-10T20:15:35Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"5","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.received_address\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_77","id":"77","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="78" started-at="2017-05-10T20:15:35Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"3","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.taobao_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_78","id":"78","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="101" started-at="2017-05-10T20:15:35Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"58","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.trans_info\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_79","id":"79","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="67" started-at="2017-05-10T20:15:35Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_80","id":"80","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="78" started-at="2017-05-10T20:15:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_anti_frauds\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_81","id":"81","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="67" started-at="2017-05-10T20:15:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_client\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_82","id":"82","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="67" started-at="2017-05-10T20:15:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_gps\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_83","id":"83","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="63" started-at="2017-05-10T20:15:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.idcard_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_84","id":"84","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="62" started-at="2017-05-10T20:15:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.mobile_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_85","id":"85","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="71" started-at="2017-05-10T20:15:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.email_info\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_86","id":"86","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="64" started-at="2017-05-10T20:15:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customerLoanInfo\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_87","id":"87","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="77" started-at="2017-05-10T20:15:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"bank_card_info.trans\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_88","id":"88","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="74" started-at="2017-05-10T20:15:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"bank_card_info.bank_card_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_89","id":"89","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="75" started-at="2017-05-10T20:15:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"3","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.contacts\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_90","id":"90","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="62" started-at="2017-05-10T20:15:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"2","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.alipay_basic\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_91","id":"91","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="65" started-at="2017-05-10T20:15:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"4","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.alipay_bank\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_92","id":"92","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="98" started-at="2017-05-10T20:15:36Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"841","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.voices\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_93","id":"93","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="70" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.contacts_intersectphones\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_94","id":"94","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="81" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.basic_info\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_95","id":"95","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="85" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"321","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"mobile_info.smses\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_96","id":"96","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="64" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"8","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_card_info.credit_basic\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_97","id":"97","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="63" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"86","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"credit_card_info.trans_info\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_98","id":"98","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="76" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"2","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.taobao_basic\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_99","id":"99","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="66" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"3","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.received_address\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_100","id":"100","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="73" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"2","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.taobao_basic\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_101","id":"101","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="72" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"58","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"taobao_info.trans_info\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_102","id":"102","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="68" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_basic\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_103","id":"103","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="65" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_anti_frauds\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_104","id":"104","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="63" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_client\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_105","id":"105","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="59" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customer_gps\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_106","id":"106","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="60" started-at="2017-05-10T20:15:37Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.idcard_basic\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_107","id":"107","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="60" started-at="2017-05-10T20:15:38Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.mobile_basic\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_108","id":"108","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="61" started-at="2017-05-10T20:15:38Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.email_info\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_109","id":"109","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="56" started-at="2017-05-10T20:15:38Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"basic_info.customerLoanInfo\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_110","id":"110","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="63" started-at="2017-05-10T20:15:38Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"0","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"bank_card_info.trans\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_111","id":"111","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="62" started-at="2017-05-10T20:15:38Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"0","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"bank_card_info.bank_card_basic\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_112","id":"112","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="86" started-at="2017-05-10T20:15:38Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.contacts\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_113","id":"113","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="61" started-at="2017-05-10T20:15:38Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"1","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.alipay_basic\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_114","id":"114","table":"resfull_case"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="method(com.alibaba.fastjson.JSONObject)[pri:0, instance:com.cif.restfull_jenkins.AssertClass@35bbe5e8]" name="method" duration-ms="64" started-at="2017-05-10T20:15:38Z" data-provider="mysql_retsfull_data" finished-at="2017-05-10T20:15:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"code":"resultCode","code_1":"count","expecteds_1":"2","channel":"redhare","leval":"P1","params":"{\"idCardNum\":\"idCardNum_change\",\"type\":\"alipay_info.alipay_bank\",\"channel\":\"301\"}","type":"json","message":"","url":"api/v1/getOneBasicColumnCount","expecteds":"SUCCESS","caseID":"case_115","id":"115","table":"resfull_case"}]]>
               </value>
             </param>
           </params>

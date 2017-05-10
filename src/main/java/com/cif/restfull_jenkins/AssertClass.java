@@ -26,6 +26,11 @@ public class AssertClass {
 		long aa = MogoData.applyNo;
 		String idNo = String.valueOf(aa + 2);
 		idNoJiaMi = JiaMi.getAes(idNo);
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Test(dataProvider = "mysql_retsfull_data", dataProviderClass = CaseData.class)
@@ -38,14 +43,15 @@ public class AssertClass {
 				json = JSONObject.parseObject(array.get(i).toString());
 				Assert.assertEquals(json.get(object.get("code")), object.get("expecteds"), "返回码不正确！！！！！");
 				if (object.get("code_1").toString().equals("tag")) {
-					Assert.assertTrue(json.getJSONArray(object.get("code_1").toString()).size() >= Integer
-							.parseInt(object.get("expecteds_1").toString()));
+					Assert.assertTrue(
+							json.getJSONArray(object.get("code_1").toString()).size() >= Integer.parseInt(object.get(
+									"expecteds_1").toString()), object.getString("caseID"));
 				} else {
 					String expecteds = object.get("expecteds_1").toString();
 					int expNum = Integer.parseInt(expecteds);
 					String actual = json.getString(object.getString("code_1"));
 					int actNum = Integer.parseInt(actual);
-					Assert.assertTrue(expNum <= actNum);
+					Assert.assertTrue(expNum <= actNum, object.getString("caseID"));
 				}
 			}
 		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {

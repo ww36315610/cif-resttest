@@ -6,13 +6,4 @@
       <class name="com.cif.restfull_jenkins.AssertClass"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.cif.restfull_jenkins.AssertClass">
-        <methods>
-          <include name="method" invocation-numbers="25 26 32 33 34 35 36 37 38 39 40"/>
-        </methods>
-      </class> <!-- com.cif.restfull_jenkins.AssertClass -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
