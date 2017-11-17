@@ -6,9 +6,9 @@ import java.util.regex.Pattern;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.cif.utils.file.FileOperation;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
+import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.QueryOperators;
 
@@ -16,30 +16,34 @@ public class MongoDao {
 
 	// 从文件中读取bason然后插入mongo、、并返回进件号[String]
 	public static String insertMongo(DBCollection dbConn, JSONArray jsonArray, long time) {
-		String className = FileOperation.getStore(jsonArray, "className");
-		String[] classNameSplit = className.split("\\.");
+		// String className = FileOperation.getStore(jsonArray, "className");
+		// String[] classNameSplit = className.split("\\.");
 		JSONObject jsonRead = (JSONObject) jsonArray.get(0);
 		DBObject dbo = (DBObject) com.mongodb.util.JSON.parse(jsonRead.toJSONString());
 		JSONObject json = (JSONObject) JSONObject.toJSON(dbo);
 		json.replace("applyNo", time + "");
+		json.replace("requestId", time + "");
 		json.replace("_id", time + 1 + "");
 		json.replace("idCardNum", time + 2 + "");
 		json.replace("idNo", time + 2 + "");
+		json.replace("idNnum", time + 2 + "");
 		dbConn.insert(new BasicDBObject(json));
 		return time + "";
 	}
 
 	// 从文件中读取bason然后插入mongo、、并返回进件号[long]
 	public static long insertMongoLong(DBCollection dbConn, JSONArray jsonArray, long time) {
-		String className = FileOperation.getStore(jsonArray, "className");
-		String[] classNameSplit = className.split("\\.");
+		// String className = FileOperation.getStore(jsonArray, "className");
+		// String[] classNameSplit = className.split("\\.");
 		JSONObject jsonRead = (JSONObject) jsonArray.get(0);
 		DBObject dbo = (DBObject) com.mongodb.util.JSON.parse(jsonRead.toJSONString());
 		JSONObject json = (JSONObject) JSONObject.toJSON(dbo);
 		json.replace("applyNo", time + "");
+		json.replace("requestId", time + "");
 		json.replace("_id", time + 1 + "");
 		json.replace("idCardNum", time + 2 + "");
 		json.replace("idNo", time + 2 + "");
+		json.replace("idNnum", time + 2 + "");
 		dbConn.insert(new BasicDBObject(json));
 		return time;
 	}
@@ -70,7 +74,7 @@ public class MongoDao {
 		return jsona;
 	}
 
-	// 存在查询\前几行limit，返回值类型为：JSONArray
+	// 存在查询\前几行limit，返回值类型为：JSONArray 某个tablename存在的前几行
 	public static JSONArray queryByExists(DBCollection dbConn, String param, int limit) {
 		JSONObject jsonObject = new JSONObject();
 		List<DBObject> list = new ArrayList<DBObject>();
@@ -107,11 +111,20 @@ public class MongoDao {
 			// 正则匹配含有paramValue参数的value
 			Pattern pattern = Pattern.compile("^.*" + paramValue + ".*$");
 			BasicDBObject queryObject = new BasicDBObject(paramKey, pattern);
-			// query.put(param, new BasicDBObject("$regex", pattern));
-			list = dbConn.find(queryObject).toArray();
+//			queryObject.put(paramKey, new BasicDBObject("$regex", pattern));
+			//以前是这样写
+//			 list = dbConn.find(queryObject).toArray();
+			// 这样写的目的【节省资源】，游标只是把数据找出来，不会放入内存，只有next的时候才会调用真的数据
+			 DBObject dbObject = null;
+			 DBCursor cursor = dbConn.find(new BasicDBObject(queryObject));
+			 while (cursor.hasNext()) {
+			 dbObject = cursor.next();
+			 list.add(dbObject);
+			 }
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return jsonArray.parseArray(list.toString());
 	}
+
 }

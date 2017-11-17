@@ -123,7 +123,10 @@ public class FileOperation {
 	// 根据 key值，获取json的value
 	public static String getStore(JSONArray jsonArray, String key) {
 		JSONObject json = jsonArray.getJSONObject(0);
-		return json.get(key).toString();
+		if (json.containsKey(key))
+			return json.get(key).toString();
+		else
+			return null;
 	}
 
 	public static void main(String[] args) {

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.httpclient.HttpStatus;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -44,7 +45,7 @@ public class HttpClientImp {
 		return jsonArry;
 	}
 
-	//post接口，传递String类型参数
+	// post接口，传递多个String类型参数
 	public JSONArray postHttp(HttpClient client, String url, Map<String, Object> map, List<Object> paramKey,
 			List<Object> paramValue) {
 		JSONArray jsonArry = null;
@@ -67,12 +68,16 @@ public class HttpClientImp {
 		}
 		try {
 			HttpResponse response = client.execute(post);
-			HttpEntity entityA = response.getEntity();
-			jsonArry = getResponse(response);
+			if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
+				HttpEntity entityA = response.getEntity();
+				jsonArry = getResponse(response);
+			}
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
+		} finally {
+			post.releaseConnection();
 		}
 		return jsonArry;
 	}
@@ -84,20 +89,33 @@ public class HttpClientImp {
 	public JSONArray postHttp(HttpClient client, String url, Map<String, Object> map, String json) {
 		JSONArray jsonArry = null;
 		HttpPost post = new HttpPost(url);
-		for (Map.Entry<String, Object> entry : map.entrySet()) {
-			String key = entry.getKey().toString();
-			String value = entry.getValue().toString();
-			post.setHeader(key, value);
-		}
+		// for (Map.Entry<String, Object> entry : map.entrySet()) {
+		// String key = entry.getKey().toString();
+		// String value = entry.getValue().toString();
+		// post.setHeader(key, value);
+		// System.out.println(value);
+		// }
+		map.forEach((k, v) -> {
+			post.setHeader(k, v.toString());
+		});
 		StringEntity entiry = new StringEntity(json, "utf-8");
 		post.setEntity(entiry);
 		try {
+
+			long s = System.currentTimeMillis();
 			HttpResponse response = client.execute(post);
-			jsonArry = getResponse(response);
+			System.out.println("HTTP POST use: " + (System.currentTimeMillis() - s) + "ms");
+			if (response.getStatusLine().getStatusCode() == 200) {
+				jsonArry = getResponse(response);
+			} else {
+				System.out.println("===code====" + response.getStatusLine().getStatusCode());
+			}
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
+		} finally {
+			post.releaseConnection();
 		}
 		return jsonArry;
 	}

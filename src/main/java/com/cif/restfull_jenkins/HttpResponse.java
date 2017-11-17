@@ -22,6 +22,7 @@ public class HttpResponse {
 		String url = before + jsonObjects.getString("url");
 		String params = jsonObjects.getString("params");
 		JSONObject paramsJson = JSONObject.parseObject(params);
+		
 		if (paramsJson.getString("idCardNum").contains("idCardNum_change")) {
 			paramsJson.replace("idCardNum", change);
 		}

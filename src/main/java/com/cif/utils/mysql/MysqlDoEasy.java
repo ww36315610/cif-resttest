@@ -26,8 +26,10 @@ public class MysqlDoEasy {
 	// 获取mysql数据
 	public JSONArray select(String sql, Connection conn) {
 		JSONArray jsonArry = new JSONArray();
+		PreparedStatement pre = null;
+		ResultSet rSet = null;
 		try {
-			PreparedStatement pre = conn.prepareStatement(sql);
+			pre = conn.prepareStatement(sql);
 			ResultSet rs = pre.executeQuery();
 			int col = rs.getMetaData().getColumnCount();
 			ResultSetMetaData data = (ResultSetMetaData) rs.getMetaData();

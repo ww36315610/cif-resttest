@@ -3,11 +3,11 @@
 <suite name="Failed suite [Suite]">
   <test name="Api_Select">
     <classes>
-      <class name="com.cif.restfull_jenkins.MogoData">
+      <class name="com.cif.restfull_jenkins.AssertClass">
         <methods>
-          <include name="beginMongo"/>
+          <include name="method"/>
         </methods>
-      </class> <!-- com.cif.restfull_jenkins.MogoData -->
+      </class> <!-- com.cif.restfull_jenkins.AssertClass -->
     </classes>
   </test> <!-- Api_Select -->
 </suite> <!-- Failed suite [Suite] -->

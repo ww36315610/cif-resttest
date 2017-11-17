@@ -20,6 +20,31 @@ public class Oauth {
 		return accessToken;
 	}
 
+	public static OAuth2AccessToken getToken(String url) {
+		ResourceOwnerPasswordAccessTokenProvider provider = new ResourceOwnerPasswordAccessTokenProvider();
+		ResourceOwnerPasswordResourceDetails resource = new ResourceOwnerPasswordResourceDetails();
+		resource.setClientAuthenticationScheme(AuthenticationScheme.form);
+		resource.setAccessTokenUri(url);
+		resource.setClientId("cif-utc-rest");
+		resource.setClientSecret("cif-utc-rest");
+		resource.setGrantType("client_credentials");
+		OAuth2AccessToken accessToken = provider.obtainAccessToken(resource, new DefaultAccessTokenRequest());
+		return accessToken;
+	}
+
+	public static OAuth2AccessToken getTokenPoutc() {
+		ResourceOwnerPasswordAccessTokenProvider provider = new ResourceOwnerPasswordAccessTokenProvider();
+		ResourceOwnerPasswordResourceDetails resource = new ResourceOwnerPasswordResourceDetails();
+		resource.setClientAuthenticationScheme(AuthenticationScheme.form);
+		resource.setAccessTokenUri("http://106.75.5.205:8082/uaa/oauth/token?grant_type=client_credentials");
+		resource.setClientId("cif-utc-rest");
+		resource.setClientSecret("cif-utc-rest");
+		resource.setGrantType("client_credentials");
+
+		OAuth2AccessToken accessToken = provider.obtainAccessToken(resource, new DefaultAccessTokenRequest());
+		return accessToken;
+	}
+
 	public static OAuth2AccessToken getTokenLine() {
 		ResourceOwnerPasswordAccessTokenProvider provider = new ResourceOwnerPasswordAccessTokenProvider();
 		ResourceOwnerPasswordResourceDetails resource = new ResourceOwnerPasswordResourceDetails();
@@ -32,8 +57,21 @@ public class Oauth {
 		return accessToken;
 	}
 
+	public static OAuth2AccessToken getTokenLine(String url) {
+		ResourceOwnerPasswordAccessTokenProvider provider = new ResourceOwnerPasswordAccessTokenProvider();
+		ResourceOwnerPasswordResourceDetails resource = new ResourceOwnerPasswordResourceDetails();
+		resource.setClientAuthenticationScheme(AuthenticationScheme.form);
+		resource.setAccessTokenUri(url);
+		resource.setClientId("cif-utc-rest");
+		resource.setClientSecret("oE5lINlBkUvNRr2h0Ek3");
+		resource.setGrantType("client_credentials");
+		OAuth2AccessToken accessToken = provider.obtainAccessToken(resource, new DefaultAccessTokenRequest());
+		return accessToken;
+	}
+
 	public static void main(String[] args) {
-		System.out.println(getTokenLine().getValue());
-		System.out.println(getTokenLine().getTokenType());
+		// System.out.println(getTokenLine().getValue());
+		// System.out.println(getTokenLine().getTokenType());
+		System.out.println(getTokenPoutc().getValue());
 	}
 }

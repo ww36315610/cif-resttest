@@ -27,7 +27,7 @@ public class MongoOperation extends ConfigTools {
 		List<ServerAddress> hostList = new ArrayList<ServerAddress>();
 		hostList.add(new ServerAddress(serverAddress, serverPort));
 		MongoClient mongoClient = new MongoClient(hostList, mongoList);
-		db = null; // 此处是为了建立不同的db实例，真正的需要去掉这一句
+		db = null; // 此处是为了建立不同的db实例，真正的需要去掉这一句[提供连接不同渠道]
 		if (db == null) {
 			synchronized (MongoDatabase.class) {
 				if (db == null) {
@@ -46,5 +46,8 @@ public class MongoOperation extends ConfigTools {
 	public static void main(String[] args) {
 		getMongoDatabase("mongo_qz");
 		System.out.println(mongoDBConn("CreditCardStore"));
+		
+		
+		System.out.println(MongoDao.queryByRegex(mongoDBConn("AlipayStore"), "key", "6214"));
 	}
 }

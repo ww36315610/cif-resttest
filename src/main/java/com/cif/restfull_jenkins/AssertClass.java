@@ -9,6 +9,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.cif.restfull_jenkins.filed.ReturnClass;
 import com.cif.utils.jiami.JiaMi;
 import com.cif.utils.mongo.MongoStoreEnum.KaNiu;
+import com.cif.utils.mongo.MongoStoreEnum.Nirvana;
 import com.cif.utils.mongo.MongoStoreEnum.QianZhan;
 
 public class AssertClass {
@@ -22,7 +23,10 @@ public class AssertClass {
 
 		min.doMongo("mongo_kn", KaNiu.class);
 		System.out.println("-----------------------------卡牛渠道-----------------------------\n");
-		System.out.println(MogoData.applyNo);
+
+		min.doMongo("mongo_nirvana", Nirvana.class);
+		System.out.println("-----------------------------涅槃渠道-----------------------------\n");
+
 		long aa = MogoData.applyNo;
 		String idNo = String.valueOf(aa + 2);
 		idNoJiaMi = JiaMi.getAes(idNo);

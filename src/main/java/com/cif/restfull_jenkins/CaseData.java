@@ -15,7 +15,10 @@ import com.cif.utils.mysql.MysqlOperation;
 import com.mysql.jdbc.Connection;
 
 public class CaseData {
-	static String sql = "select * from resfull_case";
+	// static String sql = "select * from resfull_case_nirvana";
+	static String sql = "select * from resfull_case_1 WHERE code_1 = 'tag' AND channel ='redhare'";
+	// static String sql =
+	// "SELECT * FROM resfull_case_1 WHERE code_1 = 'tag' AND channel ='qz'";
 
 	private static List<Map<String, Object>> list;
 	private static MysqlOperation mcbp;
