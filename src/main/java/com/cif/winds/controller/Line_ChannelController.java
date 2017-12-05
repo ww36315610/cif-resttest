@@ -30,6 +30,7 @@ public class Line_ChannelController {
 		map.put("Accept", "*/*");
 		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
 		map.put("Content-Type", "application/json");
+		System.out.println(map);
 	}
 
 	public void multiIdCardNum(String json) {
@@ -72,7 +73,7 @@ public class Line_ChannelController {
 	public static void main(String[] args) {
 		Line_ChannelController ut = new Line_ChannelController();
 		try {
-			ut.reflectionMethod(getMethod(httpUrlTagType), PropersTools.getValue("jsonType"));
+			ut.reflectionMethod(getMethod(httpUrlTagType), PropersTools.getValue("line.tagType_1"));
 			// ut.reflectionMethod(getMethod(httpUrlOneTagName),
 			// PropersTools.getValue("jsonTagName"));
 			// ut.reflectionMethod(getMethod(httpUrlMultiTagName),PropersTools.getValue("jsonMultiTagName"));

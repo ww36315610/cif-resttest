@@ -104,7 +104,7 @@ public class HttpClientImp {
 
 			long s = System.currentTimeMillis();
 			HttpResponse response = client.execute(post);
-			System.out.println("HTTP POST use: " + (System.currentTimeMillis() - s) + "ms");
+//			System.out.println("HTTP POST use: " + (System.currentTimeMillis() - s) + "ms");
 			if (response.getStatusLine().getStatusCode() == 200) {
 				jsonArry = getResponse(response);
 			} else {

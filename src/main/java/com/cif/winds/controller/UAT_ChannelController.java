@@ -14,11 +14,16 @@ import com.cif.winds.repository.RestfulDao;
 import com.cif.winds.repository.RestfullDaoImp;
 
 public class UAT_ChannelController {
+
 	private static final String httpUrlMultiIdCardNum = "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/multiIdCardNum";
 	private static final String httpUrlOneIdCardNum = "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/oneIdCardNum";
 	private static final String httpUrlOneTagName = "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/oneTagName";
 	private static final String httpUrlMultiTagName = "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/multiTagName";
-	private static final String httpUrlTagType = "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/tagType";
+	// private static final String httpUrlTagType =
+	// "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/tagType";
+
+//	private static final String httpUrlTagType = "http://cif-utc-rest.cif.test/api/v1/tagType";
+	private static final String httpUrlTagType = "http://cif-utc-rest.cif.dev/api/v1/moxie";
 	private static final String httpUrlTagWithCurrency = "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/currencyTag";
 	static Map<String, Object> map = new HashMap<String, Object>();
 	RestfulDao rd = new RestfullDaoImp();
@@ -75,14 +80,18 @@ public class UAT_ChannelController {
 	public static void main(String[] args) {
 		UAT_ChannelController ut = new UAT_ChannelController();
 		try {
-			ut.reflectionMethod(getMethod(httpUrlTagType), PropersTools.getValue("jsonType"));
-			ut.reflectionMethod(getMethod(httpUrlOneTagName), PropersTools.getValue("jsonTagName"));
-			// ut.reflectionMethod(getMethod(httpUrlMultiTagName),PropersTools.getValue("jsonMultiTagName"));
-			ut.reflectionMethod(getMethod(httpUrlMultiIdCardNum), PropersTools.getValue("jsonMultiIdCardNum"));
+System.out.println(PropersTools.getValue("jsonType"));
+			ut.reflectionMethod(httpUrlTagType, PropersTools.getValue("jsonType"));
+			// ut.reflectionMethod(getMethod(httpUrlOneTagName),
+			// PropersTools.getValue("jsonTagName"));
+			// ut.reflectionMethod(getMethod(httpUrlMultiTagName),
+			// PropersTools.getValue("jsonMultiTagName"));
+			// ut.reflectionMethod(getMethod(httpUrlMultiIdCardNum),
+			// PropersTools.getValue("jsonMultiIdCardNum"));
+
 		} catch (NoSuchMethodException | SecurityException | IllegalAccessException | IllegalArgumentException
 				| InvocationTargetException e) {
 			e.printStackTrace();
 		}
 	}
-
 }

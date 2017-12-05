@@ -14,14 +14,20 @@ public class RestfullDaoImp implements RestfulDao {
 	}
 
 	@Override
-	public JSONArray getJsonArray(String httpUrl,Map<String, Object> map, List<Object> listKey, List<Object> listValue) {
+	public JSONArray getJsonArray(String httpUrl, Map<String, Object> map, List<Object> listKey, List<Object> listValue) {
 		QueryDataT qd = new QueryDataT(httpUrl, map, listKey, listValue);
 		return qd.getJsonArrayByList();
 	}
 
 	@Override
-	public JSONArray getJsonArray(String httpUrl,Map<String, Object> map, String json) {
+	public JSONArray getJsonArray(String httpUrl, Map<String, Object> map, String json) {
 		QueryDataT qd = new QueryDataT(httpUrl, map, json);
 		return qd.getJsonArrayByJson();
+	}
+
+	@Override
+	public JSONArray getJsonArrayGet(String httpUrl, Map<String, Object> map) {
+		QueryDataT qd = new QueryDataT(httpUrl, map);
+		return qd.getJsonArrayByGet();
 	}
 }

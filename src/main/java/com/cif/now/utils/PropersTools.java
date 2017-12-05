@@ -7,8 +7,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Properties;
 import java.util.Set;
+
+import com.google.common.collect.Lists;
 
 public class PropersTools {
 	public static Properties propertie;
@@ -42,7 +45,7 @@ public class PropersTools {
 	// 根据key值获得value值
 	public static String getValue(String key) {
 		String value = propertie.getProperty(key);// 得到某一属性的值
-		System.out.println("..................." + value);
+		// System.out.println("..................." + value);
 		return value;
 	}
 
@@ -55,6 +58,17 @@ public class PropersTools {
 			key = it.next().toString();
 		}
 		return key;
+	}
+
+	// 获取所有key值
+	public static List<String> getKeys() {
+		List<String> list = Lists.newArrayList();
+		Set<Object> keys = propertie.keySet();
+		Iterator it = keys.iterator();
+		while (it.hasNext()) {
+			list.add(it.next().toString());
+		}
+		return list;
 	}
 
 	public static void main(String[] args) {

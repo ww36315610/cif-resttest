@@ -11,7 +11,9 @@ import com.alibaba.fastjson.JSONArray;
 public interface RestfulDao {
 	public JSONArray getJsonArray(String idNo);
 
-	public JSONArray getJsonArray(String httpUrl,Map<String, Object> map, List<Object> listKey, List<Object> listValue);
+	public JSONArray getJsonArrayGet(String httpUrl, Map<String, Object> map);
 
-	public JSONArray getJsonArray(String httpUrl,Map<String, Object> map, String json);
+	public JSONArray getJsonArray(String httpUrl, Map<String, Object> map, List<Object> listKey, List<Object> listValue);
+
+	public JSONArray getJsonArray(String httpUrl, Map<String, Object> map, String json);
 }

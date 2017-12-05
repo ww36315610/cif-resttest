@@ -19,13 +19,19 @@ public class TagQueryController {
 	String httpUrlMultiTagName = "https://api.puhuifinance.com/cif-utc-rest/api/v1/multiTagName";
 	String httpUrlTagType = "https://api.puhuifinance.com/cif-utc-rest/api/v1/tagType";
 	String httpUrlTagWithCurrency = "https://api.puhuifinance.com/cif-utc-rest/api/v1/tagWithCurrency";
-	
-//	String httpUrlMultiIdCardNum = "https://api.puhuifinance.com/cif-utc-rest-pre/api/v1/multiIdCardNum";
-//	String httpUrlOneIdCardNum = "https://api.puhuifinance.com/cif-utc-rest-pre/api/v1/oneIdCardNum";
-//	String httpUrlOneTagName = "https://api.puhuifinance.com/cif-utc-rest-pre/api/v1/oneTagName";
-//	String httpUrlMultiTagName = "https://api.puhuifinance.com/cif-utc-rest-pre/api/v1/multiTagName";
-//	String httpUrlTagType = "https://api.puhuifinance.com/cif-utc-rest-pre/api/v1/tagType";
-//	String httpUrlTagWithCurrency = "https://api.puhuifinance.com/cif-utc-rest-pre/api/v1/tagWithCurrency";
+
+	// String httpUrlMultiIdCardNum =
+	// "https://api.puhuifinance.com/cif-utc-rest-pre/api/v1/multiIdCardNum";
+	// String httpUrlOneIdCardNum =
+	// "https://api.puhuifinance.com/cif-utc-rest-pre/api/v1/oneIdCardNum";
+	// String httpUrlOneTagName =
+	// "https://api.puhuifinance.com/cif-utc-rest-pre/api/v1/oneTagName";
+	// String httpUrlMultiTagName =
+	// "https://api.puhuifinance.com/cif-utc-rest-pre/api/v1/multiTagName";
+	// String httpUrlTagType =
+	// "https://api.puhuifinance.com/cif-utc-rest-pre/api/v1/tagType";
+	// String httpUrlTagWithCurrency =
+	// "https://api.puhuifinance.com/cif-utc-rest-pre/api/v1/tagWithCurrency";
 	static Map<String, Object> map = new HashMap<String, Object>();
 	static {
 		String autoUrl = "https://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
@@ -105,7 +111,7 @@ public class TagQueryController {
 			map.put("param", "xy8a885b37a2405351cb2dcf49076ee76fc9f4dee398a60e5affae07f0e44c619220160926");
 			req.setParams(map);
 			json = JSONObject.toJSONString(req);
-			// System.out.println(">>>>>" + json);
+			json = "{\"channelId\":\"3000\",\"delayCount\":0,\"needDebugInfo\":true,\"params\":{\"param\":\"622301198103201750\",\"tagType\":\"un_use_red_packet\"}";
 		} else if (url.equals("httpUrlTagWithCurrency")) {
 			req.setChannelId("4000");
 			map.put("requestId", "5");
@@ -124,7 +130,7 @@ public class TagQueryController {
 		System.err.println("--------------------------------------------------");
 		// pc.testOneIdCardNum();
 		System.err.println("--------------------------------------------------");
-		pc.testOneTagName();
+		// pc.testOneTagName();
 		System.err.println("--------------------------------------------------");
 		// pc.testMultiTagName();
 		System.err.println("--------------------------------------------------");

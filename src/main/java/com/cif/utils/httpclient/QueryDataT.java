@@ -31,6 +31,16 @@ public class QueryDataT {
 		this.map = header;
 		this.json = json;
 	}
+	
+	public QueryDataT(String httpUrl, Map<String, Object> header) {
+		this.httpUrl = httpUrl;
+		this.map = header;
+	}
+
+	public JSONArray getJsonArrayByGet() {
+		jsonHttp = hcdi.getHttp(client, httpUrl, map);
+		return jsonHttp;
+	}
 
 	public JSONArray getJsonArrayByJson() {
 		jsonHttp = hcdi.postHttp(client, httpUrl, map, json);

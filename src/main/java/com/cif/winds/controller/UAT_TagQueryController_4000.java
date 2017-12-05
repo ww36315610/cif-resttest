@@ -17,12 +17,16 @@ public class UAT_TagQueryController_4000 implements Runnable {
 	String httpUrlMultiIdCardNum = "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/multiIdCardNum";
 	String httpUrlOneIdCardNum = "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/oneIdCardNum";
 	String httpUrlOneTagName = "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/oneTagName";
+
 	// String httpUrlOneTagName =
 	// "https://api.puhuifinance.com/cif-utc-rest/api/v1/oneTagName";
 	String httpUrlMultiTagName = "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/multiTagName";
 	// String httpUrlTagType =
-	// "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/tagType";
-	String httpUrlTagType = "http://ut1.zuul.pub.puhuifinance.com:8765/cif-utc-rest/api/v1/tagType";
+	// "http://ut1.zuul.pub.puhuifinance.com:8765/cif-utc-rest/api/v1/tagType";
+	private static final String httpUrlTagType = "http://cif-utc-rest.cif.dev/api/v1/moxie";
+	// String httpUrlTagType =
+	// "http://d1.zuul.pub.puhuifinance.com:8765/cif-utc-rest/api/v1/tagType";
+
 	String httpUrlTagWithCurrency = "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/currencyTag";
 	static Map<String, Object> map = new HashMap<String, Object>();
 	RestfulDao rd = new RestfullDaoImp();
@@ -113,6 +117,9 @@ public class UAT_TagQueryController_4000 implements Runnable {
 			req.setParams(map);
 			json = JSONObject.toJSONString(req);
 			json = "{\"channelId\":\"4000\",\"params\":{\"requestId\":\"1571\",\"tagType\":\"征信\",\"reportNo\":\"2015111718000100000001\"},\"sync\":false}";
+			json ="{\"tagType\":\"fund\",\"mvalue\":\"94fef7b10c72740fdb2f8959c588f272\",\"mkey\":\"user_id\",\"channelId\":\"3003\"}";
+			
+			json="{\"tagType\":\"insurance\",\"mvalue\":\"94fef7b10c72740fdb2f8959c588f272\",\"mkey\":\"user_id\",\"channelId\":\"3003\"}";
 			System.out.println(json);
 			// json =
 			// "{\"channelId\":\"3001\",\"delayCount\":0,\"needDebugInfo\":true,\"params\":{\"idCardNum\":\"110119198903031100\",\"tagType\":\"bestbuy\"},\"sync\":false}";
@@ -121,7 +128,7 @@ public class UAT_TagQueryController_4000 implements Runnable {
 			map.put("reportNo", "2015111718000100000001");
 			req.setParams(map);
 			json = JSONObject.toJSONString(req);
-			json = "{\"channelId\":\"6000\",\"params\":{\"requestId\":\"1571\",\"reportNo\":\"2015111718000100000001\"},\"sync\":false}";
+			json = "{\"params\":{\"tagType\":\"fund\",\"mvalue\":\"94fef7b10c72740fdb2f8959c588f272\",\"mkey\":\"user_id\",\"channelId\":\"3003\"},\"channelId\":\"3003\"}";
 		} else if (url.equals("httpUrlCalcTagWithIdCardNum")) {
 			map.put("requestId", "1571");
 			map.put("reportNo", "2015111718000100000001");
