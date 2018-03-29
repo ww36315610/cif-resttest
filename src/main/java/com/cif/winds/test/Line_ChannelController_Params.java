@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import com.alibaba.fastjson.JSONObject;
+import com.cif.utils.file.FileOperation;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 
@@ -16,6 +18,7 @@ import com.cif.winds.beans.TagsRequest;
 import com.cif.winds.repository.RestfulDao;
 import com.cif.winds.repository.RestfullDaoImp;
 import com.google.common.collect.Lists;
+import com.alibaba.fastjson.serializer.*;
 
 public class Line_ChannelController_Params {
 
@@ -34,6 +37,7 @@ public class Line_ChannelController_Params {
 		map.put("Content-Type", "application/json");
 	}
 
+
 	// 打开执行开关，并执行对应case
 	public void controller(RestfulDao rd) {
 		List<String> listM = getDoChannel();
@@ -45,7 +49,30 @@ public class Line_ChannelController_Params {
 			for (int i = 1; i <= listKeys.size(); i++) {
 				String json = PropersTools.getValue(switchDocker + "." + m + "_" + i);
 				JSONArray jsonResult = rd.getJsonArray(url, map, json);
-				System.out.println(jsonResult);
+				JSONObject jsonObject =  jsonResult.getJSONObject(0);
+				String string = JSONArray.toJSONString(jsonObject.getJSONObject("resultMap"), SerializerFeature.WriteMapNullValue);
+				String result = json.substring(json.indexOf("{"))+"#####"+string;
+				System.out.println(result);
+			}
+		}
+	}
+
+	// 打开执行开关，并执行对应case
+	public void controller1(RestfulDao rd) {
+		List<String> listM = getDoChannel();
+		for (String m : listM) {
+			String url = PropersTools.getValue(switchDocker + ".address") + m;
+			List<String> listKeys = PropersTools.getKeys().stream().filter(keysFilter -> {
+				return keysFilter.contains(switchDocker + "." + m);
+			}).collect(Collectors.toList());
+			for (int i = 1; i <= listKeys.size(); i++) {
+				String json = PropersTools.getValue(switchDocker + "." + m + "_" + i);
+				JSONArray jsonResult = rd.getJsonArray(url, map, json);
+				JSONObject jsonObject =  jsonResult.getJSONObject(0);
+				String string = JSONArray.toJSONString(jsonObject.getJSONObject("resultMap"), SerializerFeature.WriteMapNullValue);
+				String result = json.substring(json.indexOf("{"))+"#####"+string;
+				FileOperation.writeFile("",result);
+//				System.out.println(result);
 			}
 		}
 	}

@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.cif.utils.httpclient.QueryDataT;
 
 public class RestfullDaoImp implements RestfulDao {
@@ -23,6 +24,12 @@ public class RestfullDaoImp implements RestfulDao {
 	public JSONArray getJsonArray(String httpUrl, Map<String, Object> map, String json) {
 		QueryDataT qd = new QueryDataT(httpUrl, map, json);
 		return qd.getJsonArrayByJson();
+	}
+
+	@Override
+	public JSONObject getJsonObject(String httpUrl, Map<String, Object> map, String json) {
+		QueryDataT qd = new QueryDataT(httpUrl, map,json);
+		return qd.getJsonObject();
 	}
 
 	@Override

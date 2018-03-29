@@ -1,12 +1,6 @@
 package com.cif.utils.file;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.Reader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -127,6 +121,42 @@ public class FileOperation {
 			return json.get(key).toString();
 		else
 			return null;
+	}
+
+
+	// 写文件，追加写入文件
+	public static void writeFile(String file, String conent) {
+		BufferedWriter out = null;
+		try { // true代表追加写入文件
+			out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file, true)));
+			out.write(conent + "\r\n");
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				out.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+
+	// 写文件，追加写入文件
+	public static void writeFile1(String file, String conent) {
+		BufferedWriter out = null;
+		try { // true代表追加写入文件
+			out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file)));
+			out.write(conent + "\r\n");
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				out.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 	public static void main(String[] args) {

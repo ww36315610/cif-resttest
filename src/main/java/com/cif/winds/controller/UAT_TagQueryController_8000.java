@@ -13,8 +13,10 @@ import com.cif.winds.repository.RestfullDaoImp;
 import com.google.common.collect.Maps;
 
 public class UAT_TagQueryController_8000 implements Runnable {
-	String httpUrlTagType = "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/tagType";
-	String httpUrlOneIdCardNum = "http://t1.zuul.pub.puhuifinance.com/cif-utc-rest/api/v1/oneIdCardNum";
+	String httpUrlTagType = "http://cif-utc-rest.cif.beta/api/v1/tagType";
+//	String httpUrlOneIdCardNum = "http://cif-utc-rest.cif.beta/api/v1/oneTagName";
+//	String httpUrlOneIdCardNum = "http://10.10.8.88:30333/api/v1/oneTagName";
+String httpUrlOneIdCardNum = "http://10.10.8.88:30333/trace";
 	static Map<String, Object> map = new HashMap<String, Object>();
 	RestfulDao rd = new RestfullDaoImp();
 	static {
@@ -43,12 +45,12 @@ public class UAT_TagQueryController_8000 implements Runnable {
 		Map<String, String> map = Maps.newHashMap();
 		// 构建参数实体
 		TagsRequest req = new TagsRequest();
-		req.setChannelId("8000");
-		if (url.equals("httpUrlTagType")) {
-			map.put("tagType", "jiea");
-			map.put("idCardNum", "372922198408053712");
-			map.put("requestId", "104");
-			// map.put("userId", "34");
+		req.setChannelId("3005");
+		if (url.equals("httpUrlOneTagName")) {
+//			map.put("id_no", "51132419841109107X");
+//			map.put("id_no","555");
+		    map.put("id_no", "xyf151ca1a812feb546055db1fa981418820160926");
+			map.put("tagName", "FPBAF016");
 			req.setParams(map);
 			json = JSONObject.toJSONString(req);
 			System.out.println(json);
@@ -64,8 +66,8 @@ public class UAT_TagQueryController_8000 implements Runnable {
 	static UAT_TagQueryController_8000 pc = new UAT_TagQueryController_8000();
 
 	public static void main(String[] args) {
-		 pc.testTagType();
-//		pc.testOneTagName();
+//		 pc.testTagType();
+		pc.testOneTagName();
 		// else if (url.equals("httpUrlOneTagName")) {
 		// map.put("tagName", "FL_LR_id'");
 		// map.put("requestId", "882441");

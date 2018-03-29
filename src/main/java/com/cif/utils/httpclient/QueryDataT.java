@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.alibaba.fastjson.JSONObject;
 import org.apache.http.client.HttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
 
@@ -17,6 +18,7 @@ public class QueryDataT {
 	HttpClient client = new DefaultHttpClient();
 	Map<String, Object> map = new HashMap<String, Object>();
 	JSONArray jsonHttp;
+	JSONObject jsonObject;
 	String json;
 
 	public QueryDataT(String httpUrl, Map<String, Object> header, List<Object> paramKey, List<Object> paramValue) {
@@ -50,5 +52,10 @@ public class QueryDataT {
 	public JSONArray getJsonArrayByList() {
 		jsonHttp = hcdi.postHttp(client, httpUrl, map, paramKey, paramValue);
 		return jsonHttp;
+	}
+
+	public JSONObject getJsonObject() {
+		jsonObject = hcdi.postHttpJSON(client, httpUrl, map, json);
+		return jsonObject;
 	}
 }

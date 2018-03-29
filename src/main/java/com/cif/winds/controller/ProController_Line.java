@@ -47,40 +47,34 @@ public class ProController_Line {
 		return json;
 	}
 
+
+
 	public static void main(String[] args) {
 		ProController_Line pc = new ProController_Line();
-		// String resultId = null;
-		// try {
-		// resultId = pc.method();
-		// System.out.println(">>>>>>>>>>>>>>>>>>>>>"+resultId);
-		// } catch (Exception e) {
-		// resultId = "resultId";
-		// }
-		// try {
-		// Thread.sleep(16000);
-		// } catch (InterruptedException e) {
-		// e.printStackTrace();
-		// }
-		pc.asyncTagResult("");
+		String resultId = null;
+		try {
+			//resultId = pc.method();
+			pc.asyncTagResult("");
+			//System.out.println(resultId);
+		} catch (Exception e) {
+			resultId = "resultId";
+		}
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		pc.asyncTagResult(resultId);
 	}
 
 	public void asyncTagResult(String resultId) {
 		RestfulDao rd = new RestfullDaoImp();
 		TagsRequest req = new TagsRequest();
-		// req.setChannelId("200");
-		// req.setTagIds("2001");
-		// req.addParam("resultId", resultId);
-		// String json = JSON.toJSONString(req);
-
-		req.setChannelId("7000");
-		// req.addParam("calcTime", "2017-11-25");
-		req.addParam("day", "2017-11-25");
+		req.setChannelId("200");
+		req.setTagIds("7001,7002,7003");
+		req.addParam("resultId", "93686808e8d944b2bf24120e528cba86");
+		// req.addParam("resultId", "05f209254d1c45f3b7767469ed6fb795");
 		String json = JSON.toJSONString(req);
-
-		System.out.println(json);
-		JSONObject jsonObject = (JSONObject) rd.getJsonArray(asyncTagResultURL, map, json).get(0);
-		JSONObject resultMap = JSONObject.parseObject(jsonObject.getString("resultMap"));
-		JSONArray json7005 = JSONArray.parseArray(resultMap.getString("7005"));
-		System.out.println(json7005.size());
+		System.out.println(rd.getJsonArray(asyncTagResultURL, map, json));
 	}
 }

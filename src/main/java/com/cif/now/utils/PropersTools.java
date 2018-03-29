@@ -24,8 +24,10 @@ public class PropersTools {
 		// 实现子类实现按照文件顺序写入写出
 		propertie = new OrderedProperties();
 		filePath = PropersTools.class.getClassLoader().getResource("jdbc.properties").getPath();
-		// filePath =
-		// PropersTools.class.getClassLoader().getResource("jiea_mysql.properties").getPath();
+//
+		//启动的时候用  java -Djdbc=/path/to/jdbc.pro xxxxs -cp file.jar com.finup.Main
+//		filePath =  System.getProperty("jdbc");
+		 System.err.println(filePath);
 		try {
 
 			inputFile = new FileInputStream(filePath);

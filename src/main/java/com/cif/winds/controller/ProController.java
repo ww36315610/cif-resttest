@@ -73,7 +73,8 @@ public class ProController {
 		ProController pc = new ProController();
 		String resultId = null;
 		try {
-			resultId = pc.method();
+			//resultId = pc.method();
+			pc.asyncTagResult("");
 			System.out.println(resultId);
 		} catch (Exception e) {
 			resultId = "resultId";
@@ -91,7 +92,7 @@ public class ProController {
 		TagsRequest req = new TagsRequest();
 		req.setChannelId("200");
 		req.setTagIds("2001");
-		req.addParam("resultId", resultId);
+		req.addParam("resultId", "93686808e8d944b2bf24120e528cba86");
 		// req.addParam("resultId", "05f209254d1c45f3b7767469ed6fb795");
 		String json = JSON.toJSONString(req);
 		System.out.println(rd.getJsonArray(asyncTagResultURL, map, json));

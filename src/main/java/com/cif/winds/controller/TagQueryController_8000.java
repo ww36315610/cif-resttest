@@ -16,7 +16,7 @@ public class TagQueryController_8000 implements Runnable {
 	static Map<String, Object> map = new HashMap<String, Object>();
 	RestfulDao rd = new RestfullDaoImp();
 	String httpUrlMultiIdCardNum = "https://api.puhuifinance.com/cif-utc-rest/api/v1/multiIdCardNum";
-	String httpUrlOneIdCardNum = "https://api.puhuifinance.com/cif-utc-rest/api/v1/oneIdCardNum";
+	String httpUrlOneIdCardNum = "https://api.puhuifinance.com/cif-utc-restapi/v1/oneIdCardNum";
 	String httpUrlOneTagName = "https://api.puhuifinance.com/cif-utc-rest/api/v1/oneTagName";
 	String httpUrlMultiTagName = "https://api.puhuifinance.com/cif-utc-rest/api/v1/multiTagName";
 	String httpUrlTagType = "https://api.puhuifinance.com/cif-utc-rest/api/v1/tagType";
@@ -60,7 +60,7 @@ public class TagQueryController_8000 implements Runnable {
 		Map<String, String> map = Maps.newHashMap();
 		// 构建参数实体
 		TagsRequest req = new TagsRequest();
-		req.setChannelId("8000");
+		req.setChannelId("3005");
 		if (url.equals("httpUrlTagType")) {
 			map.put("tagType", "jiea");
 			map.put("idCardNum", "110111198909191416");
@@ -69,9 +69,10 @@ public class TagQueryController_8000 implements Runnable {
 			json = JSONObject.toJSONString(req);
 			System.out.println(json);
 		} else if (url.equals("httpUrlOneTagName")) {
-			map.put("idCardNum", "110111198909191416");
-			map.put("requestId", "35");
-			map.put("tagName", "dx_request");
+			map.put("id_no", "50038119891223941X");
+//		    map.put("id_no", "xy9cb23e7c01fe614fbd51a39fca70bdfb8c33830c0f4edc51145cc0c9b2f9973520160926");
+			map.put("tagName", "FPBAF016");
+
 			req.setParams(map);
 			json = JSONObject.toJSONString(req);
 			System.out.println(json);
@@ -82,7 +83,7 @@ public class TagQueryController_8000 implements Runnable {
 	static TagQueryController_8000 pc = new TagQueryController_8000();
 
 	public static void main(String[] args) {
-		pc.testTagType();
+//		pc.testTagType();
 		pc.testOneTagName();
 	}
 

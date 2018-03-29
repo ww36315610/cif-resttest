@@ -13,7 +13,70 @@ import com.alibaba.fastjson.JSON;
  */
 @Data
 public class TagsRequest {
-	@Getter
+	public String getChannelId() {
+		return channelId;
+	}
+
+	public void setChannelId(String channelId) {
+		this.channelId = channelId;
+	}
+
+	public String getTagIds() {
+		return tagIds;
+	}
+
+	public void setTagIds(String tagIds) {
+		this.tagIds = tagIds;
+	}
+
+	public String getResultId() {
+		return resultId;
+	}
+
+	public void setResultId(String resultId) {
+		this.resultId = resultId;
+	}
+
+	public Map<String, String> getParams() {
+		return params;
+	}
+
+	public void setParams(Map<String, String> params) {
+		this.params = params;
+	}
+
+	public String getVerifyType() {
+		return verifyType;
+	}
+
+	public void setVerifyType(String verifyType) {
+		this.verifyType = verifyType;
+	}
+
+	public int getDelayCount() {
+		return delayCount;
+	}
+
+	public void setDelayCount(int delayCount) {
+		this.delayCount = delayCount;
+	}
+
+	public boolean isSync() {
+		return isSync;
+	}
+
+	public void setSync(boolean sync) {
+		isSync = sync;
+	}
+
+	public boolean isNeedDebugInfo() {
+		return needDebugInfo;
+	}
+
+	public void setNeedDebugInfo(boolean needDebugInfo) {
+		this.needDebugInfo = needDebugInfo;
+	}
+
 	private String channelId;
 	// password
 	private String tagIds;

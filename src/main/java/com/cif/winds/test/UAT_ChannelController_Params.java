@@ -44,6 +44,7 @@ public class UAT_ChannelController_Params {
 			}).collect(Collectors.toList());
 			for (int i = 1; i <= listKeys.size(); i++) {
 				String json = PropersTools.getValue(switchDocker + "." + m + "_" + i);
+				System.out.println(json);
 				JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, map, json).get(0);
 				System.out.println(jsonResult);
 				if (jsonResult.getInteger("failCount") > 0)
