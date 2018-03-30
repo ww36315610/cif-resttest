@@ -198,6 +198,25 @@ public class newLine_ChannelController_Params {
 		}
 	}
 
+	// pre环境根line环境进行比对
+	public void controller5(RestfulDao rd) {
+		List<String> listM = getDoChannel();
+		for (String m : listM) {
+			String url = PropersTools.getValue(switchDocker + ".address") + m;
+			List<String> listKeys = PropersTools.getKeys().stream().filter(keysFilter -> {
+				return keysFilter.contains(switchDocker + "." + m);
+			}).collect(Collectors.toList());
+			for (int i = 1; i <= listKeys.size(); i++) {
+				String json = PropersTools.getValue(switchDocker + "." + m + "_" + i);
+
+				JSONObject jsonResult = rd.getJsonObject(url, map, json);
+				JSONObject resultMap = jsonResult.getJSONObject("resultMap");
+				String resultMapstring = JSONObject.toJSONString(resultMap, SerializerFeature.WriteMapNullValue);
+				System.err.println(resultMapstring);
+			}
+		}
+	}
+
 	// 获取执行方法
 	public List<String> getDoChannel() throws NullPointerException {
 		List<String> listMethod = Lists.newArrayList();
@@ -212,6 +231,6 @@ public class newLine_ChannelController_Params {
 	public static void main(String[] args) throws Exception {
 		RestfulDao rd = new RestfullDaoImp();
 		newLine_ChannelController_Params ucp = new newLine_ChannelController_Params();
-		ucp.controller4(rd);
+		ucp.controller5(rd);
 	}
 }

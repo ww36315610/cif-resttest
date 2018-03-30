@@ -16,7 +16,7 @@ public class HttpResponse {
 	HttpClientImp httpCL = new HttpClientImp();
 	HttpClient client = new DefaultHttpClient();
 	OAuth2AccessToken token = Oauth.getToken();
-	String before = "http://t1.zuul.pub.puhuifinance.com/cif-rest-server/";
+	String before = "https://api.puhuifinance.com/cif-rest-server/";
 
 	public JSONArray getResponse(JSONObject jsonObjects, String change) {
 		String url = before + jsonObjects.getString("url");

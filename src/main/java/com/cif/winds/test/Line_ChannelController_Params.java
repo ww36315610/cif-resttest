@@ -51,8 +51,8 @@ public class Line_ChannelController_Params {
 				JSONArray jsonResult = rd.getJsonArray(url, map, json);
 				JSONObject jsonObject =  jsonResult.getJSONObject(0);
 				String string = JSONArray.toJSONString(jsonObject.getJSONObject("resultMap"), SerializerFeature.WriteMapNullValue);
-				String result = json.substring(json.indexOf("{"))+"#####"+string;
-				System.out.println(result);
+//				String result = json.substring(json.indexOf("{"))+"#####"+string;
+				System.out.println(string);
 			}
 		}
 	}
