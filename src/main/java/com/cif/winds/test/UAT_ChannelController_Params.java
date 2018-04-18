@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 
@@ -16,6 +17,7 @@ import com.cif.winds.beans.TagsRequest;
 import com.cif.winds.repository.RestfulDao;
 import com.cif.winds.repository.RestfullDaoImp;
 import com.google.common.collect.Lists;
+import org.testng.Assert;
 
 public class UAT_ChannelController_Params {
 
@@ -46,9 +48,15 @@ public class UAT_ChannelController_Params {
 				String json = PropersTools.getValue(switchDocker + "." + m + "_" + i);
 				System.out.println(json);
 				JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, map, json).get(0);
-				System.out.println(jsonResult);
+				String rsultString = JSONObject.toJSONString(jsonResult.getJSONObject("resultMap"), SerializerFeature.WriteMapNullValue);
+				System.out.println("【"+i+"】"+rsultString);
+				if(i%32 ==0)System.out.println("**************更换场景******************");
+				if(jsonResult.getInteger("failCount")>1){
+					Assert.assertTrue(false,"【"+i+"】错误次数大于1");
+				}
+//				System.out.println(jsonResult);
 				if (jsonResult.getInteger("failCount") > 0)
-					System.out.println(json + "-----" + jsonResult);
+					System.out.println("【"+i+"】"+jsonResult);
 			}
 		}
 	}

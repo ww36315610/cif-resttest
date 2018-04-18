@@ -28,7 +28,7 @@ public class linlin_ChannelController_Params {
 	RestfulDao rd = new RestfullDaoImp();
 
 
-	private static final String filePathS="/Users/apple/Documents/linlin/0328/";
+	private static final String filePathS="/Users/apple/Documents/linlin/0402/";
 	//	private final static String filePath = "/Users/apple/Documents/linlin_idno_result.txt";
 	//	private final static String filePath = "/Users/apple/Documents/linlin_mobile_result.txt";
 	//	private static final String filePath=filePathS + "linlin_[user_id]_result.txt";
@@ -39,8 +39,10 @@ public class linlin_ChannelController_Params {
 	//  private static final String filePath=filePathS + "linlin_[bank_card_pay_id]_result.txt";
 	//  private static final String filePath=filePathS + "linlin_[phone_binded]_result.txt";
 	//  private static final String filePath=filePathS + "linlin_[login_email]_result.txt";
-      private static final String filePath=filePathS + "linlin_[member_name]_result.txt";
+//      private static final String filePath=filePathS + "linlin_[member_name]_result.txt";
 //      private static final String filePath=filePathS + "linlin_[email]_result.txt";
+
+	private static final String filePath=filePathS + "line_[third_ba]_result.txt";
 
 	static {
 		String autoUrl = "https://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
@@ -63,12 +65,20 @@ public class linlin_ChannelController_Params {
 			}).collect(Collectors.toList());
 			for (int i = 1; i <= listKeys.size(); i++) {
 				String json = PropersTools.getValue(switchDocker + "." + m + "_" + i);
+				String jsonP = json.substring(json.indexOf("{"));
+				try{
 				JSONArray jsonResult = rd.getJsonArray(url, map, json);
+				if(jsonResult.size()<1){
+					System.err.println("【"+i+"】"+jsonP);
+				}
 				JSONObject jsonObject =  jsonResult.getJSONObject(0);
 				String string = JSONObject.toJSONString(jsonObject.getJSONObject("resultMap"), SerializerFeature.WriteMapNullValue);
-				String result = json.substring(json.indexOf("{"))+"#####"+string;
+				String result = jsonP+"#####"+string;
 				FileOperation.writeFile(filePath,result);
 				System.out.println(result);
+				}catch (Exception e){
+					e.printStackTrace();
+				}
 			}
 		}
 	}

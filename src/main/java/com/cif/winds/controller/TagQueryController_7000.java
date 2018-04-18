@@ -27,6 +27,7 @@ public class TagQueryController_7000 {
 	}
 
 	public void testTagType() {
+
 		String json1 = "{\"channelId\":\"7000\",\"params\":{\"day\":\"2017-11-13\"}";
 		System.out.println(rd.getJsonArray(httpUrlTagType, map, json1));
 	}

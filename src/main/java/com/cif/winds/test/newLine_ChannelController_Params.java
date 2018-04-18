@@ -179,12 +179,13 @@ public class newLine_ChannelController_Params {
 					String resultMapstring = JSONObject.toJSONString(resultMap, SerializerFeature.WriteMapNullValue);
 					String resultMySub1 = resultMapstring.substring(resultMapstring.lastIndexOf(":")+1);
 					String resultMySub2 = resultMySub1.substring(0,resultMySub1.indexOf("}"));
+//					String resultMySub2 = resultMySub1.substring(0);
 					String r2 = r1;
 					if(r1.contains(".")) {
 						r2 = r1.substring(0, r1.indexOf("."));
 					}
 					if(!resultMySub2.equals(r2)) {
-						FileOperation.writeFile("/Users/apple/Documents/result_1000/pre_compare_taobao5.txt","【" + i + "】" + r1 + "---" + resultMySub2);
+						FileOperation.writeFile("/Users/apple/Documents/result_1000/yangPRE_compare_taobao5.txt","【" + i + "】" + r1 + "---" + resultMySub2);
 						System.err.println("【" + i + "】" + r1 + "---" + resultMySub2);
 //						System.err.println("【" + i + "】###"+json +"### MA:"+ r1 + "----pre:" + resultMySub2);
 //					System.err.println("【" + i + "】" + r1 + "---" + jsonResult);
@@ -231,6 +232,6 @@ public class newLine_ChannelController_Params {
 	public static void main(String[] args) throws Exception {
 		RestfulDao rd = new RestfullDaoImp();
 		newLine_ChannelController_Params ucp = new newLine_ChannelController_Params();
-		ucp.controller5(rd);
+		ucp.controller3(rd);
 	}
 }
