@@ -33,6 +33,15 @@ public class RestfullDaoImp implements RestfulDao {
 	}
 
 	@Override
+	public List<JSONArray> getJsonArrayByThread(String httpUrl, Map<String, Object> map, List<String> jsonList) {
+		List<JSONArray> listResult = null;
+		for (String json : jsonList) {
+			QueryDataT qd = new QueryDataT(httpUrl, map, json);
+			listResult.add(qd.getJsonArrayByJson());
+		}
+		return listResult;
+	}
+	@Override
 	public JSONArray getJsonArrayGet(String httpUrl, Map<String, Object> map) {
 		QueryDataT qd = new QueryDataT(httpUrl, map);
 		return qd.getJsonArrayByGet();

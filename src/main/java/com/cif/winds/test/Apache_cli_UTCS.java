@@ -1,5 +1,6 @@
 package com.cif.winds.test;
 
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.cif.now.utils.PropersTools;
@@ -63,8 +64,8 @@ public class Apache_cli_UTCS {
 					JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, mm, json).get(0);
 					System.out.println("【"+i+"】"+jsonResult);
 			}catch(Exception e){
-					String ejson = JSONObject.parseObject(json).getJSONObject("params").getString("tagName");
-					System.out.println("【"+i+"】:"+ejson +"--"+ e.getMessage());
+					json = JSONObject.parseObject(json).getJSONObject("params").getString("tagName");
+					System.out.println("【"+i+"】:"+json +"--"+ e.getMessage());
 					e.printStackTrace();
 				}
 			}
@@ -82,12 +83,15 @@ public class Apache_cli_UTCS {
 			List<String> listKeys = PropersTools.getKeys().stream().filter(keysFilter -> {
 				return keysFilter.contains(switchDocker + "." + m);
 			}).collect(Collectors.toList());
+
+			List<JSONArray> jsonResultList = rd.getJsonArrayByThread(url,mm,listKeys);
+
 			for (int i = 1; i <= listKeys.size(); i++) {
 				a=i;
 				try{
 					jsonThread = PropersTools.getValue(switchDocker + "." + m + "_" + i);
-//					ThreadPoolUtils.getThreadPoolExecutor();
 					ThreadPoolUtils.getThreadPoolExecutor().execute(() -> {
+						a++;
 						JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, mm, jsonThread).get(0);
 						System.out.println("【" + a + "】" + jsonResult);
 					});
@@ -114,7 +118,8 @@ public class Apache_cli_UTCS {
 
 
     public static void main(String[] args) throws Exception {
-		resultC(args);
+//		resultC(args);
+		resultCThread(args);
 	}
 	public static void result(String[] args) {
 		Options opts = new Options();
@@ -157,4 +162,16 @@ public class Apache_cli_UTCS {
 			e.printStackTrace();
 		}
 	  }
+
+	public static void resultCThread(String[] args) {
+		RestfulDao rd = new RestfullDaoImp();
+		Apache_cli_UTCS ucp = new Apache_cli_UTCS();
+		try {
+			Map<String, Object> mpp = Maps.newHashMap();
+			mpp= args.length>0?map:mapTest;
+			ucp.controllerThread(rd,mpp);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 	}

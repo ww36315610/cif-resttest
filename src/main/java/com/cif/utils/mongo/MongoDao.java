@@ -2,10 +2,13 @@ package com.cif.utils.mongo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Pattern;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.google.common.collect.Maps;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
@@ -47,6 +50,31 @@ public class MongoDao {
 		dbConn.insert(new BasicDBObject(json));
 		return time;
 	}
+
+
+	// 从文件中读取bason然后插入mongo、、并返回进件号[long]
+	public static long insertMongoLong(DBCollection dbConn, JSONObject jsonObject, long time) {
+		// String className = FileOperation.getStore(jsonArray, "className");
+		// String[] classNameSplit = className.split("\\.");
+		DBObject dbo = (DBObject) com.mongodb.util.JSON.parse(jsonObject.toJSONString());
+		JSONObject json = (JSONObject) JSONObject.toJSON(dbo);
+		json.replace("applyNo", time + "");
+		json.replace("requestId", time + "");
+		json.replace("_id", time + 1 + "");
+		json.replace("idCardNum", time + 2 + "");
+		json.replace("idNo", time + 2 + "");
+		json.replace("idNnum", time + 2 + "");
+		try {
+			dbConn.insert(new BasicDBObject(json));
+		}catch (Exception e){
+			json.replace("_id", time + 2+time + "");
+			dbConn.insert(new BasicDBObject(json));
+			System.out.println("-----------"+json.getString("_id"));
+			e.printStackTrace();
+		}
+		return time;
+	}
+
 
 	// 插入mongo
 	public static void insertMongo(DBCollection dbConn, JSONArray jsonArray) {

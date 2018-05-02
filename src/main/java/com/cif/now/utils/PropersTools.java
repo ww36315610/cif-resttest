@@ -25,9 +25,9 @@ public class PropersTools {
 		propertie = new OrderedProperties();
 		filePath = PropersTools.class.getClassLoader().getResource("jdbc.properties").getPath();
 //
-		//启动的时候用  java -Djdbc=/path/to/jdbc.pro xxxxs -cp file.jar com.finup.Main
-		filePath =  System.getProperty("jdbc");
-		 System.err.println(filePath);
+//		启动的时候用  java -Djdbc=/path/to/jdbc.pro xxxxs -cp file.jar com.finup.Main
+//		filePath =  System.getProperty("jdbc");
+//		 System.err.println(filePath);
 		try {
 
 			inputFile = new FileInputStream(filePath);

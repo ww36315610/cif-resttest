@@ -122,6 +122,7 @@ public class HttpClientImp {
 				jsonArry = getResponse(response);
 			} else {
 				System.out.println("===code====" + response.getStatusLine().getStatusCode());
+				return JSONArray.parseArray("[{\"resultMap\":{\"返回code#####\":"+response.getStatusLine().getStatusCode()+"}}]");
 			}
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();

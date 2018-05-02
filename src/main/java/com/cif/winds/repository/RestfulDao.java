@@ -19,4 +19,6 @@ public interface RestfulDao {
 	public JSONArray getJsonArray(String httpUrl, Map<String, Object> map, String json);
 
 	public JSONObject getJsonObject(String httpUrl, Map<String, Object> map, String json);
+
+	public List<JSONArray> getJsonArrayByThread(String httpUrl, Map<String, Object> map,  List<String> jsonList);
 }

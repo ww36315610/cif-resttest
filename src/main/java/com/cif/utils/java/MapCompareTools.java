@@ -1,5 +1,8 @@
 package com.cif.utils.java;
 
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializerFeature;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -66,6 +69,12 @@ public class MapCompareTools implements Comparable<MapCompareTools> {
         for (String key : beforeMap.keySet()) {
             Object beforeValue = beforeMap.get(key);
             Object afterValue = afterMap.get(key);
+            try {
+                beforeValue = null==(beforeMap.get(key)) ? null : beforeMap.get(key).toString().trim();
+                afterValue = null==(afterMap.get(key)) ? null : afterMap.get(key).toString().trim();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
             if (beforeValue.equals(afterValue)) {
             } else if (afterValue == null) {
                 output = output + key + " is missing, ";
@@ -80,7 +89,7 @@ public class MapCompareTools implements Comparable<MapCompareTools> {
             output = output + key + " was added with value " + afterMap.get(key) + ", ";
         }
 
-        if (output == null) {
+        if ("".equals(output)||output == null) {
             output = "Same map";
         }
 //        System.out.println("----"+output);
@@ -89,7 +98,30 @@ public class MapCompareTools implements Comparable<MapCompareTools> {
     }
 
 
-    /***
+    /**
+     * 传入jsonObject，获取map并比较
+     * @param jsonOne
+     * @param jsonTwo
+     * @return
+     */
+    public static String compareResult(JSONObject jsonOne, JSONObject jsonTwo,String resultMap){
+        if(jsonOne.isEmpty()||jsonTwo.isEmpty()){
+            System.out.println("jsonResut 返回有为空的");
+        }else{
+            String jsonMapOne = JSONObject.toJSONString(jsonOne.get(resultMap), SerializerFeature.WriteMapNullValue);
+            Map<String,Object> mapOne = JSONObject.parseObject(jsonMapOne);
+            String jsonMapTwo = JSONObject.toJSONString(jsonTwo.get(resultMap), SerializerFeature.WriteMapNullValue);
+            Map<String,Object> mapTwo = JSONObject.parseObject(jsonMapTwo);
+            return compareResult(mapOne,mapTwo);
+        }
+        return "jsonResut 返回有为空的";
+    }
+
+    /**
+     * 比较连个Set集合
+     * @param beforeSet
+     * @param afterSet
+     * @return 相同返回Same map  不同返回不同key或者value
      */
 
     public static String SetCompare(Set<MapCompareTools> beforeSet, Set<MapCompareTools> afterSet) {
@@ -132,4 +164,6 @@ public class MapCompareTools implements Comparable<MapCompareTools> {
         System.out.println("44444"+output);
         return output;
     }
+
+
 }

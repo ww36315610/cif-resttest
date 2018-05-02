@@ -11,6 +11,7 @@ public class ConfigTools {
 	static {
 		String path = ConfigTools.class.getClassLoader()
 				.getResource(Contants.FILE).getPath();
+//		String path = System.getProperty("oauthFile");
 		Config parsedConfig = ConfigFactory.parseFile(new File(path));
 		config = ConfigFactory.load(parsedConfig);
 	}

@@ -46,7 +46,7 @@ public class UAT_ChannelController_Params {
 			}).collect(Collectors.toList());
 			for (int i = 1; i <= listKeys.size(); i++) {
 				String json = PropersTools.getValue(switchDocker + "." + m + "_" + i);
-				System.out.println(json);
+//				System.out.println(json);
 				JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, map, json).get(0);
 				String rsultString = JSONObject.toJSONString(jsonResult.getJSONObject("resultMap"), SerializerFeature.WriteMapNullValue);
 				System.out.println("【"+i+"】"+rsultString);
@@ -75,7 +75,24 @@ public class UAT_ChannelController_Params {
 	public static void main(String[] args) throws Exception {
 		RestfulDao rd = new RestfullDaoImp();
 		UAT_ChannelController_Params ucp = new UAT_ChannelController_Params();
-		ucp.controller(rd);
+//		ucp.controller(rd);
+
+		for(int i=0;i<3;i++){
+			new Thread(new Runnable(){
+    		public void run(){
+//				ucp.controller(rd);
+				for(int i=0;i<100;i++){
+					try {
+						Thread.sleep(200);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+					System.out.println(i+":::::"+Thread.currentThread().getName());
+				}
+			}
+		}).start();
+	}
+
 
 		// String name =null;
 		// if(StringUtils.isBlank(name)){
