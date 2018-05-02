@@ -18,6 +18,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.config.*;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 
@@ -54,9 +55,12 @@ public class HttpClientImp {
 		JSONArray jsonArry = null;
 		HttpPost post = new HttpPost(url);
 		//设置超时时间
+//		RequestConfig requestConfig = RequestConfig.custom()
+//				.setConnectTimeout(20*5000).setConnectionRequestTimeout(20*1000)
+//				.setSocketTimeout(20*5000).build();
 		RequestConfig requestConfig = RequestConfig.custom()
-				.setConnectTimeout(20*5000).setConnectionRequestTimeout(20*1000)
-				.setSocketTimeout(20*5000).build();
+				.setConnectTimeout(20*1).setConnectionRequestTimeout(20*1)
+				.setSocketTimeout(20*1).build();
 		post.setConfig(requestConfig);
 		for (Map.Entry<String, Object> entry : map.entrySet()) {
 			String key = entry.getKey().toString();
@@ -98,10 +102,13 @@ public class HttpClientImp {
 		JSONArray jsonArry = null;
 		HttpPost post = new HttpPost(url);
 		//设置超时时间
-		RequestConfig requestConfig = RequestConfig.custom()
-				.setConnectTimeout(20*5000).setConnectionRequestTimeout(20*1000)
-				.setSocketTimeout(20*5000).build();
-		post.setConfig(requestConfig);
+//		RequestConfig requestConfig = RequestConfig.custom()
+//				.setConnectTimeout(20*5000).setConnectionRequestTimeout(20*1000)
+//				.setSocketTimeout(20*5000).build();
+		RequestConfig config = RequestConfig.custom().setConnectTimeout(10000).setSocketTimeout(10000).build();
+		client = HttpClientBuilder.create().setDefaultRequestConfig(config).build();
+//		client = HttpClientBuilder.create().setConnec
+//		post.setConfig(requestConfig);
 		// for (Map.Entry<String, Object> entry : map.entrySet()) {
 		// String key = entry.getKey().toString();
 		// String value = entry.getValue().toString();
@@ -176,9 +183,12 @@ public class HttpClientImp {
 		JSONObject object = null;
 		HttpPost post = new HttpPost(url);
 		//设置超时时间
+//		RequestConfig requestConfig = RequestConfig.custom()
+//				.setConnectTimeout(20*5000).setConnectionRequestTimeout(20*1000)
+//				.setSocketTimeout(20*5000).build();
 		RequestConfig requestConfig = RequestConfig.custom()
-				.setConnectTimeout(20*5000).setConnectionRequestTimeout(20*1000)
-				.setSocketTimeout(20*5000).build();
+				.setConnectTimeout(20*1).setConnectionRequestTimeout(20*1)
+				.setSocketTimeout(20*1).build();
 		post.setConfig(requestConfig);
 		map.forEach((k, v) -> {
 			post.setHeader(k, v.toString());

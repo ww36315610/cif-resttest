@@ -1,7 +1,6 @@
 package com.cif.winds.test;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.cif.now.utils.PropersTools;
@@ -19,7 +18,6 @@ import com.google.common.collect.Maps;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.lucene.search.spans.SpanWeight;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,7 +25,7 @@ import java.util.Map;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.stream.Collectors;
 
-public class HttpClientRequestDemo {
+public class HttpClientFromMongo {
 
 	private static final String switchDocker = PropersTools.getValue("switch");
 	private static final String method = PropersTools.getValue("method");
@@ -42,7 +40,7 @@ public class HttpClientRequestDemo {
 		header = headerPut();
 	}
 
-	public HttpClientRequestDemo(){
+	public HttpClientFromMongo(){
 		rd = new RestfullDaoImp();
 		db = MongoOperation.getMongoDatabase("mongo_feather_utc_rest");
 		dbConn = MongoOperation.mongoDBConn(method);
@@ -51,7 +49,7 @@ public class HttpClientRequestDemo {
 	public static void main(String[] args) {
 		String fileOut = "/Users/apple/Documents/linlin/mongo_0428.txt";
 		String fileCSV = "/Users/apple/Downloads/graylog-search-result-absolute-2018-04-17T00_00_00.000Z-2018-04-17T03_00_00.000Z.csv";
-		HttpClientRequestDemo hcrd = new HttpClientRequestDemo();
+		HttpClientFromMongo hcrd = new HttpClientFromMongo();
 //		hcrd.controller();
 //		hcrd.controllerT();
 //		hcrd.caseMake();
@@ -68,15 +66,9 @@ public class HttpClientRequestDemo {
 			new Thread(new Runnable(){
 				public void run(){
 					//	比对
-//					try {
-//						Thread.sleep(200);
-//					} catch (InterruptedException e) {
-//						e.printStackTrace();
-//					}
-					hcrd.controllerTCompareList(listCSV,before,after,fileOut);
-
+//					hcrd.controllerTCompareList(listCSV,before,after,fileOut);
 					//写入mongo-response-request
-//					hcrd.controllerTSaveMongo(listCSV,fileOut);
+				hcrd.controllerTSaveMongo(listCSV,fileOut);
 				}
 			}).start();
 		}
@@ -158,9 +150,6 @@ public class HttpClientRequestDemo {
 						String url = address + m;
 						String json = PropersTools.getValue(switchDocker + "." + m + "_" + a);
 						JSONObject jsonResultPre = (JSONObject) rd.getJsonArray(url, header, json).get(0);
-						System.out.println("【"+a+"】"+jsonResultPre);
-//						url = url.replace("cif-utc-rest-pre","cif-utc-rest");
-						url = url.replace(beforeUrl,afterUrl);
 						JSONObject jsonResultLine = (JSONObject) rd.getJsonArray(url, header, json).get(0);
 						System.out.println("【"+a+"】line::::"+jsonResultLine);
 						if(!(jsonResultLine.getString("resultMap").contains("code#####")||jsonResultPre.getString("resultMap").contains("code#####"))) {
