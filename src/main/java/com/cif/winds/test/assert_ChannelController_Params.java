@@ -13,6 +13,7 @@ import com.cif.winds.repository.RestfulDao;
 import com.cif.winds.repository.RestfullDaoImp;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.netflix.hystrix.exception.HystrixBadRequestException;
 import org.apache.commons.lang3.tuple.Pair;
 import org.codehaus.jackson.annotate.JsonPropertyOrder;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
@@ -24,6 +25,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+
 public class assert_ChannelController_Params {
 
 	private static String switchDocker = PropersTools.getValue("switch");
@@ -31,25 +33,25 @@ public class assert_ChannelController_Params {
 	private Pair<String, List<String>> pair;
 	static Map<String, Object> map = new HashMap<String, Object>();
 	RestfulDao rd = new RestfullDaoImp();
-//	static {
-//		String autoUrl = "https://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
-//		TagsRequest tr = new TagsRequest();
-//		OAuth2AccessToken token = Oauth.getTokenLine(autoUrl);
-//		// 设置header
-//		map.put("Accept", "*/*");
-//		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
-//		map.put("Content-Type", "application/json;charset=UTF-8");
-//	}
-
 	static {
-		String autoUrl = "http://106.75.5.205:8082/uaa/oauth/token?grant_type=client_credentials";
+		String autoUrl = "https://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
 		TagsRequest tr = new TagsRequest();
-		OAuth2AccessToken token = Oauth.getToken(autoUrl);
+		OAuth2AccessToken token = Oauth.getTokenLine(autoUrl);
 		// 设置header
 		map.put("Accept", "*/*");
 		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
-		map.put("Content-Type", "application/json");
+		map.put("Content-Type", "application/json;charset=UTF-8");
 	}
+
+//	static {
+//		String autoUrl = "http://106.75.5.205:8082/uaa/oauth/token?grant_type=client_credentials";
+//		TagsRequest tr = new TagsRequest();
+//		OAuth2AccessToken token = Oauth.getToken(autoUrl);
+//		// 设置header
+//		map.put("Accept", "*/*");
+//		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
+//		map.put("Content-Type", "application/json");
+//	}
 
 
 
@@ -72,7 +74,7 @@ public class assert_ChannelController_Params {
 //	}
 	// 打开执行开关，并执行对应case
 	public void controller(RestfulDao rd) {
-		String fileOut = "/Users/apple/Documents/result_1000/pre-0420.txt";
+		String fileOut = "/Users/apple/Documents/result_1000/pre-0502.txt";
 		String json=null;
 		List<String> listM = getDoChannel();
 		for (String m : listM) {
@@ -133,7 +135,8 @@ public class assert_ChannelController_Params {
 					json = PropersTools.getValue(switchDocker + "." + m + "_" + i);
 //					System.out.println(json);
 					JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, map, json).get(0);
-					System.out.println("【"+i+"】"+jsonResult);
+//					System.out.println("【"+i+"】"+jsonResult);
+                    System.out.println("【"+i+"】"+JSONObject.toJSONString(jsonResult.get("resultMap"),SerializerFeature.WriteMapNullValue));
 				}catch(Exception e){
 //					String ejson = JSONObject.parseObject(json).getJSONObject("params").getString("tagName");
 //					FileOperation.writeFile(fileOut,"【"+i+"】:"+ejson +"--"+ e.getMessage());
@@ -283,6 +286,23 @@ public class assert_ChannelController_Params {
 	}
 
 
+//	String receiveRequestFallBack(String id, Throwable e) {
+//
+//		assert "getUserById command failed".equals(e.getMessage());
+//
+//		throw new RuntimeException("receiveRequestFallBack failed.");
+//
+//	}
+
+//	@HystrixCommand(
+//			fallbackMethod = "receiveRequestFallBack",
+//			ignoreExceptions = {HystrixBadRequestException.class},
+//			commandProperties = {
+//					@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000"),
+//					@HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "5"),
+//					@HystrixProperty(name = "execution.timeout.enabled", value = "true")
+//			}
+//	)
 	public static void main(String[] args) throws Exception {
 		RestfulDao rd = new RestfullDaoImp();
 		assert_ChannelController_Params ucp = new assert_ChannelController_Params();

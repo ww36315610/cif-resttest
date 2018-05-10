@@ -102,7 +102,8 @@ public class MongoDao {
 		return jsona;
 	}
 
-	// 存在查询\前几行limit，返回值类型为：JSONArray 某个tablename存在的前几行
+
+	// 存在查询\前几行limit，返回值类型为：JSONArray 某个tablename存在的前几行 [例：param ="applyNo"]
 	public static JSONArray queryByExists(DBCollection dbConn, String param, int limit) {
 		JSONObject jsonObject = new JSONObject();
 		List<DBObject> list = new ArrayList<DBObject>();
@@ -130,7 +131,7 @@ public class MongoDao {
 		return jsonArray.parseArray(list.toString());
 	}
 
-	// 模糊查询 paramLey 包含 paramValue的数据
+	// 模糊查询 paramLey 包含 paramValue的数据 [例：paramKey ="applyNo" paramValue="102"]
 	public static JSONArray queryByRegex(DBCollection dbConn, String paramKey, String paramValue) {
 		JSONObject jsonObject = new JSONObject();
 		List<DBObject> list = new ArrayList<DBObject>();

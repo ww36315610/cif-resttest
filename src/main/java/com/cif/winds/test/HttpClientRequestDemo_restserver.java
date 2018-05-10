@@ -1,11 +1,11 @@
 package com.cif.winds.test;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.cif.now.utils.PropersTools;
 import com.cif.utils.file.CsvReadTools;
+import com.cif.utils.file.CsvReadTools_restserver;
 import com.cif.utils.file.FileOperation;
 import com.cif.utils.java.MapCompareTools;
 import com.cif.utils.java.Oauth;
@@ -19,7 +19,6 @@ import com.google.common.collect.Maps;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.lucene.search.spans.SpanWeight;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,7 +26,7 @@ import java.util.Map;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.stream.Collectors;
 
-public class HttpClientRequestDemo {
+public class HttpClientRequestDemo_restserver {
 
 	private static final String switchDocker = PropersTools.getValue("switch");
 	private static final String method = PropersTools.getValue("method");
@@ -42,16 +41,16 @@ public class HttpClientRequestDemo {
 		header = headerPut();
 	}
 
-	public HttpClientRequestDemo(){
+	public HttpClientRequestDemo_restserver(){
 		rd = new RestfullDaoImp();
 		db = MongoOperation.getMongoDatabase("mongo_feather_utc_rest");
 		dbConn = MongoOperation.mongoDBConn(method);
 	}
 
 	public static void main(String[] args) {
-		String fileOut = "/Users/apple/Documents/linlin/mongo_0428.txt";
-		String fileCSV = "/Users/apple/Downloads/graylog-search-result-absolute-2018-04-17T00_00_00.000Z-2018-04-17T03_00_00.000Z.csv";
-		HttpClientRequestDemo hcrd = new HttpClientRequestDemo();
+		String fileOut = "/Users/apple/Documents/linlin/restserver_0510.txt";
+		String fileCSV = "/Users/apple/Downloads/graylog-search-result-relative-14400.csv";
+		HttpClientRequestDemo_restserver hcrd = new HttpClientRequestDemo_restserver();
 //		hcrd.controller();
 //		hcrd.controllerT();
 //		hcrd.caseMake();
@@ -62,24 +61,24 @@ public class HttpClientRequestDemo {
 		//按照jdbc.properties的case走
 //		List<String> list = PropersTools.getKeys();
 		//按照读取csv的case走
-		List<String> listCSV = CsvReadTools.getCaseFromCSV(fileCSV);
+		List<String> listCSV = CsvReadTools_restserver.getDataFromCSV(fileCSV);
 
 		for(int i=0;i<1;i++){
-			new Thread(new Runnable(){
-				public void run(){
+//			new Thread(new Runnable(){
+//				public void run(){
 					//	比对
 //					try {
 //						Thread.sleep(200);
 //					} catch (InterruptedException e) {
 //						e.printStackTrace();
 //					}
-//					hcrd.controllerTCompareList(listCSV,before,after,fileOut);
+					hcrd.controllerTCompareList(listCSV,before,after,fileOut);
 
 					//写入mongo-response-request
-					hcrd.controllerTSaveMongo(listCSV,fileOut);
+//					hcrd.controllerTSaveMongo(listCSV,fileOut);
 				}
-			}).start();
-		}
+//			}).start();
+//		}
 	}
 
 
@@ -189,7 +188,8 @@ public class HttpClientRequestDemo {
 		List<String> listM = getDoChannel();
 		for (String m : listM) {
 			List<String> listKeys = list.stream().filter(keysFilter -> {
-				return keysFilter.contains(switchDocker + "." + m+"_");
+//				return keysFilter.contains(switchDocker + "." + m+"_");
+				return keysFilter.length()>0;
 			}).collect(Collectors.toList());
 			for (int i = 1; i <= listKeys.size(); i++) {
 				final int a = i;
@@ -197,17 +197,17 @@ public class HttpClientRequestDemo {
 					pool.execute(()->{
 						String url = address + m;
 //						String json = PropersTools.getValue(switchDocker + "." + m + "_" + a);
-						String json = listKeys.get(a)==""?"{\"code\":\"JSON_ERR\"}":listKeys.get(a).toString().substring(listKeys.get(a).toString().indexOf("=")+1);
+						String json = listKeys.get(a)==""?"{\"code\":\"JSON_ERR\"}":listKeys.get(a).toString();
 						JSONObject jsonResultPre = (JSONObject) rd.getJsonArray(url, header, json).get(0);
 						System.out.println("pree:::"+jsonResultPre);
-						url = url.replace(beforeUrl,afterUrl);
-						JSONObject jsonResultLine = (JSONObject) rd.getJsonArray(url, header, json).get(0);
-						System.out.println("line:::"+jsonResultLine);
-						if(!(jsonResultLine.getString("resultMap").contains("code#####")||jsonResultPre.getString("resultMap").contains("code#####"))) {
-							System.err.println(compareResult(jsonResultPre,jsonResultLine)=="Same map"?"True【"+m+":"+a+"】":"False【"+m+":"+a+"】"+json);
-						}else{
-							System.err.println("【"+m+":"+a+"】"+url+"::::"+"返回code有错误的情况！！！！！！！！！！！！！！！");
-						}
+//						url = url.replace(beforeUrl,afterUrl);
+//						JSONObject jsonResultLine = (JSONObject) rd.getJsonArray(url, header, json).get(0);
+//						System.out.println("line:::"+jsonResultLine);
+//						if(!(jsonResultLine.getString("resultMap").contains("code#####")||jsonResultPre.getString("resultMap").contains("code#####"))) {
+//							System.err.println(compareResult(jsonResultPre,jsonResultLine)=="Same map"?"True【"+m+":"+a+"】":"False【"+m+":"+a+"】"+json);
+//						}else{
+//							System.err.println("【"+m+":"+a+"】"+url+"::::"+"返回code有错误的情况！！！！！！！！！！！！！！！");
+//						}
 					});
 				}catch(Exception e){
 					String  errorMsg = "【"+a+"】:--"+ e.getMessage();

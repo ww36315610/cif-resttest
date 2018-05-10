@@ -26,15 +26,15 @@ public class assert_ChannelController_Params_server {
 	private Pair<String, List<String>> pair;
 	static Map<String, Object> map = new HashMap<String, Object>();
 	RestfulDao rd = new RestfullDaoImp();
-//	static {
-//		String autoUrl = "https://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
-//		TagsRequest tr = new TagsRequest();
-//		OAuth2AccessToken token = Oauth.getTokenLine(autoUrl);
-//		// 设置header
-//		map.put("Accept", "*/*");
-//		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
-//		map.put("Content-Type", "application/json;charset=UTF-8");
-//	}
+	static {
+		String autoUrl = "https://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
+		TagsRequest tr = new TagsRequest();
+		OAuth2AccessToken token = Oauth.getTokenLine(autoUrl);
+		// 设置header
+		map.put("Accept", "*/*");
+		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
+		map.put("Content-Type", "application/json;charset=UTF-8");
+	}
 
 //	static {
 //		String autoUrl = "http://106.75.5.205:8082/uaa/oauth/token?grant_type=client_credentials";
@@ -48,14 +48,14 @@ public class assert_ChannelController_Params_server {
 
 
 
-	static {
-		TagsRequest tr = new TagsRequest();
-		OAuth2AccessToken token = Oauth.getTokenLine();
-		// 设置header
-		map.put("Accept", "*/*");
-		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
-		map.put("Content-Type", "application/json");
-	}
+//	static {
+//		TagsRequest tr = new TagsRequest();
+//		OAuth2AccessToken token = Oauth.getTokenLine();
+//		// 设置header
+//		map.put("Accept", "*/*");
+//		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
+//		map.put("Content-Type", "application/json");
+//	}
 
 //	static {
 //		TagsRequest tr = new TagsRequest();
@@ -67,7 +67,7 @@ public class assert_ChannelController_Params_server {
 //	}
 	// 打开执行开关，并执行对应case
 	public void controller(RestfulDao rd) {
-		String fileOut = "/Users/apple/Documents/result_1000/pre-slow_new3900_0417.txt";
+		String fileOut = "/Users/apple/Documents/result_1000/pre-0502.txt";
 		String json=null;
 		List<String> listM = getDoChannel();
 		for (String m : listM) {
@@ -226,9 +226,9 @@ public class assert_ChannelController_Params_server {
 	public static void main(String[] args) throws Exception {
 		RestfulDao rd = new RestfullDaoImp();
 		assert_ChannelController_Params_server ucp = new assert_ChannelController_Params_server();
-//		ucp.controller(rd);
+		ucp.controller(rd);
 //		ucp.controllerHanshu(rd);
 
-		ucp.controllerUTC(rd);
+//		ucp.controllerUTC(rd);
     }
 }

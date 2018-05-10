@@ -14,6 +14,7 @@ import org.apache.http.ParseException;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.config.*;
@@ -105,9 +106,10 @@ public class HttpClientImp {
 //		RequestConfig requestConfig = RequestConfig.custom()
 //				.setConnectTimeout(20*5000).setConnectionRequestTimeout(20*1000)
 //				.setSocketTimeout(20*5000).build();
-		RequestConfig config = RequestConfig.custom().setConnectTimeout(10000).setSocketTimeout(10000).build();
-		client = HttpClientBuilder.create().setDefaultRequestConfig(config).build();
-//		client = HttpClientBuilder.create().setConnec
+
+//		RequestConfig config = RequestConfig.custom().setConnectTimeout(10000).setSocketTimeout(10000).build();
+//		client = HttpClientBuilder.create().setDefaultRequestConfig(config).build();
+
 //		post.setConfig(requestConfig);
 		// for (Map.Entry<String, Object> entry : map.entrySet()) {
 		// String key = entry.getKey().toString();
@@ -123,7 +125,8 @@ public class HttpClientImp {
 		try {
 
 			long s = System.currentTimeMillis();
-			HttpResponse response = client.execute(post);
+			CloseableHttpResponse  response = (CloseableHttpResponse) client.execute(post);
+//			response.close();
 //			System.out.println("HTTP POST use: " + (System.currentTimeMillis() - s) + "ms");
 			if (response.getStatusLine().getStatusCode() == 200) {
 				jsonArry = getResponse(response);
