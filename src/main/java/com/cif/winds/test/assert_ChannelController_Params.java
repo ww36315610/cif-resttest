@@ -51,6 +51,7 @@ public class assert_ChannelController_Params {
 //		map.put("Accept", "*/*");
 //		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
 //		map.put("Content-Type", "application/json");
+//		System.out.println(map);
 //	}
 
 
@@ -133,7 +134,7 @@ public class assert_ChannelController_Params {
 			for (int i = 1; i <= listKeys.size(); i++) {
 				try{
 					json = PropersTools.getValue(switchDocker + "." + m + "_" + i);
-//					System.out.println(json);
+					System.out.println(json);
 					JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, map, json).get(0);
 //					System.out.println("【"+i+"】"+jsonResult);
                     System.out.println("【"+i+"】"+JSONObject.toJSONString(jsonResult.get("resultMap"),SerializerFeature.WriteMapNullValue));
@@ -146,6 +147,34 @@ public class assert_ChannelController_Params {
 		}
 
 	}
+
+	// 测试凡卡-es-hbase
+	public void controllerUTCJ(RestfulDao rd) {
+		String fileOut = "/Users/apple/Documents/result_1000/pre-slow_new3900_0413.txt";
+		String json=null;
+		List<String> listM = getDoChannel();
+		for (String m : listM) {
+			String url = PropersTools.getValue(switchDocker + ".address") + m;
+			List<String> listKeys = PropersTools.getKeys().stream().filter(keysFilter -> {
+				return keysFilter.contains(switchDocker + "." + m+"_");
+			}).collect(Collectors.toList());
+			for (int i = 1; i <= listKeys.size(); i++) {
+				try{
+					json = PropersTools.getValue(switchDocker + "." + m + "_" + i);
+//					System.out.println(json);
+					JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, map, json).get(0);
+//					System.out.println("【"+i+"】"+jsonResult);
+					System.out.println("【"+i+"】"+JSONObject.toJSONString(jsonResult.get("resultMap"),SerializerFeature.WriteMapNullValue));
+				}catch(Exception e){
+//					String ejson = JSONObject.parseObject(json).getJSONObject("params").getString("tagName");
+//					FileOperation.writeFile(fileOut,"【"+i+"】:"+ejson +"--"+ e.getMessage());
+					e.printStackTrace();
+				}
+			}
+		}
+
+	}
+
 
 	// 执行count-sum-avg函数
 	public void controllerHanshu(RestfulDao rd) {
@@ -309,7 +338,7 @@ public class assert_ChannelController_Params {
 //		ucp.controller(rd);
 //		ucp.controllerHanshu(rd);
 
-		for (int i=0;i<100;i++)
+		for (int i=0;i<1;i++)
 			ucp.controllerUTC(rd);
 
 

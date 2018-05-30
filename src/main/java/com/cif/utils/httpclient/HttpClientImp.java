@@ -126,6 +126,7 @@ public class HttpClientImp {
 
 			long s = System.currentTimeMillis();
 			CloseableHttpResponse  response = (CloseableHttpResponse) client.execute(post);
+			//强制关闭
 //			response.close();
 //			System.out.println("HTTP POST use: " + (System.currentTimeMillis() - s) + "ms");
 			if (response.getStatusLine().getStatusCode() == 200) {
