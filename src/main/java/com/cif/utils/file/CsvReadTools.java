@@ -20,15 +20,17 @@ public class CsvReadTools {
     static Map<String,String> mapURL = Maps.newHashMap();
 
     public static void main(String[] args) {
-        List<String> listCSV = getDataFromCSV("/Users/apple/Downloads/graylog-search-result-absolute-2018-04-17T00_00_00.000Z-2018-04-17T03_00_00.000Z.csv");
+//        List<String> listCSV = getDataFromCSV("/Users/apple/Downloads/graylog-search-result-absolute-2018-04-17T00_00_00.000Z-2018-04-17T03_00_00.000Z.csv");
 //        getDataFromCSV("/Users/apple/Downloads/graylog-search-result-relative-300.csv");
 //        System.err.println(mapURL.keySet());
 ////        Map<String,List<String>> mapCase = makeRealCase(listCSV);
 ////        returnCaseList(mapCase);
 //        System.err.println(mapURL.keySet());
 
-        String fileCSV = "/Users/apple/Downloads/graylog-search-result-absolute-2018-04-17T00_00_00.000Z-2018-04-17T03_00_00.000Z.csv";
+//        String fileCSV = "/Users/apple/Downloads/graylog-search-result-absolute-2018-04-17T00_00_00.000Z-2018-04-17T03_00_00.000Z.csv";
+        String fileCSV = "/Users/apple/Downloads/graylog-search-result-relative-14400.csv";
         getCaseFromCSV(fileCSV);
+
 
     }
 
@@ -139,6 +141,7 @@ public class CsvReadTools {
                 String af = line.split("###")[1];
                 if (key.equals(mKey)) {
                     listValue.add(af);
+//                    System.out.println(af);
                 }
             }
             map.put(mKey, listValue);

@@ -34,15 +34,17 @@ public class assert_ChannelController_Params {
 	static Map<String, Object> map = new HashMap<String, Object>();
 	RestfulDao rd = new RestfullDaoImp();
 	static {
-		String autoUrl = "https://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
+		String autoUrl = "http://api.finupgroup.com/uaa/oauth/token?grant_type=client_credentials";
+		//String autoUrl = "https://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
 		TagsRequest tr = new TagsRequest();
 		OAuth2AccessToken token = Oauth.getTokenLine(autoUrl);
 		// 设置header
 		map.put("Accept", "*/*");
 		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
 		map.put("Content-Type", "application/json;charset=UTF-8");
+		System.out.println(map);
 	}
-
+//
 //	static {
 //		String autoUrl = "http://106.75.5.205:8082/uaa/oauth/token?grant_type=client_credentials";
 //		TagsRequest tr = new TagsRequest();
@@ -87,7 +89,7 @@ public class assert_ChannelController_Params {
 				try{
 					json = PropersTools.getValue(switchDocker + "." + m + "_" + i);
 					JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, map, json).get(0);
-//					System.out.println(jsonResult);
+					System.out.println(jsonResult);
 					String jsonRR = JSONObject.toJSONString(jsonResult.get("resultMap"),SerializerFeature.WriteMapNullValue);
 					String slowSql ="【"+i+"】"+jsonRR+"----"+jsonResult.get("castTime");
 //                    String slowSql ="【"+i+"】"+"----"+jsonResult.get("castTime");
@@ -134,10 +136,11 @@ public class assert_ChannelController_Params {
 			for (int i = 1; i <= listKeys.size(); i++) {
 				try{
 					json = PropersTools.getValue(switchDocker + "." + m + "_" + i);
-					System.out.println(json);
+//					System.out.println(json);
 					JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, map, json).get(0);
-//					System.out.println("【"+i+"】"+jsonResult);
-                    System.out.println("【"+i+"】"+JSONObject.toJSONString(jsonResult.get("resultMap"),SerializerFeature.WriteMapNullValue));
+					String jsonRR = JSONObject.toJSONString(jsonResult,SerializerFeature.WriteMapNullValue);
+					System.out.println("【"+i+"】"+jsonRR);
+//                    System.out.println("【"+i+"】"+m+"---"+JSONObject.toJSONString(jsonResult.get("resultMap"),SerializerFeature.WriteMapNullValue));
 				}catch(Exception e){
 //					String ejson = JSONObject.parseObject(json).getJSONObject("params").getString("tagName");
 //					FileOperation.writeFile(fileOut,"【"+i+"】:"+ejson +"--"+ e.getMessage());
@@ -337,9 +340,16 @@ public class assert_ChannelController_Params {
 		assert_ChannelController_Params ucp = new assert_ChannelController_Params();
 //		ucp.controller(rd);
 //		ucp.controllerHanshu(rd);
-
-		for (int i=0;i<1;i++)
-			ucp.controllerUTC(rd);
+		for(int j=0;j<1;j++) {
+			new Thread(new Runnable() {
+				public void run() {
+					for (int i = 0; i < 1; i++) {
+						System.out.println("---------------------------------[[" + i + "]]-----------------------------------------");
+						ucp.controllerUTC(rd);
+					}
+				}
+			}).start();
+		}
 
 
 

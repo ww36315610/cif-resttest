@@ -1,7 +1,6 @@
 package com.cif.winds.test;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.cif.now.utils.PropersTools;
@@ -19,7 +18,6 @@ import com.google.common.collect.Maps;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.lucene.search.spans.SpanWeight;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,7 +25,7 @@ import java.util.Map;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.stream.Collectors;
 
-public class HttpClientRequestDemo {
+public class HttpClientRequestDemo_tidb {
 
     private static final String switchDocker = PropersTools.getValue("switch");
     private static final String method = PropersTools.getValue("method");
@@ -43,7 +41,7 @@ public class HttpClientRequestDemo {
         header = headerPut();
     }
 
-    public HttpClientRequestDemo() {
+    public HttpClientRequestDemo_tidb() {
         rd = new RestfullDaoImp();
         db = MongoOperation.getMongoDatabase("mongo_feather_utc_rest");
         dbConn = MongoOperation.mongoDBConn(method);
@@ -63,7 +61,7 @@ public class HttpClientRequestDemo {
         //测试butterfly-sort专用-method=moxie
 //        String fileCSV = "/Users/apple/Downloads/graylog-moxie_0626.csv";
 
-        HttpClientRequestDemo hcrd = new HttpClientRequestDemo();
+        HttpClientRequestDemo_tidb hcrd = new HttpClientRequestDemo_tidb();
 //		hcrd.controller();
 //		hcrd.controllerT();
 //		hcrd.caseMake();

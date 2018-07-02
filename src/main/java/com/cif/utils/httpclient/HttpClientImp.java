@@ -120,6 +120,7 @@ public class HttpClientImp {
 		map.forEach((k, v) -> {
 			post.setHeader(k, v.toString());
 		});
+//		System.out.println("eee"+json);
 		StringEntity entiry = new StringEntity(json, "utf-8");
 		post.setEntity(entiry);
 		try {
