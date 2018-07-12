@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class ThreadPoolUtils {
     private static ThreadPoolExecutor threadPoolExecutor = null;
     static {
-        int lendUtilsThreadPoolMinSize=2;
+        int lendUtilsThreadPoolMinSize=5;
         int lendUtilsThreadPoolMaxSize=10;
         threadPoolExecutor = new ThreadPoolExecutor(lendUtilsThreadPoolMinSize, lendUtilsThreadPoolMaxSize,
                 60L, TimeUnit.SECONDS,

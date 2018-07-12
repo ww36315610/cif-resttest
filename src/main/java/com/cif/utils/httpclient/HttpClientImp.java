@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.httpclient.HttpStatus;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -160,6 +161,9 @@ public class HttpClientImp {
 					if (respons.startsWith("[")) {
 						jsonArry = JSONArray.parseArray(respons);
 						System.out.println(jsonArry);
+					}else if(StringUtils.isEmpty(respons)){
+						String responsNew = "[{" + respons + "}]";
+						jsonArry = JSONArray.parseArray(responsNew);
 					} else {
 						String responsNew = "[" + respons + "]";
 						jsonArry = JSONArray.parseArray(responsNew);

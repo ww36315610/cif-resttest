@@ -136,6 +136,10 @@ public class assert_ChannelController_Params {
 			for (int i = 1; i <= listKeys.size(); i++) {
 				try{
 					json = PropersTools.getValue(switchDocker + "." + m + "_" + i);
+					if(json.contains("resultId")) {
+						JSONObject jsonRe = JSONObject.parseObject(json);
+						jsonRe.remove("resultId");
+					}
 //					System.out.println(json);
 					JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, map, json).get(0);
 					String jsonRR = JSONObject.toJSONString(jsonResult,SerializerFeature.WriteMapNullValue);

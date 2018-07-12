@@ -50,10 +50,10 @@ public class HttpClientRequestDemo {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        String fileOut = "tidb_err0702";
+        String fileOut = "_0711";
 //        String fileCSV = "/Users/apple/Downloads/graylog-search-result-absolute-2018-04-17T00_00_00.000Z-2018-04-17T03_00_00.000Z.csv";
 
-          //生产最新的log日志，量大  -测试所有接口
+        //生产最新的log日志，量大  -测试所有接口
         String fileCSV = "/Users/apple/Downloads/graylog-all_0628.csv";
 
         //测试Tidb--method=oneTagName 凡卡标签
@@ -73,7 +73,6 @@ public class HttpClientRequestDemo {
 //        String after = "api.finupgroup.com/cif-utc-rest-pre";
 
         String before = "api.finupgroup.com/cif-utc-rest-pre";
-//        String after = "api.finupgroup.com/cif-utc-rest-pre";
         String after = "api.finupgroup.com/cif-utc-rest";
         //按照jdbc.properties的case走
 //		List<String> list = PropersTools.getKeys();
@@ -84,12 +83,15 @@ public class HttpClientRequestDemo {
         //按照文件读取case走
 //        String fileCase = "/Users/apple/Documents/case/caseMoxie.txt";
 
+
+        String fileCrawler = "/Users/apple/Documents/case/crawler.txt";
         String fileCase = "/Users/apple/Documents/case/moxieslow.txt";
         String fileCase1 = "/Users/apple/Documents/case/moxieslow_moxie.txt";
-//        List<String> listFile = FileOperation.readFileByLineString(fileCase1);
+        String fileCase2 = "/Users/apple/Documents/case/compare.txt";
+//        List<String> listFile = FileOperation.readFileByLineString(fileCase2);
 
 
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 2; i++) {
             new Thread(new Runnable() {
                 public void run() {
                     //从excell日志文件读取执行case
@@ -227,17 +229,24 @@ public class HttpClientRequestDemo {
                         String json = listKeys.get(a) == "" ? "{\"code\":\"JSON_ERR\"}" : listKeys.get(a).toString().substring(listKeys.get(a).toString().indexOf("=") + 1);
 //                        json = json.replace("3005","9988");
 //                        System.out.println("json:::::"+json);
+                        if(json.contains("resultId")) {
+                            JSONObject jsonRe = JSONObject.parseObject(json);
+                            jsonRe.remove("resultId");
+                        }
                         JSONObject jsonResultPre = (JSONObject) rd.getJsonArray(url, header, json).get(0);
+//                        System.err.println(jsonResultPre);
                         url = url.replace(beforeUrl, afterUrl);
 //                        json = json.replace("9999","3003");
 //                        System.err.println(json);
                         JSONObject jsonResultLine = (JSONObject) rd.getJsonArray(url, header, json).get(0);
-                        if (jsonResultLine.getString("resultMap").contains("code#####")){
-                            String fileOut1 = "/Users/apple/Documents/linlin/"+fileOut+"_code1.txt";
-                            FileOperation.writeFile(fileOut1, json);
-                        }
-                        if(jsonResultPre.getString("resultMap").contains("code#####")){
-                            String fileOut1 = "/Users/apple/Documents/linlin/"+fileOut+"_code2.txt";
+//                        System.err.println(jsonResultLine);
+                        if (jsonResultPre.size() > 0 && jsonResultLine.size() > 0){
+                            if (jsonResultLine.getString("resultMap").contains("code#####")) {
+                                String fileOut1 = "/Users/apple/Documents/linlin/" + m+fileOut + "_Linecode1.txt";
+                                FileOperation.writeFile(fileOut1, json);
+                            }
+                        if (jsonResultPre.getString("resultMap").contains("code#####")) {
+                            String fileOut1 = "/Users/apple/Documents/linlin/" + m+fileOut + "_Precode2.txt";
                             FileOperation.writeFile(fileOut1, json);
                         }
                         if (!(jsonResultLine.getString("resultMap").contains("code#####") || jsonResultPre.getString("resultMap").contains("code#####"))) {
@@ -252,43 +261,41 @@ public class HttpClientRequestDemo {
                                 System.out.println("pree:::" + jsonResultPre.getString("resultMap"));
                                 System.out.println("line:::" + jsonResultLine.getString("resultMap"));
                                 if (jsonResultPre.getInteger("failCount") > 0) {
-                                    String fileOut1 = "/Users/apple/Documents/linlin/"+fileOut+"_3.txt";
+                                    String fileOut1 = "/Users/apple/Documents/linlin/" + m+fileOut + "_PreFaile3.txt";
+                                    FileOperation.writeFile(fileOut1, resultAssert);
+                                } else if (jsonResultLine.getInteger("failCount") > 0) {
+                                    String fileOut1 = "/Users/apple/Documents/linlin/" + m+fileOut + "_LineFaile4.txt";
                                     FileOperation.writeFile(fileOut1, resultAssert);
                                 } else {
-//                                    if (jsonResultPre.getString("resultMap").equals("{}")) {
-//                                        String fileOut1 = "/Users/apple/Documents/linlin/"+fileOut+"_PreResultmap4.txt";
-//                                        FileOperation.writeFile(fileOut1, resultAssert);
-//                                    } else
-                                    if (jsonResultPre.getString("resultMap").contains("[]") && jsonResultLine.getString("resultMap").contains("[{}]")) {
-                                        String fileOut1 = "/Users/apple/Documents/linlin/"+fileOut+"__LineResultmap5.txt";
-                                        FileOperation.writeFile(fileOut1, resultAssert);
-                                    } else {
-                                        String fileOut1 = "/Users/apple/Documents/linlin/"+fileOut+"_compare6.txt";
-                                        FileOperation.writeFile(fileOut1, resultAssert);
-                                    }
+                                    String fileOut1 = "/Users/apple/Documents/linlin/" + m+fileOut + "_compare5.txt";
+                                    FileOperation.writeFile(fileOut1, resultAssert);
                                 }
-//                                FileOperation.writeFile(fileOut, resultAssert);
                             } else {
-//                                System.out.print("pree:::" + urlP);
-//                                System.out.println("pree:::" + jsonResultPre.getString("resultMap"));
-//                                System.out.print("line:::" + url);
-//                                System.out.println("line:::" + jsonResultLine.getString("resultMap"));
                                 if (castTimePre > castTimeLine && castTimePre > 5000 && castTimeLine < 3000) {
-                                    String resultCompare = "【" + method + ":" + json + "】::::" + "返回时间大于5秒！！！！！！！！！！！！！！！";
+                                    String resultCompare = "【" + method + ":" + json + "】::::" + "PPRREE返回时间大于5秒！！！！！！！！！！！！！！！";
                                     System.err.println(resultCompare);
-                                    String fileOut1 = "/Users/apple/Documents/linlin/"+fileOut+"_time7.txt";
+                                    String fileOut1 = "/Users/apple/Documents/linlin/" + m+fileOut + "_time6.txt";
                                     FileOperation.writeFile(fileOut1, resultCompare);
                                 }
-                                if(castTimePre >15000){
-                                    String fileOut2 = "/Users/apple/Documents/linlin/"+fileOut+"_Bigtime8.txt";
-                                    FileOperation.writeFile(fileOut2, "PPRREE::::【"+castTimePre+"】"+json);
-                                }else if(castTimeLine>15000){
-                                    String fileOut2 = "/Users/apple/Documents/linlin/"+fileOut+"_Bigtime8.txt";
-                                    FileOperation.writeFile(fileOut2, "PPRREE::::【"+castTimeLine+"】"+json);
+                                if (castTimePre < castTimeLine && castTimePre < 3000 && castTimeLine > 5000) {
+                                    String resultCompare = "【" + method + ":" + json + "】::::" + "LLIINN返回时间大于5秒！！！！！！！！！！！！！！！";
+                                    System.err.println(resultCompare);
+                                    String fileOut1 = "/Users/apple/Documents/linlin/" + m+fileOut + "_time_line6.txt";
+                                    FileOperation.writeFile(fileOut1, resultCompare);
+                                }
+                                if (castTimePre > 15000) {
+                                    String fileOut2 = "/Users/apple/Documents/linlin/" + m+fileOut + "_Bigtime7.txt";
+                                    FileOperation.writeFile(fileOut2, "PPRREE::::【" + castTimePre + "】" + json);
+                                } else if (castTimeLine > 10000) {
+                                    String fileOut2 = "/Users/apple/Documents/linlin/" + m+fileOut + "_Bigtime_line7.txt";
+                                    FileOperation.writeFile(fileOut2, "LLIINN::::【" + castTimeLine + "】" + json);
                                 }
                             }
                         } else {
-                            System.err.println("【" + m + ":" + a + "】" +json+ url + "::::" + "返回code有错误的情况！！！！！！！！！！！！！！！");
+                            System.err.println("【" + m + ":" + a + "】" + json + url + "::::" + "返回code有错误的情况！！！！！！！！！！！！！！！");
+                        }
+                    }else {
+                            System.err.println("【" + m + ":" + a + "】" + json + "::::" + "返回值为null");
                         }
                     });
                     System.out.println("[" + a + "]:::pre=[" + timePre + "]----line=[" + timeLine + "]");
