@@ -41,6 +41,33 @@ public class MapCompareTools implements Comparable<MapCompareTools> {
             System.out.println(result);
         }
 
+        Map<String, Object> beforeMap2 = new HashMap<String, Object>();
+        beforeMap.put("a", "1");
+        beforeMap.put("b", "2");
+        Map<String, Object> afterMap2 = new HashMap<String, Object>();
+        afterMap.put("b", "2");
+        afterMap.put("a", "1");
+        String result2 = compareResult(beforeMap2, afterMap2);
+        if (result.equals("Same map")) {
+            System.out.println(result2);
+        } else {
+            System.out.println(result2);
+        }
+
+        Map<String, Object> beforeMap1 = new HashMap<String, Object>();
+        beforeMap.put("a", "[{\"aa\":\"aa\"},{\"bb\":\"bb\"}]");
+
+        Map<String, Object> afterMap1 = new HashMap<String, Object>();
+        afterMap.put("a", "[{\"aa\":\"aa\"},{\"bb\":\"bb\"}]");
+
+        String result1 = compareResult(beforeMap1, afterMap1);
+        if (result.equals("Same map")) {
+            System.out.println(result1);
+        } else {
+            System.out.println(result1);
+        }
+
+
 
         Set<MapCompareTools> beforeSet = new TreeSet<>();
         beforeSet.add(new MapCompareTools("a", "1"));
@@ -52,7 +79,7 @@ public class MapCompareTools implements Comparable<MapCompareTools> {
         afterSet.add(new MapCompareTools("c", "333"));
         afterSet.add(new MapCompareTools("aa", "4"));
 
-        System.out.println("-------" + SetCompare(beforeSet, afterSet));
+//        System.out.println("-------" + SetCompare(beforeSet, afterSet));
     }
 
 

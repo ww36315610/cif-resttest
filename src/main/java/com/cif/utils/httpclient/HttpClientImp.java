@@ -160,7 +160,7 @@ public class HttpClientImp {
 				try {
 					if (respons.startsWith("[")) {
 						jsonArry = JSONArray.parseArray(respons);
-						System.out.println(jsonArry);
+//						System.out.println(jsonArry);
 					}else if(StringUtils.isEmpty(respons)){
 						String responsNew = "[{" + respons + "}]";
 						jsonArry = JSONArray.parseArray(responsNew);

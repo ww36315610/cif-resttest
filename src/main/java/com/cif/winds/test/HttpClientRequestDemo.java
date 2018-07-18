@@ -55,10 +55,14 @@ public class HttpClientRequestDemo {
 
         //生产最新的log日志，量大  -测试所有接口
         String fileCSV = "/Users/apple/Downloads/graylog-all_0628.csv";
-
+//
         //测试Tidb--method=oneTagName 凡卡标签
 //        String fileCSV = "/Users/apple/Downloads/graylog-tidb_0625_samll.csv";
 //        String fileCSV = "/Users/apple/Downloads/graylog-tidb_0625_big.csv";
+
+        // 测试moxie一个小时量
+//        String fileCSV = "/Users/apple/Downloads/graylog-search-result-relative-3600.csv";
+
 
         //测试butterfly-sort专用-method=moxie
 //        String fileCSV = "/Users/apple/Downloads/graylog-moxie_0626.csv";
@@ -88,10 +92,11 @@ public class HttpClientRequestDemo {
         String fileCase = "/Users/apple/Documents/case/moxieslow.txt";
         String fileCase1 = "/Users/apple/Documents/case/moxieslow_moxie.txt";
         String fileCase2 = "/Users/apple/Documents/case/compare.txt";
-//        List<String> listFile = FileOperation.readFileByLineString(fileCase2);
+        String fileCase3 = "/Users/apple/Documents/case/one.txt";
+        List<String> listFile = FileOperation.readFileByLineString(fileCase3);
 
 
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 1; i++) {
             new Thread(new Runnable() {
                 public void run() {
                     //从excell日志文件读取执行case
