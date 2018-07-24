@@ -27,8 +27,8 @@ public class CsvReadTools {
 ////        returnCaseList(mapCase);
 //        System.err.println(mapURL.keySet());
 
-//        String fileCSV = "/Users/apple/Downloads/graylog-search-result-absolute-2018-04-17T00_00_00.000Z-2018-04-17T03_00_00.000Z.csv";
-        String fileCSV = "/Users/apple/Downloads/graylog-search-result-relative-14400.csv";
+        String fileCSV = "/Users/apple/Downloads/graylog-search-result-absolute-2018-04-17T00_00_00.000Z-2018-04-17T03_00_00.000Z.csv";
+//        String fileCSV = "/Users/apple/Downloads/graylog-search-result-relative-14400.csv";
         getCaseFromCSV(fileCSV);
 
 

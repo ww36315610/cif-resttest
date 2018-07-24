@@ -341,7 +341,7 @@ public class assert_ChannelController_Params {
 		assert_ChannelController_Params ucp = new assert_ChannelController_Params();
 //		ucp.controller(rd);
 //		ucp.controllerHanshu(rd);
-		for(int j=0;j<1;j++) {
+		for(int j=0;j<1000;j++) {
 			new Thread(new Runnable() {
 				public void run() {
 					for (int i = 0; i < 1; i++) {
