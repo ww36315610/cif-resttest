@@ -20,6 +20,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.config.*;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
@@ -103,6 +104,7 @@ public class HttpClientImp {
 	public JSONArray postHttp(HttpClient client, String url, Map<String, Object> map, String json) {
 		JSONArray jsonArry = null;
 		HttpPost post = new HttpPost(url);
+		CloseableHttpResponse  response=null;
 		//设置超时时间
 //		RequestConfig requestConfig = RequestConfig.custom()
 //				.setConnectTimeout(20*5000).setConnectionRequestTimeout(20*1000)
@@ -124,10 +126,11 @@ public class HttpClientImp {
 //		System.out.println("eee"+json);
 		StringEntity entiry = new StringEntity(json, "utf-8");
 		post.setEntity(entiry);
+
 		try {
 
 			long s = System.currentTimeMillis();
-			CloseableHttpResponse  response = (CloseableHttpResponse) client.execute(post);
+			response = (CloseableHttpResponse) client.execute(post);
 			//强制关闭
 //			response.close();
 //			System.out.println("HTTP POST use: " + (System.currentTimeMillis() - s) + "ms");
@@ -141,7 +144,10 @@ public class HttpClientImp {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} finally {
+		}catch (Exception e){
+			client = new DefaultHttpClient();
+		}
+		finally {
 			post.releaseConnection();
 		}
 		return jsonArry;

@@ -27,7 +27,7 @@ public class assert_ChannelController_Params_server {
 	static Map<String, Object> map = new HashMap<String, Object>();
 	RestfulDao rd = new RestfullDaoImp();
 	static {
-		String autoUrl = "https://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
+		String autoUrl = "http://api.finupgroup.com/uaa/oauth/token?grant_type=client_credentials";
 		TagsRequest tr = new TagsRequest();
 		OAuth2AccessToken token = Oauth.getTokenLine(autoUrl);
 		// 设置header
