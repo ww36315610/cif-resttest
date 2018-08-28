@@ -58,7 +58,10 @@ public class HttpClientRequestDemo {
 //        String fileCSV = "/Users/apple/Downloads/graylog-search-result-absolute-2018-04-17T00_00_00.000Z-2018-04-17T03_00_00.000Z.csv";
 
         //生产最新的log日志，量大  -测试所有接口
-        String fileCSV = "/Users/apple/Downloads/graylog-all_0628.csv";
+//        String fileCSV = "/Users/apple/Downloads/graylog-all_0628.csv";
+
+        //生产最新的log日志，量大  -测试所有接口
+        String fileCSV = "/Users/apple/Downloads/graylog-search-result-relative-7200.csv";
 //
         //测试Tidb--method=oneTagName 凡卡标签
 //        String fileCSV = "/Users/apple/Downloads/graylog-tidb_0625_samll.csv";

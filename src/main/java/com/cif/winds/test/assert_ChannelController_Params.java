@@ -30,19 +30,19 @@ public class assert_ChannelController_Params {
     private Pair<String, List<String>> pair;
     static Map<String, Object> map = new HashMap<String, Object>();
     RestfulDao rd = new RestfullDaoImp();
-
-//    static {
-//        String autoUrl = "http://api.finupgroup.com/uaa/oauth/token?grant_type=client_credentials";
-////        String autoUrl = "http://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
-//        TagsRequest tr = new TagsRequest();
-//        OAuth2AccessToken token = Oauth.getTokenLine(autoUrl);
-//        // 设置header
-//        map.put("Accept", "*/*");
-//        map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
-//        map.put("Content-Type", "application/json;charset=UTF-8");
-//        System.out.println(map);
-//    }
 //
+    static {
+        String autoUrl = "http://api.finupgroup.com/uaa/oauth/token?grant_type=client_credentials";
+//        String autoUrl = "http://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
+        TagsRequest tr = new TagsRequest();
+        OAuth2AccessToken token = Oauth.getTokenLine(autoUrl);
+        // 设置header
+        map.put("Accept", "*/*");
+        map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
+        map.put("Content-Type", "application/json;charset=UTF-8");
+        System.out.println(map);
+    }
+
 //	static {
 //		String autoUrl = "http://106.75.5.205:8082/uaa/oauth/token?grant_type=client_credentials";
 //		TagsRequest tr = new TagsRequest();
@@ -55,14 +55,14 @@ public class assert_ChannelController_Params {
 //	}
 
 
-	static {
-		TagsRequest tr = new TagsRequest();
-		OAuth2AccessToken token = Oauth.getTokenLine();
-		// 设置header
-		map.put("Accept", "*/*");
-		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
-		map.put("Content-Type", "application/json");
-	}
+//	static {
+//		TagsRequest tr = new TagsRequest();
+//		OAuth2AccessToken token = Oauth.getTokenLine();
+//		// 设置header
+//		map.put("Accept", "*/*");
+//		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
+//		map.put("Content-Type", "application/json");
+//	}
 
     //	static {
 //		TagsRequest tr = new TagsRequest();
@@ -139,11 +139,31 @@ public class assert_ChannelController_Params {
                     }
                     JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, map, json).get(0);
                     String jsonRR = JSONObject.toJSONString(jsonResult, SerializerFeature.WriteMapNullValue);
-                    System.out.println("【" + i + "】" + jsonRR);
+//                    String jsonRR = JSONObject.toJSONString(jsonResult.getJSONObject("resultMap"), SerializerFeature.WriteMapNullValue);
+
+//                    if(jsonResult.getInteger("castTime")>5000){
+                        System.out.println("【" + i + "】" + jsonRR);
+//                    }
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
+        }
+
+    }
+
+
+    // 测试凡卡-es-hbase
+    public void controllerUTCGET(RestfulDao rd) {
+        String fileOut = "/Users/apple/Documents/result_1000/pre-slow_new3900_0413.txt";
+        String json = null;
+        List<String> listM = getDoChannel();
+        for (String m : listM) {
+            String url = PropersTools.getValue(switchDocker + ".address") + m;
+            List<String> listKeys = PropersTools.getKeys().stream().filter(keysFilter -> {
+                return keysFilter.contains(switchDocker + "." + m + "_");
+            }).collect(Collectors.toList());
+           System.out.println(rd.getJsonArrayGet(url,map));
         }
 
     }
@@ -240,7 +260,9 @@ public class assert_ChannelController_Params {
                 public void run() {
                     for (int i = 0; i < 1; i++) {
                         System.out.println("---------------------------------[[" + i + "]]-----------------------------------------");
-                        ucp.controllerUTC(rd);
+//                        ucp.controllerUTC(rd);
+                        ucp.controllerUTCGET(rd);
+
                     }
                 }
             }).start();

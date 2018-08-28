@@ -29,7 +29,7 @@ public class assert_ChannelController_Params_server {
 	static {
 		String autoUrl = "http://api.finupgroup.com/uaa/oauth/token?grant_type=client_credentials";
 		TagsRequest tr = new TagsRequest();
-		OAuth2AccessToken token = Oauth.getTokenLine(autoUrl);
+		OAuth2AccessToken token = Oauth.getTokenLine();
 		// 设置header
 		map.put("Accept", "*/*");
 		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
