@@ -82,7 +82,7 @@ public class UAT_ChannelController {
 		try {
 System.out.println(PropersTools.getValue("jsonType"));
 			ut.reflectionMethod(httpUrlTagType, PropersTools.getValue("jsonType"));
-			// ut.reflectionMethod(getMethod(httpUrlOneTagName),
+//			 ut.reflectionMethod(getMethod(httpUrlOneTagName),
 			// PropersTools.getValue("jsonTagName"));
 			// ut.reflectionMethod(getMethod(httpUrlMultiTagName),
 			// PropersTools.getValue("jsonMultiTagName"));

@@ -1,18 +1,13 @@
 package com.cif.winds.test;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
+
 import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.parser.Feature;
-import com.alibaba.fastjson.parser.ParserConfig;
-import com.alibaba.fastjson.parser.deserializer.ParseProcess;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.cif.now.utils.PropersTools;
 import com.cif.utils.file.CsvReadTools;
 import com.cif.utils.file.FileOperation;
 import com.cif.utils.java.MapCompareTools;
 import com.cif.utils.java.Oauth;
-import com.cif.utils.mongo.MongoDao;
 import com.cif.utils.mongo.MongoOperation;
 import com.cif.utils.thread.ThreadPoolUtils;
 import com.cif.winds.repository.RestfulDao;
@@ -21,10 +16,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
-import com.oracle.javafx.jmx.json.impl.JSONStreamReaderImpl;
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.lucene.search.spans.SpanWeight;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;

@@ -19,14 +19,14 @@ public class FieldFilter {
 	// }
 	//
 	// // 反射获取hive对应的执行对象
-	// public static DoFilter_Hive getDoFilterHive(JSONObject object) throws
-	// ClassNotFoundException,
-	// InstantiationException, IllegalAccessException {
-	// DoFilter_Hive obj = null;
-	// Class c = Class.forName(getClassName(object));
-	// obj = (DoFilter_Hive) c.newInstance();
-	// return obj;
-	// }
+//	 public static DoFilter_Hive getDoFilterHive(JSONObject object) throws
+//	 ClassNotFoundException,
+//	 InstantiationException, IllegalAccessException {
+//	 DoFilter_Hive obj = null;
+//	 Class c = Class.forName(getClassName(object));
+//	 obj = (DoFilter_Hive) c.newInstance();
+//	 return obj;
+//	 }
 
 	// 反射得到bean类中的属性信息，className后期可以通过反射获取，也做到了关键字渠道
 	public static List<String> getBeanFilter(JSONObject object) throws ClassNotFoundException {

@@ -19,6 +19,8 @@ import org.codehaus.jackson.annotate.JsonPropertyOrder;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.testng.Assert;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -30,29 +32,31 @@ public class assert_ChannelController_Params {
     private Pair<String, List<String>> pair;
     static Map<String, Object> map = new HashMap<String, Object>();
     RestfulDao rd = new RestfullDaoImp();
+    private static Oauth oauth;
 //
+//    static {
+//        String autoUrl = "http://api.finupgroup.com/uaa/oauth/token?grant_type=client_credentials";
+////        String autoUrl = "http://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
+//        TagsRequest tr = new TagsRequest();
+//        OAuth2AccessToken token = Oauth.getTokenLine(autoUrl);
+//        // 设置header
+//        map.put("Accept", "*/*");
+//        map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
+//        map.put("Content-Type", "application/json;charset=UTF-8");
+//        System.out.println(map);
+//    }
+
     static {
-        String autoUrl = "http://api.finupgroup.com/uaa/oauth/token?grant_type=client_credentials";
+        String autoUrl = "http://106.75.5.205:8082/uaa/oauth/token?grant_type=client_credentials";
 //        String autoUrl = "http://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
         TagsRequest tr = new TagsRequest();
-        OAuth2AccessToken token = Oauth.getTokenLine(autoUrl);
+        OAuth2AccessToken token = Oauth.getToken(autoUrl);
         // 设置header
         map.put("Accept", "*/*");
         map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
         map.put("Content-Type", "application/json;charset=UTF-8");
         System.out.println(map);
     }
-
-//	static {
-//		String autoUrl = "http://106.75.5.205:8082/uaa/oauth/token?grant_type=client_credentials";
-//		TagsRequest tr = new TagsRequest();
-//		OAuth2AccessToken token = Oauth.getToken(autoUrl);
-//		// 设置header
-//		map.put("Accept", "*/*");
-//		map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
-//		map.put("Content-Type", "application/json");
-//		System.out.println(map);
-//	}
 
 
 //	static {
@@ -137,7 +141,9 @@ public class assert_ChannelController_Params {
                         JSONObject jsonRe = JSONObject.parseObject(json);
                         jsonRe.remove("resultId");
                     }
+//                    System.out.println("aaaaaaa::::::"+json);
                     JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, map, json).get(0);
+
                     String jsonRR = JSONObject.toJSONString(jsonResult, SerializerFeature.WriteMapNullValue);
 //                    String jsonRR = JSONObject.toJSONString(jsonResult.getJSONObject("resultMap"), SerializerFeature.WriteMapNullValue);
 
@@ -260,8 +266,8 @@ public class assert_ChannelController_Params {
                 public void run() {
                     for (int i = 0; i < 1; i++) {
                         System.out.println("---------------------------------[[" + i + "]]-----------------------------------------");
-//                        ucp.controllerUTC(rd);
-                        ucp.controllerUTCGET(rd);
+                        ucp.controllerUTC(rd);
+//                        ucp.controllerUTCGET(rd);
 
                     }
                 }

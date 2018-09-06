@@ -6,6 +6,9 @@ import org.springframework.security.oauth2.client.token.grant.password.ResourceO
 import org.springframework.security.oauth2.common.AuthenticationScheme;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 public class Oauth {
 	public static OAuth2AccessToken getToken() {
 		ResourceOwnerPasswordAccessTokenProvider provider = new ResourceOwnerPasswordAccessTokenProvider();
@@ -69,9 +72,23 @@ public class Oauth {
 		return accessToken;
 	}
 
+
+	// 通过反射动态获取执行方法
+	public Object reflectionMethod(String methodName, String param) throws NoSuchMethodException, SecurityException,
+			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+		Method method = getClass().getMethod(methodName, String.class);
+		return  method.invoke(this, param);
+	}
+
+	// 获取发方法名
+	public static String getMethod(String url) {
+		if(url.contains("api.finupgroup.com")){
+			return "getTokenLine";
+		}else return "getToken";
+	}
+
 	public static void main(String[] args) {
-		// System.out.println(getTokenLine().getValue());
-		// System.out.println(getTokenLine().getTokenType());
 		System.out.println(getTokenPoutc().getValue());
 	}
+
 }
