@@ -88,6 +88,7 @@ public class assert_ChannelController_Params_fanshe {
                         jsonRe.remove("resultId");
                     }
                     JSONObject jsonResult = (JSONObject) rd.getJsonArray(url, map, json).get(0);
+//                    System.out.println(jsonResult);
                     String jsonRR = JSONObject.toJSONString(jsonResult, SerializerFeature.WriteMapNullValue);
 //                    String jsonRR = JSONObject.toJSONString(jsonResult.getJSONObject("resultMap"), SerializerFeature.WriteMapNullValue);
                     System.out.println("【" + i + "】" + jsonRR);

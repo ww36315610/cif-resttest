@@ -86,7 +86,9 @@ public class HttpClientRequestDemo {
         String fileCase2 = "/Users/apple/Documents/case/compare.txt";
         String fileCase3 = "/Users/apple/Documents/case/one.txt";
         String fileCase4 = "/Users/apple/Documents/case/lnull.txt";
-//        List<String> listFile = FileOperation.readFileByLineString(fileCase4);
+        String fileCase5 = "/Users/apple/Documents/case/basicInfo.txt";
+
+        List<String> listFile = FileOperation.readFileByLineString(fileCase5);
 
 
         for (int i = 0; i < 1; i++) {
@@ -129,10 +131,12 @@ public class HttpClientRequestDemo {
                     String json = listKeys.get(a) == "" ? "{\"code\":\"JSON_ERR\"}" : listKeys.get(a).toString().substring(listKeys.get(a).toString().indexOf("=") + 1);
 //                        json = json.replace("3005","9988");
 //                        System.out.println("json:::::"+json);
-                    if (json.contains("resultId")) {
-                        JSONObject jsonRe = JSONObject.parseObject(json);
-                        jsonRe.remove("resultId");
-                    }
+                        if (json.contains("requestId")||json.contains("resultId")) {
+                            JSONObject jsonRe = JSONObject.parseObject(json);
+                            jsonRe.remove("requestId");
+                            jsonRe.remove("resultId");
+                            json = JSONObject.toJSONString(jsonRe,SerializerFeature.WriteMapNullValue);
+                        }
                     JSONObject jsonResultPre = (JSONObject) rd.getJsonArray(url, header, json).get(0);
                     url = url.replace(beforeUrl, afterUrl);
                     JSONObject jsonResultLine = (JSONObject) rd.getJsonArray(url, header, json).get(0);
