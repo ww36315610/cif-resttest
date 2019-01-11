@@ -133,10 +133,11 @@ public class HttpClientImp {
 			response = (CloseableHttpResponse) client.execute(post);
 			//强制关闭
 //			response.close();
-//			System.out.println("HTTP POST use: " + (System.currentTimeMillis() - s) + "ms");
+//			System.out.printlsn("HTTP POST use: " + (System.currentTimeMillis() - s) + "ms");
 			if (response.getStatusLine().getStatusCode() == 200) {
 				jsonArry = getResponse(response);
 			} else {
+				System.out.println("===rrrrr====" + response);
 				System.out.println("===code====" + response.getStatusLine().getStatusCode());
 				return JSONArray.parseArray("[{\"resultMap\":{\"返回code#####\":"+response.getStatusLine().getStatusCode()+"}}]");
 			}

@@ -31,7 +31,6 @@ public class assert_ChannelController_Params_fanshe {
     RestfulDao rd = new RestfullDaoImp();
     private static Oauth oauth;
 
-
     //反射获取oauth执行方法
     static {
         oauth = new Oauth();

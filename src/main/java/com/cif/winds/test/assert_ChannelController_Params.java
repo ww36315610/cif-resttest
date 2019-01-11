@@ -33,18 +33,7 @@ public class assert_ChannelController_Params {
     static Map<String, Object> map = new HashMap<String, Object>();
     RestfulDao rd = new RestfullDaoImp();
     private static Oauth oauth;
-//
-//    static {
-//        String autoUrl = "http://api.finupgroup.com/uaa/oauth/token?grant_type=client_credentials";
-////        String autoUrl = "http://api.puhuifinance.com/uaa/oauth/token?grant_type=client_credentials";
-//        TagsRequest tr = new TagsRequest();
-//        OAuth2AccessToken token = Oauth.getTokenLine(autoUrl);
-//        // 设置header
-//        map.put("Accept", "*/*");
-//        map.put("Authorization", String.format("%s %s", token.getTokenType(), token.getValue()));
-//        map.put("Content-Type", "application/json;charset=UTF-8");
-//        System.out.println(map);
-//    }
+
 
     static {
         String autoUrl = "http://106.75.5.205:8082/uaa/oauth/token?grant_type=client_credentials";
@@ -274,5 +263,4 @@ public class assert_ChannelController_Params {
             }).start();
         }
     }
-
 }
