@@ -38,6 +38,8 @@ public class UAT_TagQueryController_6000 implements Runnable {
 		System.out.println(token.getValue());
 		map.put("Content-Type", "application/json");
 		System.out.println(map);
+
+
 	}
 
 	public void testCalcTagWithIdCardNum() {

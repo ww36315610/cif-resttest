@@ -73,6 +73,8 @@ public class Oauth {
 	}
 
 
+
+
 	// 通过反射动态获取执行方法
 	public Object reflectionMethod(String methodName, String param) throws NoSuchMethodException, SecurityException,
 			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
