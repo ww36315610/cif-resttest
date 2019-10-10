@@ -35,7 +35,9 @@ public class assert_ChannelController_Params_fanshe {
     static {
         oauth = new Oauth();
         String autoUrlLine = "http://api.finupgroup.com/uaa/oauth/token?grant_type=client_credentials";
-        String autoUrlTest = "http://106.75.5.205:8082/uaa/oauth/token?grant_type=client_credentials";
+//        String autoUrlTest = "http://106.75.5.205:8082/uaa/oauth/token?grant_type=client_credentials";
+//        String autoUrlTest = "http://uaa.galaxy.test/uaa/oauth/token?grant_type=client_credentials";
+        String autoUrlTest = "http://uaa.galaxy.test/uaa/oauth/token?grant_type=client_credentials";
         String autoUrl = "test".equals(switchDocker) || "beta".equals(switchDocker) || "dev".equals(switchDocker) ? autoUrlTest : autoUrlLine;
         TagsRequest tr = new TagsRequest();
         OAuth2AccessToken token = null;
