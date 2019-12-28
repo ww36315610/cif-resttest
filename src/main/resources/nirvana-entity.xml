@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+        channel="channel-oplog"
+        name="oplog trans Plug-in"
+        provider-name="xiong">
+    <store pk="_id" applyNoStr="requestId">
+		<cf name="basic_info" target="UserWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="customer_basic" jsonName="result"/>
+			<column hbaseCfName="userLoanInfoVoWrapper" jsonName="userLoanInfoVoWrapper"/>
+			<column hbaseCfName="lendRepayRecordVoList" jsonName="lendRepayRecordVoList"/>
+			<column hbaseCfName="fetchBankCardWrapper" jsonName="fetchBankCardWrapper"/>
+        </cf>
+		
+		<cf name="basic_info" target="LocationInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId,half500ApplyTimes,oneDay500ApplyTimes,oneDay2000ApplyTimes,twoDay2000ApplyTimes">
+            <column hbaseCfName="customer_gps" jsonName="result"/>
+        </cf>
+		<cf name="basic_info" target="ClientInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="customer_client" jsonName="result"/>
+        </cf>
+		<cf name="basic_info" target="ContactInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="customer_contacts" jsonName="result"/>
+        </cf>
+		
+		<cf name="bank_card_info" target="BankCardBasicInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="bank_card_basic" jsonName="result"/>
+        </cf>
+		
+		<cf name="credit_card_info" target="CreditCardBasicInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="credit_basic" jsonName="result"/>
+        </cf>
+		<cf name="credit_card_info" target="CreditCardTrsnWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="trans_info" jsonName="result"/>
+        </cf>
+
+		
+		
+        <cf name="taobao_info" target="TaobaoBasicInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="taobao_basic" jsonName="result"/>
+        </cf>
+		<cf name="taobao_info" target="TaobaoDetailTransBasicInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="detail_trans_basic" jsonName="result"/>
+			<column hbaseCfName="receive_requested_phone" jsonName="receiveRequestedPhone"/>
+			<column hbaseCfName="users" jsonName="users"/>
+        </cf>
+		<cf name="taobao_info" target="TaobaoReceivedAddressWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="received_address" jsonName="result"/>
+        </cf>
+		<cf name="taobao_info" target="TaobaoTransInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="trans_info" jsonName="result"/>
+        </cf>
+		<cf name="taobao_info" target="TaobaoTransInfoAndLogisticsWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="trans_info_and_logistics" jsonName="result"/>
+        </cf>
+		
+		
+		
+        <cf name="alipay_info" target="AlipayBanklistWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="alipay_bank" jsonName="result"/>
+        </cf>
+		<cf name="alipay_info" target="AlipayBasicInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="alipay_basic" jsonName="result"/>
+        </cf>
+		<cf name="alipay_info" target="AlipayTransInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="alipay_transinfo" jsonName="result"/>
+        </cf>
+		<cf name="alipay_info" target="AlipayContactsWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="contacts" jsonName="result"/>
+        </cf>
+		
+		
+		
+		
+		
+		<cf name="credit_report_info"  target="CreditReportAdministrativeSanctionWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="administrative_sanction" jsonName="result"/>
+        </cf>
+		<cf name="credit_report_info"  target="CreditReportCompulsoryExecutionWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="compulsory_execution" jsonName="result"/>
+        </cf>
+		<cf name="credit_report_info"  target="CreditReportCustomerInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="cr_basic" jsonName="result"/>
+        </cf>
+		<cf name="credit_report_info"  target="CreditReportInfoSummaryWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="info_summary" jsonName="result"/>
+        </cf>
+		<cf name="credit_report_info"  target="CreditReportJudgmentExecutionWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="judgment_execution" jsonName="result"/>
+        </cf>
+		<cf name="credit_report_info"  target="CreditReportOwingTaxesWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="owing_taxes" jsonName="result"/>
+        </cf>
+		
+		
+		<cf name="credit_report_info"  target="CreditReportInfoCredit60Wrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="info_credit_60" jsonName="result"/>
+        </cf>
+		<cf name="credit_report_info"  target="CreditReportInfoCreditNormalWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="info_credit_normal" jsonName="result"/>
+        </cf>
+		<cf name="credit_report_info"  target="CreditReportInfoCreditOverdueWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="info_credit_overdue" jsonName="result"/>
+        </cf>
+		<cf name="credit_report_info"  target="CreditReportInfoHouseNormalWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="info_house_normal" jsonName="result"/>
+        </cf>
+		<cf name="credit_report_info"  target="CreditReportInfoHouseOverdueWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="info_house_overdue" jsonName="result"/>
+        </cf>
+		<cf name="credit_report_info"  target="CreditReportInfoOtherNormalWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="info_other_normal" jsonName="result"/>
+        </cf>
+		<cf name="credit_report_info"  target="CreditReportInfoOtherOverdueWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="info_other_overdue" jsonName="result"/>
+        </cf>
+		<cf name="credit_report_info"  target="CreditReportQueryInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="query_info" jsonName="result"/>
+        </cf>
+		
+		
+		
+		<cf name="mobile_info"  target="MobileBasicInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="basic_info" jsonName="result"/>
+        </cf>
+		<cf name="mobile_info"  target="MobileContactsIntersectWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="contacts_intersectphones" jsonName="result"/>
+        </cf>
+		<cf name="mobile_info"  target="MobileDetailSmsWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="smses" jsonName="result"/>
+        </cf>
+		<cf name="mobile_info"  target="MobileDetailVoiceWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="voices" jsonName="result"/>
+			<column hbaseCfName="mobile_online" jsonName="mobileOnline"/>
+			<column hbaseCfName="person_loan_customerStatus" jsonName="personLoanCustomerStatus"/>
+        </cf>
+		<cf name="mobile_info"  target="smsInfoWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="sms_info" jsonName="result"/>
+        </cf>
+
+		
+		<cf name="device_info"  target="DevicesWrapper" cifid="_id,_class->className,idNo->idCardNum,idNo,channelCode->channel,requestId->applyNo,requestId,userId,ct,errorCode,applyId">
+            <column hbaseCfName="device_info" jsonName="result"/>
+        </cf>		
+		
+		
+		
+    </store>
+</plugin>
